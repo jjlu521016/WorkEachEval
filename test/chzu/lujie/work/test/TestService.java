@@ -1,0 +1,30 @@
+package chzu.lujie.work.test;
+
+import javax.annotation.Resource;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+
+import chzu.lujie.work.domain.User;
+import chzu.lujie.work.domain.user1;
+
+@Service("testService")
+public class TestService
+{
+
+	@Resource
+	private SessionFactory sessionFactory;
+
+	// 开事务
+	@Transactional
+	public void saveTwoUsers()
+	{
+		Session session = sessionFactory.getCurrentSession();
+
+		session.save(new user1());
+		// int a = 1 / 0; // 这行会抛异常
+		session.save(new user1());
+	}
+}
