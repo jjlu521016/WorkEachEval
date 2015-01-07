@@ -3,9 +3,13 @@
         "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
         "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
 
-<hibernate-mapping package="cn.itcast.oa.domain">
+<hibernate-mapping package="chzu.lujie.work.domain">
 
-	<class name="User" table="itcast_user">
+	<class name="User" table="t_work_user">
+<!-- 		<id name="id"> -->
+<!--             <generator class="native"/> -->
+<!-- 		</id> -->
+
 		<id name="id">
             <generator class="native"/>
 		</id>
@@ -16,6 +20,7 @@
 		<property name="phoneNumber" />
 		<property name="email" />
 		<property name="description" />
+		<property name="photo" />
 		
 		
 		<!-- department属性，本类与Department的多对一 -->
@@ -23,7 +28,7 @@
 		
 		
 		<!-- roles属性，本类与Role的多对多 -->
-		<set name="roles" table="itcast_user_role">
+		<set name="roles" table="t_work_user_role" lazy="false">
 			<key column="userId"></key>
 			<many-to-many class="Role" column="roleId"></many-to-many>
 		</set>

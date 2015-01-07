@@ -1,83 +1,125 @@
 package chzu.lujie.work.view.action;
 
+import java.util.HashSet;
 import java.util.List;
 
 import javax.annotation.Resource;
 
+import org.slf4j.Logger;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Controller;
 
+import sun.security.acl.PermissionImpl;
+
 import com.opensymphony.xwork2.ActionContext;
+import com.opensymphony.xwork2.ActionSupport;
+import com.opensymphony.xwork2.ModelDriven;
 import com.sun.org.glassfish.gmbal.Description;
 
+import chzu.lujie.work.base.BaseAction;
+import chzu.lujie.work.domain.Permission;
 import chzu.lujie.work.domain.Role;
 import chzu.lujie.work.service.RoleService;
 
 @Controller
 @Scope("prototype")
-public class RoleAction
-{
-	@Resource
-	private RoleService roleService;
-	
-	private Long id;
-	private String name;
-	private String description;
-	//
-//	private Role model = new Role();
-	
-public String getName() {
-		return name;
-	}
+public class RoleAction extends BaseAction<Role> {
 
-	public void setName(String name) {
-		this.name = name;
-	}
+	private Long[] permissionIds;
 
-	public String getDescription() {
-		return description;
-	}
-
-	public void setDescription(String description) {
-		this.description = description;
-	}
-
-	//	public Role getModel(){
-//		return model;
-//	}
-	public String list() throws Exception{
+	public String list() throws Exception {
 		//
 		List<Role> roleList = roleService.findAll();
 		//
 		ActionContext.getContext().put("roleList", roleList);
 		return "list";
 	}
-	
-	public String delete() throws Exception{
-		roleService.delete(id);
+
+	public String delete() throws Exception {
+		roleService.delete(model.getId());
 		return "tolist";
 	}
-	
-	public String add() throws Exception{
+
+	public String add() throws Exception {
+		// 封装到对象中
+
+		roleService.save(model);
+		return "tolist";
+	}
+
+	public String addUI() throws Exception {
+
 		return "addUI";
 	}
-	public String addUI() throws Exception{
-		//封装到对象中
-		Role role = new Role();
-		role.setName(name);
-		role.setDescription(description);
-		
-		roleService.save(role);
-		
+
+	public String edit() throws Exception {
+		Role role = roleService.getById(model.getId());
+
+		roleService.update(model);
 		return "tolist";
 	}
-	
-	public String edit() throws Exception{
+
+	public String editUI() throws Exception {
+		// 准备回显的数据
+		Role role = roleService.getById(model.getId());
+		ActionContext.getContext().getValueStack().push(role);
 		return "editUI";
 	}
-	public String editUI() throws Exception{
+
+	/**
+	 * 设置权限信息 卢杰20150106
+	 * 
+	 * @return
+	 * @throws Exception
+	 */
+	public String setPermissionUI() throws Exception {
+		// 准备数据，得到role的id
+		Role role = roleService.getById(model.getId());
+		
+		System.out.println("************-------"+role);
+		ActionContext.getContext().getValueStack().push(role);
+		
+		
+		if (role.getPermissions() != null) {
+			permissionIds = new Long[role.getPermissions().size()];
+			int index = 0;
+			for (Permission permisson : role.getPermissions()) {
+				permissionIds[index++] = permisson.getId();
+			}
+		}
+
+		List<Permission> permissionList = permissionService.findAll();
+		ActionContext.getContext().put("permissionList", permissionList);
+		return "setPermissionUI";
+
+	}
+
+	/**
+	 * 
+	 * @return
+	 * @throws Exception
+	 */
+	public String setPermission() throws Exception {
+		// 1，从数据库中获取原对象
+		Role role = roleService.getById(model.getId());
+
+		// 2，设置要修改的属性
+		List<Permission> permissionList = permissionService
+				.getByIds(permissionIds);
+		role.setPermissions(new HashSet<Permission>(permissionList));
+
+		// 3，更新到数据库
+		roleService.update(role);
+
 		return "tolist";
 	}
-	
+
+	public Long[] getPermissionIds() {
+		return permissionIds;
+	}
+
+	public void setPermissionIds(Long[] permissionIds) {
+		this.permissionIds = permissionIds;
+	}
 
 }

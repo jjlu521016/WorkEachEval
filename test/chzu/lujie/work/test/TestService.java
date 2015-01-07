@@ -8,7 +8,6 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import chzu.lujie.work.domain.User;
-import chzu.lujie.work.domain.user1;
 
 @Service("testService")
 public class TestService
@@ -23,8 +22,8 @@ public class TestService
 	{
 		Session session = sessionFactory.getCurrentSession();
 
-		session.save(new user1());
+		session.save(new User());
 		// int a = 1 / 0; // 这行会抛异常
-		session.save(new user1());
+		session.save(new User());
 	}
 }

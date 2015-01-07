@@ -24,7 +24,7 @@
 		<listener-class>org.springframework.web.util.Log4jConfigListener</listener-class>
 	</listener>
 
- 
+
 	<!-- 配置Spring的用于初始化容器对象的监听器 -->
 	<listener>
 		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
@@ -33,6 +33,22 @@
 		<param-name>contextConfigLocation</param-name>
 		<param-value>classpath:applicationContext*.xml</param-value>
 	</context-param>
+
+	<!-- 初始化的工具配置 -->
+	<listener>
+		<listener-class>chzu.lujie.work.util.InitListener</listener-class>
+	</listener>
+
+
+	<!-- 配置Spring的用于解决懒加载问题的过滤器 -->
+	<filter>
+		<filter-name>OpenSessionInViewFilter</filter-name>
+		<filter-class>org.springframework.orm.hibernate3.support.OpenSessionInViewFilter</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>OpenSessionInViewFilter</filter-name>
+		<url-pattern>*.action</url-pattern>
+	</filter-mapping>
 
 	<!-- 配置Struts2的核心的过滤器 -->
 	<filter>

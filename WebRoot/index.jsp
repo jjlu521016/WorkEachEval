@@ -1,14 +1,8 @@
 <%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
 <%
-String path = request.getContextPath();
-String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
-%>
+	//重定向到loginUI页面，
 
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
-<html>
-  
-  
-  <body>
-    hello <br>
-  </body>
-</html>
+	response.sendRedirect(request.getContextPath()
+			+ "/user_loginUI.action");
+	// 	response.sendRedirect(request.getContextPath()+ "/home_index.action");
+%>

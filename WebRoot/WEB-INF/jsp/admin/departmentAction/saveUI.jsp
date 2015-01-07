@@ -3,11 +3,7 @@
 <html>
 <head>
 	<title>部门设置</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <script language="javascript" src="${pageContext.request.contextPath}/script/jquery.js"></script>
-    <script language="javascript" src="${pageContext.request.contextPath}/script/pageCommon.js" charset="utf-8"></script>
-    <script language="javascript" src="${pageContext.request.contextPath}/script/PageUtils.js" charset="utf-8"></script>
-    <link type="text/css" rel="stylesheet" href="${pageContext.request.contextPath}/style/blue/pageCommon.css" />
+    <%@ include file="/WEB-INF/jsp/public/commons.jspf" %>
 </head>
 <body>
 
@@ -36,22 +32,17 @@
         <div class="ItemBlockBorder">
             <div class="ItemBlock">
                 <table cellpadding="0" cellspacing="0" class="mainForm">
-                    <tr><td width="100">上级部门</td>
-                        <td><select name="parentId" class="SelectStyle">
-                                <option value="">请选择部门</option>
-                                <option value="7">┠总经理室</option>
-                                <option value="1">┠市场部</option>
-                                <option value="2">　┠咨询部</option>
-                                <option value="3">　┠招生部</option>
-                                <option value="4">┠教学部</option>
-                                <option value="5">┠后勤部</option>
-                            </select>
-                        </td>
+                    <tr><td width="100">上级院系</td>
+                    <td> 
+                    <s:select name="parentId" cssClass="selectStyle" list="#departmentList" 
+                    listKey="id" listValue="name" headerKey="" headerValue="==请选择部门==" >
+                    </s:select>
+                   
                     </tr>
-                    <tr><td>部门名称</td>
+                    <tr><td>院系、专业名称</td>
                         <td><s:textfield  name="name" cssClass="InputStyle"/> *</td>
                     </tr>
-                    <tr><td>职能说明</td>
+                    <tr><td>院系、专业说明</td>
                         <td><s:textarea name="description" cssClass="TextareaStyle"></s:textarea></td>
                     </tr>
                 </table>
