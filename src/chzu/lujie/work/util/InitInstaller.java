@@ -64,8 +64,7 @@ public class InitInstaller {
 		session.save(menu);
 		session.save(menu1);
 		session.save(menu2);
-		
-		
+
 		// 老师作业管理
 		menu = new Permission("老师作业管理", null, null);
 		menu1 = new Permission("知识点分析", "knowlegeManage_list", menu);
@@ -77,18 +76,18 @@ public class InitInstaller {
 		session.save(menu2);
 		session.save(menu3);
 		session.save(menu4);
-		
+
 		session.save(new Permission("例题讲解", "question_list", menu1));
 		session.save(new Permission("当前作业", "nowhomework_list", menu2));
 		session.save(new Permission("历史作业", "historyhomework_list", menu2));
-		
+
 		// 学生作业管理
 		menu = new Permission("我的任务管理", null, null);
 		menu1 = new Permission("待批改的作业", "homework_list", menu);
 		menu2 = new Permission("已完成的作业", "Fhomework_list", menu);
 		menu3 = new Permission("未完成的作业", "TOhomework_list", menu);
 		menu4 = new Permission("成绩管理", "grade_list", menu);
-		
+
 		session.save(menu);
 		session.save(menu1);
 		session.save(menu2);
@@ -97,9 +96,10 @@ public class InitInstaller {
 	}
 
 	public static void main(String[] args) {
-//
-		ApplicationContext ac = new ClassPathXmlApplicationContext("applicationContext.xml");
-		
+		//
+		ApplicationContext ac = new ClassPathXmlApplicationContext(
+				"applicationContext.xml");
+
 		InitInstaller installer = (InitInstaller) ac.getBean("initInstaller");
 		System.out.println("------>");
 		installer.install();

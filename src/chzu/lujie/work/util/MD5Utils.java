@@ -66,6 +66,6 @@ public class MD5Utils {
 
 	public static void main(String[] args) {
 		MD5Utils getMD5 = new MD5Utils();
-		System.out.println(getMD5.GetMD5Code(null));
+		System.out.println(getMD5.GetMD5Code("admin"));
 	}
 }

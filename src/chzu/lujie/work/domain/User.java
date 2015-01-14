@@ -44,32 +44,32 @@ public class User {
 	 * @return
 	 */
 	@SuppressWarnings("unchecked")
-	public boolean hasPermissionByUrl(String privUrl) {
+	public boolean hasPermissionByUrl(String PermUrl) {
 		// 超级管理有所有的权限
 		if (isAdmin()) {
 			return true;
 		}
 
 		// >> 去掉后面的参数
-		int pos = privUrl.indexOf("?");
+		int pos = PermUrl.indexOf("?");
 		if (pos > -1) {
-			privUrl = privUrl.substring(0, pos);
+			PermUrl = PermUrl.substring(0, pos);
 		}
 		// >> 去掉UI后缀
-		if (privUrl.endsWith("UI")) {
-			privUrl = privUrl.substring(0, privUrl.length() - 2);
+		if (PermUrl.endsWith("UI")) {
+			PermUrl = PermUrl.substring(0, PermUrl.length() - 2);
 		}
 
 		// 如果本URL不需要控制，则登录用户就可以使用
 		Collection<String> allPermissionUrls = (Collection<String>) ActionContext
 				.getContext().getApplication().get("allPermissionUrls");
-		if (!allPermissionUrls.contains(privUrl)) {
+		if (!allPermissionUrls.contains(PermUrl)) {
 			return true;
 		} else {
 			// 普通用户要判断是否含有这个权限
 			for (Role role : roles) {
 				for (Permission permission : role.getPermissions()) {
-					if (privUrl.equals(permission.getUrl())) {
+					if (PermUrl.equals(permission.getUrl())) {
 						return true;
 					}
 				}

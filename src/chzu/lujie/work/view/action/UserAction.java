@@ -137,10 +137,14 @@ public class UserAction extends BaseAction<User> {
 		User user = userService.findByLoginNameAndPassword(model.getLoginName(), model.getPassword());
 		if (user == null) {
 			addFieldError("login", "用户名或密码不正确！");
+			
+			System.out.println("----loginUI---------"+ user);
 			return "loginUI";
 		} else {
 			// 登录用户
 			ActionContext.getContext().getSession().put("user", user);
+			
+			System.out.println("-----toINdex--------"+ user);
 			return "toIndex";
 		}
 	}
