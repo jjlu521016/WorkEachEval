@@ -39,9 +39,6 @@ public class User {
 
 	/**
 	 * 判断本用户是否有指定URL的权限
-	 * 
-	 * @param privUrl
-	 * @return
 	 */
 	@SuppressWarnings("unchecked")
 	public boolean hasPermissionByUrl(String PermUrl) {
@@ -50,12 +47,13 @@ public class User {
 			return true;
 		}
 
-		// >> 去掉后面的参数
+		//  去掉后面的参数,
 		int pos = PermUrl.indexOf("?");
+		//如果字符中不含有“？”，则pos=-1，否则返回的值大于-1.
 		if (pos > -1) {
 			PermUrl = PermUrl.substring(0, pos);
 		}
-		// >> 去掉UI后缀
+		//如果获取的字符含有“UI”字符，则将“UI”去掉
 		if (PermUrl.endsWith("UI")) {
 			PermUrl = PermUrl.substring(0, PermUrl.length() - 2);
 		}
@@ -69,6 +67,7 @@ public class User {
 			// 普通用户要判断是否含有这个权限
 			for (Role role : roles) {
 				for (Permission permission : role.getPermissions()) {
+					//与判断名称权限的判断不同，防止空指针异常。
 					if (PermUrl.equals(permission.getUrl())) {
 						return true;
 					}
@@ -78,6 +77,7 @@ public class User {
 		}
 	}
 
+	
 	/**
 	 * 判断本用户是否是超级管理员
 	 * 
