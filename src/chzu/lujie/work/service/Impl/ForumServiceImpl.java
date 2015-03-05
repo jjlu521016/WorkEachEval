@@ -13,6 +13,7 @@ import chzu.lujie.work.service.ForumService;
 @Transactional
 public class ForumServiceImpl extends DaoSupportImpl<Forum> implements ForumService {
 
+	@SuppressWarnings("unchecked")
 	@Override
 	public List<Forum> findAll() {
 		// TODO Auto-generated method stub

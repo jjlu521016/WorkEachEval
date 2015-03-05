@@ -19,5 +19,7 @@
   <mapping resource="chzu/lujie/work/domain/Department.hbm.xml"/>
   <mapping resource="chzu/lujie/work/domain/Permission.hbm.xml"/>
   <mapping resource="chzu/lujie/work/domain/Forum.hbm.xml"/>
+  <mapping resource="chzu/lujie/work/domain/Topic.hbm.xml"/>
+  <mapping resource="chzu/lujie/work/domain/Reply.hbm.xml"/>
  </session-factory>
 </hibernate-configuration>
