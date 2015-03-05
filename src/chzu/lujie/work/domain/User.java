@@ -14,6 +14,22 @@ import com.opensymphony.xwork2.ActionContext;
  */
 public class User {
 
+	private Long id;
+	// 专业或部门
+	private Department department;
+	// 角色
+	private Set<Role> roles = new HashSet<Role>();
+
+	private String loginName; // 登录名
+	private String password; // 密码
+	private String name; // 真实姓名
+	private String gender; // 性别
+	private String phoneNumber; // 电话号码
+	private String email; // 电子邮件
+	private String description; // 说明
+	// 20150106添加的字段
+	private String photo;// 用户头像
+
 	/**
 	 * 判断本用户是否有指定名称的权限
 	 * 
@@ -47,13 +63,13 @@ public class User {
 			return true;
 		}
 
-		//  去掉后面的参数,
+		// 去掉后面的参数,
 		int pos = PermUrl.indexOf("?");
-		//如果字符中不含有“？”，则pos=-1，否则返回的值大于-1.
+		// 如果字符中不含有“？”，则pos=-1，否则返回的值大于-1.
 		if (pos > -1) {
 			PermUrl = PermUrl.substring(0, pos);
 		}
-		//如果获取的字符含有“UI”字符，则将“UI”去掉
+		// 如果获取的字符含有“UI”字符，则将“UI”去掉
 		if (PermUrl.endsWith("UI")) {
 			PermUrl = PermUrl.substring(0, PermUrl.length() - 2);
 		}
@@ -67,7 +83,7 @@ public class User {
 			// 普通用户要判断是否含有这个权限
 			for (Role role : roles) {
 				for (Permission permission : role.getPermissions()) {
-					//与判断名称权限的判断不同，防止空指针异常。
+					// 与判断名称权限的判断不同，防止空指针异常。
 					if (PermUrl.equals(permission.getUrl())) {
 						return true;
 					}
@@ -77,7 +93,6 @@ public class User {
 		}
 	}
 
-	
 	/**
 	 * 判断本用户是否是超级管理员
 	 * 
@@ -86,22 +101,6 @@ public class User {
 	public boolean isAdmin() {
 		return "admin".equals(loginName);
 	}
-
-	private Long id;
-	// 专业或部门
-	private Department department;
-	// 角色
-	private Set<Role> roles = new HashSet<Role>();
-
-	private String loginName; // 登录名
-	private String password; // 密码
-	private String name; // 真实姓名
-	private String gender; // 性别
-	private String phoneNumber; // 电话号码
-	private String email; // 电子邮件
-	private String description; // 说明
-	// 20150106添加的字段
-	private String photo;// 用户头像
 
 	public Long getId() {
 		return id;

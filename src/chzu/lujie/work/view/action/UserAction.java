@@ -83,7 +83,25 @@ public class UserAction extends BaseAction<User> {
 		userService.update(user);
 		return "tolist";
 	}
+///////////////////////////////////////////////////////////////////////////////	
+//	个人信息更改
+	public String editInfoUI() throws Exception {
+		
 
+		// 准备回显的数据
+		User user = userService.getById(model.getId());
+		ActionContext.getContext().getValueStack().push(user);
+		
+		return "editInfoUI";
+	}
+	
+	public String editInfo() throws Exception {
+		User user = userService.getById(model.getId());
+
+		userService.update(model);
+		return "editInfo";
+	}
+///////////////////////////////////////////////////////////////////////////////	
 	public String editUI() throws Exception {
 		// 准备数据, departmentList
 		List<Department> topList = departmentService.findTopList();
@@ -111,7 +129,7 @@ public class UserAction extends BaseAction<User> {
 		return "editUI";
 	}
 
-	/** 初始化密码为1234 */
+	/** 初始化密码为123456 */
 	public String initPassword() throws Exception {
 		// 1，从数据库中取出原对象
 		User user = userService.getById(model.getId());

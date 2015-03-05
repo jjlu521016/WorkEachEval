@@ -25,6 +25,7 @@
 
 		<s:form action="user_%{id == null ? 'add' : 'edit'}">
 			<s:hidden name="id"></s:hidden>
+			<s:hidden name="password"></s:hidden>
 
 			<div class="ItemBlock_Title1">
 				<!-- 信息说明 -->
@@ -50,6 +51,7 @@
 							<td><s:textfield name="loginName" cssClass="InputStyle" />
 								<font color="red">*</font></td>
 						</tr>
+
 						<tr>
 							<td>姓名</td>
 							<td><s:textfield name="name" cssClass="InputStyle" /> <font

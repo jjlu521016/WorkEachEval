@@ -14,7 +14,18 @@
 	background: #ffffff;
 	width: 100%;
 	text-align: left;
-`
+}
+
+
+
+#logoutTip {
+	height: 100;
+	background: #ffffff;
+	width: 100%;
+	text-align: center;
+	font-size: 22px;
+	color: red;
+	text-shadow: gray;
 }
 #LogoutOperate {
 	background: #dcdcdc;

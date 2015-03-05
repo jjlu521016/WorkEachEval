@@ -5,6 +5,7 @@ import java.lang.reflect.ParameterizedType;
 import javax.annotation.Resource;
 
 import chzu.lujie.work.service.DepartmentService;
+import chzu.lujie.work.service.ForumService;
 import chzu.lujie.work.service.PermissionService;
 import chzu.lujie.work.service.RoleService;
 import chzu.lujie.work.service.UserService;
@@ -50,4 +51,7 @@ protected UserService userService;
 
 @Resource
 protected PermissionService permissionService;
+
+@Resource
+protected ForumService forumService;
 }

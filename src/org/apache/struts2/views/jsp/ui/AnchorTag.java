@@ -36,7 +36,11 @@ import com.opensymphony.xwork2.util.ValueStack;
 
 /**
  * @see Anchor
+ * @author jielu
+ * 本文件是<s:a>...</s:a>标签调用的类。因为本系统要根据不用的角色控制不同的权限，来显示不同的功能按钮，
+ * 本系统的按钮是通过超链接来实现的，所以在执行超链接标签<s:a>前，利用权限拦截来显示不同的按钮
  */
+
 public class AnchorTag extends AbstractClosingTag {
 
 	private static final long serialVersionUID = -1034616578492431113L;
