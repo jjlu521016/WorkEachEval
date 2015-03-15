@@ -18,7 +18,7 @@ KindEditor.plugin('insertfile', function(K) {
 		lang = self.lang(name + '.');
 	self.plugin.fileDialog = function(options) {
 		var fileUrl = K.undef(options.fileUrl, 'http://'),
-			//fileTitle = K.undef(options.fileTitle, ''),
+			fileTitle = K.undef(options.fileTitle, ''),
 			clickFn = options.clickFn;
 		var html = [
 			'<div style="padding:20px;">',
@@ -30,11 +30,11 @@ KindEditor.plugin('insertfile', function(K) {
 			'<input type="button" class="ke-button-common ke-button" name="viewServer" value="' + lang.viewServer + '" />',
 			'</span>',
 			'</div>',
-			//title   我注释掉了下面的这段代码，去掉文件说明和文本框
-			//'<div class="ke-dialog-row">',
-			//'<label for="keTitle" style="width:60px;">' + lang.title + '</label>',
-			//'<input type="text" id="keTitle" class="ke-input-text" name="title" value="" style="width:160px;" /></div>',
-			//'</div>',
+			//title
+			'<div class="ke-dialog-row">',
+			'<label for="keTitle" style="width:60px;">' + lang.title + '</label>',
+			'<input type="text" id="keTitle" class="ke-input-text" name="title" value="" style="width:160px;" /></div>',
+			'</div>',
 			//form end
 			'</form>',
 			'</div>'
@@ -81,11 +81,9 @@ KindEditor.plugin('insertfile', function(K) {
 							url = K.formatUrl(url, 'absolute');
 						}
 						urlBox.val(url);
-
 						if (self.afterUpload) {
-							 self.afterUpload.call(self, url, data, name);
+							self.afterUpload.call(self, url, data, name);
 						}
-
 						alert(self.lang('uploadSuccess'));
 					} else {
 						alert(data.message);

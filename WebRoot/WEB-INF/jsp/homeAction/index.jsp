@@ -7,7 +7,7 @@
 </head>
 
 	<frameset rows="100,*,25" framespacing=0 border=0 frameborder="0">
-		<frame noresize name="TopMenu" scrolling="yes" src="${pageContext.request.contextPath}/home_top.action">
+		<frame noresize name="TopMenu" scrolling="no" src="${pageContext.request.contextPath}/home_top.action">
 		<frameset cols="180,*" id="resize">
 			<frame noresize name="menu" scrolling="yes" src="${pageContext.request.contextPath}/home_left.action">
 			<frame noresize name="right" scrolling="yes" src="${pageContext.request.contextPath}/home_right.action">

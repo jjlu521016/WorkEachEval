@@ -46,6 +46,7 @@ public class ForumManageAction extends BaseAction<Forum> {
 		forum.setName(model.getName());
 		forum.setDescription(model.getDescription());;
 		// 更新到数据库
+		forumService.save(forum);
 		return "tolist";
 	}
 

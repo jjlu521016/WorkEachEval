@@ -25,7 +25,7 @@
                 <td width="100">登录名</td>
                 <td width="100">姓名</td>
                 <td width="100">所属部门</td>
-                <td width="200">岗位</td>
+                <td width="200">角色</td>
                 <td>备注</td>
                 <td>相关操作</td>
             </tr>

@@ -16,7 +16,6 @@ public class ForumServiceImpl extends DaoSupportImpl<Forum> implements ForumServ
 	@SuppressWarnings("unchecked")
 	@Override
 	public List<Forum> findAll() {
-		// TODO Auto-generated method stub
 		return getSession().createQuery(//
 				"FROM Forum f order by f.position")//
 				.list();
@@ -24,7 +23,6 @@ public class ForumServiceImpl extends DaoSupportImpl<Forum> implements ForumServ
 
 	@Override
 	public void save(Forum forum) {
-		// TODO Auto-generated method stub
 		
 		//保存到数据库
 		super.save(forum);
@@ -36,7 +34,6 @@ public class ForumServiceImpl extends DaoSupportImpl<Forum> implements ForumServ
 
 	@Override
 	public void moveUp(Long id) {
-		// TODO Auto-generated method stub
 		Forum forum = getById(id);
 		//其他板块，如果position比本position的值大，选择上面的第一个
 		Forum other  = (Forum) getSession().createQuery(
@@ -65,7 +62,6 @@ public class ForumServiceImpl extends DaoSupportImpl<Forum> implements ForumServ
 
 	@Override
 	public void moveDown(Long id) {
-		// TODO Auto-generated method stub
 		Forum forum = getById(id);
 		//其他板块，如果position比本position的值小，选择下面的第一个
 		Forum other  = (Forum) getSession().createQuery(

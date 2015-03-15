@@ -11,8 +11,6 @@ public class CheckPermission extends AbstractInterceptor {
 
 	@Override
 	public String intercept(ActionInvocation invocation) throws Exception {
-		
-		System.out.println("----------------->>>>>>>>>>>>>>拦截前");
 
 		
 		//获取当前用户信息
@@ -40,7 +38,6 @@ public class CheckPermission extends AbstractInterceptor {
 		//如果已经登录
 		
 		else{
-			System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"+user.hasPermissionByUrl(PermUrl));
 			if(user.hasPermissionByUrl(PermUrl))
 			{
 				//return "noPermissionError";

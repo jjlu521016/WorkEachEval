@@ -4,12 +4,16 @@ import java.lang.reflect.ParameterizedType;
 
 import javax.annotation.Resource;
 
+import chzu.lujie.work.domain.User;
 import chzu.lujie.work.service.DepartmentService;
 import chzu.lujie.work.service.ForumService;
 import chzu.lujie.work.service.PermissionService;
+import chzu.lujie.work.service.ReplyService;
 import chzu.lujie.work.service.RoleService;
+import chzu.lujie.work.service.TopicService;
 import chzu.lujie.work.service.UserService;
 
+import com.opensymphony.xwork2.ActionContext;
 import com.opensymphony.xwork2.ActionSupport;
 import com.opensymphony.xwork2.ModelDriven;
 
@@ -54,4 +58,42 @@ protected PermissionService permissionService;
 
 @Resource
 protected ForumService forumService;
+
+@Resource
+protected TopicService topicService;
+
+@Resource
+protected ReplyService replyService;
+
+/**
+ * 其他一些常用的变量
+ */
+
+/**
+ * 获取当前用户
+ */
+
+protected User getCurrentUser(){
+	return (User) ActionContext.getContext().getSession().get("user");
+}
+
+//分页相关
+
+protected int pageNum =1;
+protected int pageSize =10;
+public int getPageNum() {
+	return pageNum;
+}
+
+public void setPageNum(int pageNum) {
+	this.pageNum = pageNum;
+}
+
+public int getPageSize() {
+	return pageSize;
+}
+
+public void setPageSize(int pageSize) {
+	this.pageSize = pageSize;
+}
 }

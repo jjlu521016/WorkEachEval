@@ -1,7 +1,7 @@
 <%@ page language="java" import="java.util.*" pageEncoding="utf-8"%>
 <html>
 <head>
-	<title>【${forum.name}】中的主题列表</title>
+	<title>${forum.name}中的帖子列表</title>
     <%@ include file="/WEB-INF/jsp/public/commons.jspf" %>
 	<link type="text/css" rel="stylesheet" href="${pageContext.request.contextPath}/style/blue/forum.css" />
 	<script type="text/javascript">
@@ -27,7 +27,7 @@
     <div id="Title_bar_Head">
         <div id="Title_Head"></div>
         <div id="Title"><!--页面标题-->
-            <img border="0" width="13" height="13" src="${pageContext.request.contextPath}/style/images/title_arrow.gif"/> 【${forum.name}】中的主题列表
+            <img border="0" width="13" height="13" src="${pageContext.request.contextPath}/style/images/title_arrow.gif"/><font color="red"> 【${forum.name}】</font>中的帖子列表
         </div>
         <div id="Title_End"></div>
     </div>
@@ -41,7 +41,7 @@
 			<font class="MenuPoint"> &gt; </font>
 			<s:a action="forum_list">论坛</s:a>
 			<font class="MenuPoint"> &gt; </font>
-			${forum.name}
+			<font color="red">${forum.name}</font>
 			<span style="margin-left:30px;">
 				<s:a action="topic_addUI?forumId=%{#forum.id}">
 					<img align="absmiddle" src="${pageContext.request.contextPath}/style/blue/images/button/publishNewTopic.png"/>
@@ -71,7 +71,7 @@
 				<!--主题列表-->
 				<tbody class="dataContainer" datakey="topicList">
 				
-				<s:iterator value="recordList">
+				<s:iterator value="#topicList">
 					<tr height="35" id="d0" class="template">
 						<td></td>
 						<td class="ForumTopicPageDataLine" align="center"><img src="${pageContext.request.contextPath}/style/images/topicType_${type}.gif" /></td>
@@ -131,7 +131,7 @@
 </s:form>
 
 <!--分页信息-->
-<%@ include file="/WEB-INF/jsp/public/pageView.jspf" %>
+<%-- <%@ include file="/WEB-INF/jsp/public/pageView.jspf" %> --%>
 
 
 

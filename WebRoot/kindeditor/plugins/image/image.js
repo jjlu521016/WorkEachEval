@@ -5,15 +5,16 @@
 * @author Roddy <luolonghao@gmail.com>
 * @site http://www.kindsoft.net/
 * @licence http://www.kindsoft.net/license.php
+* uploadJson的路径默认为php改成jsp的
 *******************************************************************************/
 
 KindEditor.plugin('image', function(K) {
 	var self = this, name = 'image',
 		allowImageUpload = K.undef(self.allowImageUpload, true),
-		allowImageRemote = K.undef(self.allowImageRemote, true),//用于隐藏网络图片
+		allowImageRemote = K.undef(self.allowImageRemote, true),
 		formatUploadUrl = K.undef(self.formatUploadUrl, true),
 		allowFileManager = K.undef(self.allowFileManager, false),
-		uploadJson = K.undef(self.uploadJson, self.basePath + 'php/upload_json.php'),
+		uploadJson = K.undef(self.uploadJson, self.basePath + 'jsp/upload_json.jsp'),
 		imageTabIndex = K.undef(self.imageTabIndex, 0),
 		imgPath = self.pluginsPath + 'image/images/',
 		extraParams = K.undef(self.extraFileUploadParams, {}),
@@ -27,10 +28,9 @@ KindEditor.plugin('image', function(K) {
 			imageHeight = K.undef(options.imageHeight, ''),
 			imageTitle = K.undef(options.imageTitle, ''),
 			imageAlign = K.undef(options.imageAlign, ''),
-			showRemote = K.undef(options.showRemote, true),//用于隐藏网络图片
+			showRemote = K.undef(options.showRemote, true),
 			showLocal = K.undef(options.showLocal, true),
 			tabIndex = K.undef(options.tabIndex, 0),
-			
 			clickFn = options.clickFn;
 		var target = 'kindeditor_upload_iframe_' + new Date().getTime();
 		var hiddenElements = [];
