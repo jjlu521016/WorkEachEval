@@ -25,10 +25,8 @@ https://github.com/jjlu521016/WorkEachEval.git
 
 
 
-<action name="knowledgeAnalyManage_*" class="knowledgeAnalyManageAction" method="{1}">
-			<result name="list">/WEB-INF/jsp/knowledgeAnalyManageAction/list.jsp</result>
-			<result name="saveUI">/WEB-INF/jsp/knowledgeAnalyManageAction/saveUI.jsp</result>
-			<result name="tolist" type="redirectAction">knowledgeAnalyManage_list</result>
-		</action>
+20150401：
+note
+到目前为止还有作业管理系统+互评系统没有开发
 
 
