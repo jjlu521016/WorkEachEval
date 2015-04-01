@@ -9,3 +9,26 @@ action比数据库中的action多了一个namespace（/）!!
 2.开始论坛的开发：论坛管理已完成，等待开发论坛模块
 
 
+https://github.com/jjlu521016/WorkEachEval.git
+
+
+
+        　　 var editor;
+         　　KindEditor.ready(function(K) {
+                 　　editor = K.create('#editor_id');
+         　　});
+         　　var options = {
+          　　cssPath : '/kindeditor/themes/qq/qq.css',
+         　　 filterMode : true
+    　　　　};
+   　　　　var editor = K.create('textarea[name="content"]', options);
+
+
+
+<action name="knowledgeAnalyManage_*" class="knowledgeAnalyManageAction" method="{1}">
+			<result name="list">/WEB-INF/jsp/knowledgeAnalyManageAction/list.jsp</result>
+			<result name="saveUI">/WEB-INF/jsp/knowledgeAnalyManageAction/saveUI.jsp</result>
+			<result name="tolist" type="redirectAction">knowledgeAnalyManage_list</result>
+		</action>
+
+

@@ -28,7 +28,7 @@ public class InitInstaller {
 		session.save(user);
 
 		// 初始化权限
-		Permission menu, menu1, menu2, menu3, menu4;
+		Permission menu, menu1, menu2, menu3, menu4,menu5;
 		menu = new Permission("系统管理", null, null);
 
 		menu1 = new Permission("角色管理", "role_list", menu);
@@ -67,15 +67,17 @@ public class InitInstaller {
 
 		// 老师作业管理
 		menu = new Permission("老师作业管理", null, null);
-		menu1 = new Permission("知识点分析", "knowlegeManage_list", menu);
-		menu2 = new Permission("布置作业", "giveHWork_list", menu);
-		menu3 = new Permission("批改作业", "CrHWork_list", menu);
-		menu4 = new Permission("成绩统计", "grade_list", menu);
+		menu1 = new Permission("知识点管理", "knowledgeAnalyManage_list", menu);
+		menu2 = new Permission("知识点分析", "knowledgeAnaly_list", menu);
+		menu3 = new Permission("布置作业", "giveHWork_list", menu);
+		menu4 = new Permission("批改作业", "CrHWork_list", menu);
+		menu5 = new Permission("成绩统计", "grade_list", menu);
 		session.save(menu);
 		session.save(menu1);
 		session.save(menu2);
 		session.save(menu3);
 		session.save(menu4);
+		session.save(menu5);
 
 		session.save(new Permission("例题讲解", "question_list", menu1));
 		session.save(new Permission("当前作业", "nowhomework_list", menu2));

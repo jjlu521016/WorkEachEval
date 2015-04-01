@@ -91,7 +91,7 @@
 				<div class="ItemBlock">
 					<table cellpadding="0" cellspacing="0" class="mainForm">
 						<tr>
-							<td width="100">岗位</td>
+							<td width="100">角色</td>
 							<td><s:select name="roleIds" cssClass="SelectStyle"
 									multiple="true" size="10" list="#roleList" listKey="id"
 									listValue="name" /> 按住Ctrl键可以多选或取消选择</td>

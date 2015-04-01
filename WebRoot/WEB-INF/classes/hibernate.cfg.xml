@@ -21,5 +21,9 @@
   <mapping resource="chzu/lujie/work/domain/Forum.hbm.xml"/>
   <mapping resource="chzu/lujie/work/domain/Topic.hbm.xml"/>
   <mapping resource="chzu/lujie/work/domain/Reply.hbm.xml"/>
+  <mapping resource="chzu/lujie/work/domain/Charpter.hbm.xml"/>
+  <mapping resource="chzu/lujie/work/domain/Subject.hbm.xml"/>
+  <mapping resource="chzu/lujie/work/domain/KnowledgeDetail.hbm.xml"/>
+  <mapping resource="chzu/lujie/work/domain/KnowledgeAnaly.hbm.xml"/>
  </session-factory>
 </hibernate-configuration>

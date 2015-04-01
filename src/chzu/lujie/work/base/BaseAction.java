@@ -5,11 +5,15 @@ import java.lang.reflect.ParameterizedType;
 import javax.annotation.Resource;
 
 import chzu.lujie.work.domain.User;
+import chzu.lujie.work.service.CharpterService;
 import chzu.lujie.work.service.DepartmentService;
 import chzu.lujie.work.service.ForumService;
+import chzu.lujie.work.service.KnowledgeAnalyService;
+import chzu.lujie.work.service.KnowledgeService;
 import chzu.lujie.work.service.PermissionService;
 import chzu.lujie.work.service.ReplyService;
 import chzu.lujie.work.service.RoleService;
+import chzu.lujie.work.service.SubjectService;
 import chzu.lujie.work.service.TopicService;
 import chzu.lujie.work.service.UserService;
 
@@ -65,6 +69,17 @@ protected TopicService topicService;
 @Resource
 protected ReplyService replyService;
 
+@Resource
+protected KnowledgeAnalyService knowledgeAnalyService;
+
+@Resource
+protected SubjectService subjectService;
+
+@Resource
+protected CharpterService charpterService; 
+
+@Resource
+protected KnowledgeService knowledgeService ; 
 /**
  * 其他一些常用的变量
  */

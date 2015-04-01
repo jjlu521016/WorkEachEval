@@ -21,9 +21,6 @@ import chzu.lujie.work.domain.Topic;
 public class TopicAction extends BaseAction<Topic> {
 	private Long forumId;
 	
-
-
-
 	public String show() throws Exception {
 
 		Topic topic = topicService.getById(model.getId());		

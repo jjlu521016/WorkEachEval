@@ -84,28 +84,67 @@
 		<!-- 论坛板块管理 -->
 		<action name="forumManage_*" class="forumManageAction" method="{1}">
 			<result name="list">/WEB-INF/jsp/forumManageAction/list.jsp</result>
-			<result name="saveUI">/WEB-INF/jsp/forumManageAction/saveUI.jsp</result>
+			<result name="saveUI">/WEB-INF/jsp/forumManageAction/saveUI.jsp
+			</result>
 			<result name="tolist" type="redirectAction">forumManage_list</result>
 		</action>
-		
+
 		<!-- 论坛管理 -->
 		<action name="forum_*" class="forumAction" method="{1}">
 			<result name="list">/WEB-INF/jsp/forumAction/list.jsp</result>
 			<result name="show">/WEB-INF/jsp/forumAction/show.jsp</result>
 		</action>
-		
+
 		<!-- 主题管理 -->
 		<action name="topic_*" class="topicAction" method="{1}">
 			<result name="addUI">/WEB-INF/jsp/topicAction/addUI.jsp</result>
 			<result name="show">/WEB-INF/jsp/topicAction/show.jsp</result>
 			<result name="toShow" type="redirectAction">topic_show?id=${id}</result>
 		</action>
-		
+
 		<!-- 回帖管理 -->
 		<action name="reply_*" class="replyAction" method="{1}">
 			<result name="addUI">/WEB-INF/jsp/replyAction/addUI.jsp</result>
-			<result name="toTopicShow" type="redirectAction">topic_show?id=${topicId}</result>
+			<result name="toTopicShow" type="redirectAction">topic_show?id=${topicId}
+			</result>
 		</action>
+
+		<!-- 例题管理 -->
+		<action name="knowledgeAnalyManage_*" class="knowledgeAnalyManageAction"
+			method="{1}">
+			<result name="list">/WEB-INF/jsp/knowledgeAnalyManageAction/list.jsp
+			</result>
+			<result name="saveUI">/WEB-INF/jsp/knowledgeAnalyManageAction/saveUI.jsp
+			</result>
+			<result name="tolist" type="redirectAction">knowledgeAnalyManage_list</result>
+
+
+		</action>
+
+		<!--科目管理 -->
+		<action name="subject_*" class="subjectAction" method="{1}">
+			<result name="list">/WEB-INF/jsp/subjectAction/showSubject.jsp
+			</result>
+			<result name="saveUI">/WEB-INF/jsp/subjectAction/addSubject.jsp
+			</result>
+			<result name="tolist" type="redirectAction">subject_list</result>
+			<result name="showsubjectById" >/WEB-INF/jsp/charpterAction/show.jsp</result>
+		</action>
+
+		<!-- 章节管理 -->
+		<action name="charpter_*" class="charpterAction" method="{1}">
+			<result name="list">/WEB-INF/jsp/charpterAction/list.jsp</result>
+			<result name="saveUI">/WEB-INF/jsp/charpterAction/saveUI.jsp</result>
+			<result name="toshow" type="redirectAction">subject_showsubjectById?sid=${subjectId}</result>
+			<result name="showCharpterById" >/WEB-INF/jsp/knowledgeAction/show.jsp</result>	
+		</action>
+		
+		<!-- 知识点管理 -->
+		<action name="knowledge_*" class="knowledgeAction" method="{1}">
+			<result name="saveUI">/WEB-INF/jsp/knowledgeAction/saveUI.jsp</result>
+			<result name="toshow" type="redirectAction">charpter_showCharpterById?cid=${charpterId}</result>
+		</action>
+		
 	</package>
 
 	<!-- Add packages here -->

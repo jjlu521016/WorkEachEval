@@ -50,11 +50,7 @@
 				src="${pageContext.request.contextPath}/style/blue/images/top/logout.gif" />
 			</a>
 		</div>
-		<div id="Head1Right_Button">
-			<a target="desktop" href="javascript:void(0)"><img width="65"
-				height="20" alt="显示桌面"
-				src="${pageContext.request.contextPath}/style/blue/images/top/desktop.gif" /></a>
-		</div>
+		
 	</div>
 
 	<div id="Head2">

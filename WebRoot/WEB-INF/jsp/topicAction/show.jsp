@@ -20,6 +20,7 @@
          　　 filterMode : true
     　　　　};
    　　　　var editor = K.create('textarea[name="content"]', options);
+   
  　　　 </script>
 </head>
 <body >
