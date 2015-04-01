@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="chzu.lujie.work.domain">
+	<class name="Knowledge" table="t_work_knowledge">
+		<id name="kid">
+			<generator class="native" />
+		</id>
+		<property name="kname" />
+		
+		<many-to-one name="charpter" cascade="save-update" class="Charpter"
+			lazy="false" fetch="select">
+
+			<column name="C_ID" precision="22" scale="0" />
+		</many-to-one>
+
+
+
+		<set name="questionses" cascade="delete" inverse="true">
+		<key>
+		<column name="Q_KNOWLEDGE" precision="22" scale="0" />
+		</key>
+		<one-to-many class="Questions" />
+		</set>
+
+	</class>
+</hibernate-mapping>

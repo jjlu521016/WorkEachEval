@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="chzu.lujie.work.domain">
+
+	<class name="Subject" table="t_work_subject">
+		<id name="sid">
+			<generator class="native" />
+		</id>
+		<property name="sname" />
+		<property name="description" />
+		<property name="subject_code" />
+
+		<!-- testbases属性 ，本类和Testbase的一对多关系 -->
+		<!-- <set name="testbases" cascade="delete" inverse="true"> -->
+		<!-- <key> -->
+		<!-- <column name="S_ID" precision="22" scale="0" /> -->
+		<!-- </key> -->
+		<!-- <one-to-many class="Testbase" /> -->
+		<!-- </set> -->
+
+<!-- 		charpters属性，本类与Charpter的一对多关系 -->
+		<set name="charpters" cascade="delete" inverse="true" lazy="false">
+		<key>
+		<column name="S_ID" precision="22" scale="0" />
+		</key>
+		<one-to-many class="Charpter" />
+		</set>
+
+		<!-- questionses属性 ，本类和Question类的一对多关系 -->
+		<!-- <set name="questionses" cascade="delete" inverse="true"> -->
+		<!-- <key> -->
+		<!-- <column name="S_ID" precision="22" scale="0" /> -->
+		<!-- </key> -->
+		<!-- <one-to-many class="Questions" /> -->
+		<!-- </set> -->
+	</class>
+</hibernate-mapping>

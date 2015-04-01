@@ -1,0 +1,266 @@
+[WARN ] 2015-03-12 22:36:34 localhost-startStop-1 org.hibernate.util.DTDEntityResolver - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[WARN ] 2015-03-12 22:36:34 localhost-startStop-1 org.hibernate.util.DTDEntityResolver - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[WARN ] 2015-03-12 22:36:35 localhost-startStop-1 org.hibernate.util.DTDEntityResolver - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[WARN ] 2015-03-12 22:36:35 localhost-startStop-1 org.hibernate.util.DTDEntityResolver - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[WARN ] 2015-03-12 22:36:35 localhost-startStop-1 org.hibernate.util.DTDEntityResolver - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[WARN ] 2015-03-12 22:36:35 localhost-startStop-1 org.hibernate.util.DTDEntityResolver - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[WARN ] 2015-03-12 22:36:35 localhost-startStop-1 org.hibernate.util.DTDEntityResolver - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[WARN ] 2015-03-12 22:36:41 localhost-startStop-1 org.hibernate.impl.SessionFactoryObjectFactory - Could not bind factory to JNDI
+javax.naming.NamingException: Name is not valid
+	at org.apache.naming.NamingContext.bind(NamingContext.java:892)
+	at org.apache.naming.NamingContext.rebind(NamingContext.java:225)
+	at org.apache.naming.SelectorContext.rebind(SelectorContext.java:216)
+	at javax.naming.InitialContext.rebind(Unknown Source)
+	at org.hibernate.util.NamingHelper.bind(NamingHelper.java:97)
+	at org.hibernate.impl.SessionFactoryObjectFactory.addInstance(SessionFactoryObjectFactory.java:113)
+	at org.hibernate.impl.SessionFactoryImpl.<init>(SessionFactoryImpl.java:365)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1842)
+	at org.springframework.orm.hibernate3.LocalSessionFactoryBean.newSessionFactory(LocalSessionFactoryBean.java:793)
+	at org.springframework.orm.hibernate3.LocalSessionFactoryBean.buildSessionFactory(LocalSessionFactoryBean.java:715)
+	at org.springframework.orm.hibernate3.AbstractSessionFactoryBean.afterPropertiesSet(AbstractSessionFactoryBean.java:189)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1612)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1549)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:539)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:475)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:304)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:300)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:445)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:419)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:544)
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:155)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:87)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessPropertyValues(CommonAnnotationBeanPostProcessor.java:304)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1185)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:537)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:475)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:304)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:300)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:195)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:700)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:760)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:482)
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:403)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:306)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:106)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4973)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5467)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1559)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1549)
+	at java.util.concurrent.FutureTask$Sync.innerRun(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+[ERROR] 2015-03-12 22:38:29 http-bio-8080-exec-3 com.opensymphony.xwork2.interceptor.ParametersInterceptor - Developer Notification (set struts.devMode to false to disable this message):
+Unexpected Exception caught setting 'x' on 'class chzu.lujie.work.view.action.UserAction: Error setting expression 'x' with value ['22', ]
+[ERROR] 2015-03-12 22:38:29 http-bio-8080-exec-3 com.opensymphony.xwork2.interceptor.ParametersInterceptor - Developer Notification (set struts.devMode to false to disable this message):
+Unexpected Exception caught setting 'y' on 'class chzu.lujie.work.view.action.UserAction: Error setting expression 'y' with value ['17', ]
+[ERROR] 2015-03-12 22:39:18 http-bio-8080-exec-8 com.opensymphony.xwork2.interceptor.ParametersInterceptor - Developer Notification (set struts.devMode to false to disable this message):
+Unexpected Exception caught setting 'x' on 'class chzu.lujie.work.view.action.TopicAction: Error setting expression 'x' with value ['8', ]
+[ERROR] 2015-03-12 22:39:18 http-bio-8080-exec-8 com.opensymphony.xwork2.interceptor.ParametersInterceptor - Developer Notification (set struts.devMode to false to disable this message):
+Unexpected Exception caught setting 'y' on 'class chzu.lujie.work.view.action.TopicAction: Error setting expression 'y' with value ['9', ]
+[ERROR] 2015-03-12 22:39:26 http-bio-8080-exec-10 com.opensymphony.xwork2.interceptor.ParametersInterceptor - Developer Notification (set struts.devMode to false to disable this message):
+Unexpected Exception caught setting 'x' on 'class chzu.lujie.work.view.action.TopicAction: Error setting expression 'x' with value ['21', ]
+[ERROR] 2015-03-12 22:39:26 http-bio-8080-exec-10 com.opensymphony.xwork2.interceptor.ParametersInterceptor - Developer Notification (set struts.devMode to false to disable this message):
+Unexpected Exception caught setting 'y' on 'class chzu.lujie.work.view.action.TopicAction: Error setting expression 'y' with value ['16', ]
+[ERROR] 2015-03-12 22:39:34 http-bio-8080-exec-10 com.opensymphony.xwork2.interceptor.ParametersInterceptor - Developer Notification (set struts.devMode to false to disable this message):
+Unexpected Exception caught setting 'x' on 'class chzu.lujie.work.view.action.TopicAction: Error setting expression 'x' with value ['15', ]
+[ERROR] 2015-03-12 22:39:34 http-bio-8080-exec-10 com.opensymphony.xwork2.interceptor.ParametersInterceptor - Developer Notification (set struts.devMode to false to disable this message):
+Unexpected Exception caught setting 'y' on 'class chzu.lujie.work.view.action.TopicAction: Error setting expression 'y' with value ['9', ]
+[ERROR] 2015-03-12 22:39:41 http-bio-8080-exec-10 com.opensymphony.xwork2.interceptor.ParametersInterceptor - Developer Notification (set struts.devMode to false to disable this message):
+Unexpected Exception caught setting 'x' on 'class chzu.lujie.work.view.action.TopicAction: Error setting expression 'x' with value ['35', ]
+[ERROR] 2015-03-12 22:39:41 http-bio-8080-exec-10 com.opensymphony.xwork2.interceptor.ParametersInterceptor - Developer Notification (set struts.devMode to false to disable this message):
+Unexpected Exception caught setting 'y' on 'class chzu.lujie.work.view.action.TopicAction: Error setting expression 'y' with value ['7', ]
+[ERROR] 2015-03-12 22:39:48 http-bio-8080-exec-6 com.opensymphony.xwork2.interceptor.ParametersInterceptor - Developer Notification (set struts.devMode to false to disable this message):
+Unexpected Exception caught setting 'x' on 'class chzu.lujie.work.view.action.TopicAction: Error setting expression 'x' with value ['32', ]
+[ERROR] 2015-03-12 22:39:48 http-bio-8080-exec-6 com.opensymphony.xwork2.interceptor.ParametersInterceptor - Developer Notification (set struts.devMode to false to disable this message):
+Unexpected Exception caught setting 'y' on 'class chzu.lujie.work.view.action.TopicAction: Error setting expression 'y' with value ['9', ]
+[ERROR] 2015-03-12 22:39:56 http-bio-8080-exec-6 com.opensymphony.xwork2.interceptor.ParametersInterceptor - Developer Notification (set struts.devMode to false to disable this message):
+Unexpected Exception caught setting 'x' on 'class chzu.lujie.work.view.action.TopicAction: Error setting expression 'x' with value ['27', ]
+[ERROR] 2015-03-12 22:39:56 http-bio-8080-exec-6 com.opensymphony.xwork2.interceptor.ParametersInterceptor - Developer Notification (set struts.devMode to false to disable this message):
+Unexpected Exception caught setting 'y' on 'class chzu.lujie.work.view.action.TopicAction: Error setting expression 'y' with value ['14', ]
+[ERROR] 2015-03-12 22:40:02 http-bio-8080-exec-9 com.opensymphony.xwork2.interceptor.ParametersInterceptor - Developer Notification (set struts.devMode to false to disable this message):
+Unexpected Exception caught setting 'x' on 'class chzu.lujie.work.view.action.TopicAction: Error setting expression 'x' with value ['15', ]
+[ERROR] 2015-03-12 22:40:02 http-bio-8080-exec-9 com.opensymphony.xwork2.interceptor.ParametersInterceptor - Developer Notification (set struts.devMode to false to disable this message):
+Unexpected Exception caught setting 'y' on 'class chzu.lujie.work.view.action.TopicAction: Error setting expression 'y' with value ['11', ]
+[ERROR] 2015-03-12 22:40:09 http-bio-8080-exec-5 com.opensymphony.xwork2.interceptor.ParametersInterceptor - Developer Notification (set struts.devMode to false to disable this message):
+Unexpected Exception caught setting 'x' on 'class chzu.lujie.work.view.action.TopicAction: Error setting expression 'x' with value ['26', ]
+[ERROR] 2015-03-12 22:40:09 http-bio-8080-exec-5 com.opensymphony.xwork2.interceptor.ParametersInterceptor - Developer Notification (set struts.devMode to false to disable this message):
+Unexpected Exception caught setting 'y' on 'class chzu.lujie.work.view.action.TopicAction: Error setting expression 'y' with value ['12', ]
+[ERROR] 2015-03-12 22:40:16 http-bio-8080-exec-8 com.opensymphony.xwork2.interceptor.ParametersInterceptor - Developer Notification (set struts.devMode to false to disable this message):
+Unexpected Exception caught setting 'x' on 'class chzu.lujie.work.view.action.TopicAction: Error setting expression 'x' with value ['40', ]
+[ERROR] 2015-03-12 22:40:16 http-bio-8080-exec-8 com.opensymphony.xwork2.interceptor.ParametersInterceptor - Developer Notification (set struts.devMode to false to disable this message):
+Unexpected Exception caught setting 'y' on 'class chzu.lujie.work.view.action.TopicAction: Error setting expression 'y' with value ['6', ]
+[ERROR] 2015-03-12 22:40:27 http-bio-8080-exec-8 com.opensymphony.xwork2.interceptor.ParametersInterceptor - Developer Notification (set struts.devMode to false to disable this message):
+Unexpected Exception caught setting 'x' on 'class chzu.lujie.work.view.action.TopicAction: Error setting expression 'x' with value ['29', ]
+[ERROR] 2015-03-12 22:40:27 http-bio-8080-exec-8 com.opensymphony.xwork2.interceptor.ParametersInterceptor - Developer Notification (set struts.devMode to false to disable this message):
+Unexpected Exception caught setting 'y' on 'class chzu.lujie.work.view.action.TopicAction: Error setting expression 'y' with value ['0', ]
+[ERROR] 2015-03-12 22:41:21 http-bio-8080-exec-5 com.opensymphony.xwork2.interceptor.ParametersInterceptor - Developer Notification (set struts.devMode to false to disable this message):
+Unexpected Exception caught setting 'x' on 'class chzu.lujie.work.view.action.ReplyAction: Error setting expression 'x' with value ['13', ]
+[ERROR] 2015-03-12 22:41:21 http-bio-8080-exec-5 com.opensymphony.xwork2.interceptor.ParametersInterceptor - Developer Notification (set struts.devMode to false to disable this message):
+Unexpected Exception caught setting 'y' on 'class chzu.lujie.work.view.action.ReplyAction: Error setting expression 'y' with value ['8', ]
+[ERROR] 2015-03-12 22:41:32 http-bio-8080-exec-5 com.opensymphony.xwork2.interceptor.ParametersInterceptor - Developer Notification (set struts.devMode to false to disable this message):
+Unexpected Exception caught setting 'x' on 'class chzu.lujie.work.view.action.TopicAction: Error setting expression 'x' with value ['2', ]
+[ERROR] 2015-03-12 22:41:32 http-bio-8080-exec-5 com.opensymphony.xwork2.interceptor.ParametersInterceptor - Developer Notification (set struts.devMode to false to disable this message):
+Unexpected Exception caught setting 'y' on 'class chzu.lujie.work.view.action.TopicAction: Error setting expression 'y' with value ['10', ]
+[ERROR] 2015-03-12 22:45:12 http-bio-8080-exec-5 com.opensymphony.xwork2.interceptor.ParametersInterceptor - Developer Notification (set struts.devMode to false to disable this message):
+Unexpected Exception caught setting 'x' on 'class chzu.lujie.work.view.action.UserAction: Error setting expression 'x' with value ['9', ]
+[ERROR] 2015-03-12 22:45:12 http-bio-8080-exec-5 com.opensymphony.xwork2.interceptor.ParametersInterceptor - Developer Notification (set struts.devMode to false to disable this message):
+Unexpected Exception caught setting 'y' on 'class chzu.lujie.work.view.action.UserAction: Error setting expression 'y' with value ['23', ]
+[ERROR] 2015-03-12 22:46:48 http-bio-8080-exec-3 com.opensymphony.xwork2.interceptor.ParametersInterceptor - Developer Notification (set struts.devMode to false to disable this message):
+Unexpected Exception caught setting 'x' on 'class chzu.lujie.work.view.action.ReplyAction: Error setting expression 'x' with value ['17', ]
+[ERROR] 2015-03-12 22:46:48 http-bio-8080-exec-3 com.opensymphony.xwork2.interceptor.ParametersInterceptor - Developer Notification (set struts.devMode to false to disable this message):
+Unexpected Exception caught setting 'y' on 'class chzu.lujie.work.view.action.ReplyAction: Error setting expression 'y' with value ['3', ]
+[ERROR] 2015-03-12 22:48:12 http-bio-8080-exec-1 com.opensymphony.xwork2.interceptor.ParametersInterceptor - Developer Notification (set struts.devMode to false to disable this message):
+Unexpected Exception caught setting 'x' on 'class chzu.lujie.work.view.action.ReplyAction: Error setting expression 'x' with value ['8', ]
+[ERROR] 2015-03-12 22:48:12 http-bio-8080-exec-1 com.opensymphony.xwork2.interceptor.ParametersInterceptor - Developer Notification (set struts.devMode to false to disable this message):
+Unexpected Exception caught setting 'y' on 'class chzu.lujie.work.view.action.ReplyAction: Error setting expression 'y' with value ['13', ]
+[ERROR] 2015-03-12 22:48:29 http-bio-8080-exec-2 com.opensymphony.xwork2.interceptor.ParametersInterceptor - Developer Notification (set struts.devMode to false to disable this message):
+Unexpected Exception caught setting 'x' on 'class chzu.lujie.work.view.action.ReplyAction: Error setting expression 'x' with value ['35', ]
+[ERROR] 2015-03-12 22:48:29 http-bio-8080-exec-2 com.opensymphony.xwork2.interceptor.ParametersInterceptor - Developer Notification (set struts.devMode to false to disable this message):
+Unexpected Exception caught setting 'y' on 'class chzu.lujie.work.view.action.ReplyAction: Error setting expression 'y' with value ['10', ]
+[WARN ] 2015-03-12 22:50:36 ContainerBackgroundProcessor[StandardEngine[Catalina]] org.hibernate.impl.SessionFactoryObjectFactory - Could not unbind factory from JNDI
+javax.naming.NamingException: Name is not valid
+	at org.apache.naming.NamingContext.unbind(NamingContext.java:269)
+	at org.apache.naming.NamingContext.unbind(NamingContext.java:304)
+	at org.apache.naming.SelectorContext.unbind(SelectorContext.java:268)
+	at javax.naming.InitialContext.unbind(Unknown Source)
+	at org.hibernate.impl.SessionFactoryObjectFactory.removeInstance(SessionFactoryObjectFactory.java:139)
+	at org.hibernate.impl.SessionFactoryImpl.close(SessionFactoryImpl.java:966)
+	at org.springframework.orm.hibernate3.AbstractSessionFactoryBean.destroy(AbstractSessionFactoryBean.java:230)
+	at org.springframework.orm.hibernate3.LocalSessionFactoryBean.destroy(LocalSessionFactoryBean.java:832)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:257)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:540)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:516)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:824)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:485)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:921)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:895)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:841)
+	at org.springframework.web.context.ContextLoader.closeWebApplicationContext(ContextLoader.java:579)
+	at org.springframework.web.context.ContextLoaderListener.contextDestroyed(ContextLoaderListener.java:115)
+	at org.apache.catalina.core.StandardContext.listenerStop(StandardContext.java:5014)
+	at org.apache.catalina.core.StandardContext.stopInternal(StandardContext.java:5659)
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:232)
+	at org.apache.catalina.core.StandardContext.reload(StandardContext.java:3981)
+	at org.apache.catalina.loader.WebappLoader.backgroundProcess(WebappLoader.java:425)
+	at org.apache.catalina.core.ContainerBase.backgroundProcess(ContainerBase.java:1345)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1530)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1540)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1540)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.run(ContainerBase.java:1519)
+	at java.lang.Thread.run(Unknown Source)
+[WARN ] 2015-03-12 22:51:09 ContainerBackgroundProcessor[StandardEngine[Catalina]] com.mchange.v2.c3p0.management.ActiveManagementCoordinator - A C3P0Registry mbean is already registered. This probably means that an application using c3p0 was undeployed, but not all PooledDataSources were closed prior to undeployment. This may lead to resource leaks over time. Please take care to close all PooledDataSources.
+[WARN ] 2015-03-12 22:51:11 ContainerBackgroundProcessor[StandardEngine[Catalina]] org.hibernate.util.DTDEntityResolver - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[WARN ] 2015-03-12 22:51:11 ContainerBackgroundProcessor[StandardEngine[Catalina]] org.hibernate.util.DTDEntityResolver - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[WARN ] 2015-03-12 22:51:11 ContainerBackgroundProcessor[StandardEngine[Catalina]] org.hibernate.util.DTDEntityResolver - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[WARN ] 2015-03-12 22:51:12 ContainerBackgroundProcessor[StandardEngine[Catalina]] org.hibernate.util.DTDEntityResolver - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[WARN ] 2015-03-12 22:51:12 ContainerBackgroundProcessor[StandardEngine[Catalina]] org.hibernate.util.DTDEntityResolver - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[WARN ] 2015-03-12 22:51:12 ContainerBackgroundProcessor[StandardEngine[Catalina]] org.hibernate.util.DTDEntityResolver - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[WARN ] 2015-03-12 22:51:12 ContainerBackgroundProcessor[StandardEngine[Catalina]] org.hibernate.util.DTDEntityResolver - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[WARN ] 2015-03-12 22:51:20 ContainerBackgroundProcessor[StandardEngine[Catalina]] org.hibernate.impl.SessionFactoryObjectFactory - Could not bind factory to JNDI
+javax.naming.NamingException: Name is not valid
+	at org.apache.naming.NamingContext.bind(NamingContext.java:892)
+	at org.apache.naming.NamingContext.rebind(NamingContext.java:225)
+	at org.apache.naming.SelectorContext.rebind(SelectorContext.java:216)
+	at javax.naming.InitialContext.rebind(Unknown Source)
+	at org.hibernate.util.NamingHelper.bind(NamingHelper.java:97)
+	at org.hibernate.impl.SessionFactoryObjectFactory.addInstance(SessionFactoryObjectFactory.java:113)
+	at org.hibernate.impl.SessionFactoryImpl.<init>(SessionFactoryImpl.java:365)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1842)
+	at org.springframework.orm.hibernate3.LocalSessionFactoryBean.newSessionFactory(LocalSessionFactoryBean.java:793)
+	at org.springframework.orm.hibernate3.LocalSessionFactoryBean.buildSessionFactory(LocalSessionFactoryBean.java:715)
+	at org.springframework.orm.hibernate3.AbstractSessionFactoryBean.afterPropertiesSet(AbstractSessionFactoryBean.java:189)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1612)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1549)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:539)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:475)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:304)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:300)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:445)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:419)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:544)
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:155)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:87)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessPropertyValues(CommonAnnotationBeanPostProcessor.java:304)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1185)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:537)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:475)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:304)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:300)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:195)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:700)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:760)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:482)
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:403)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:306)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:106)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4973)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5467)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.StandardContext.reload(StandardContext.java:3988)
+	at org.apache.catalina.loader.WebappLoader.backgroundProcess(WebappLoader.java:425)
+	at org.apache.catalina.core.ContainerBase.backgroundProcess(ContainerBase.java:1345)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1530)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1540)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1540)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.run(ContainerBase.java:1519)
+	at java.lang.Thread.run(Unknown Source)
+[ERROR] 2015-03-12 22:51:48 http-bio-8080-exec-3 com.opensymphony.xwork2.interceptor.ParametersInterceptor - Developer Notification (set struts.devMode to false to disable this message):
+Unexpected Exception caught setting 'x' on 'class chzu.lujie.work.view.action.UserAction: Error setting expression 'x' with value ['51', ]
+[ERROR] 2015-03-12 22:51:48 http-bio-8080-exec-3 com.opensymphony.xwork2.interceptor.ParametersInterceptor - Developer Notification (set struts.devMode to false to disable this message):
+Unexpected Exception caught setting 'y' on 'class chzu.lujie.work.view.action.UserAction: Error setting expression 'y' with value ['20', ]
+[ERROR] 2015-03-12 22:53:01 http-bio-8080-exec-15 com.opensymphony.xwork2.interceptor.ParametersInterceptor - Developer Notification (set struts.devMode to false to disable this message):
+Unexpected Exception caught setting 'x' on 'class chzu.lujie.work.view.action.ReplyAction: Error setting expression 'x' with value ['14', ]
+[ERROR] 2015-03-12 22:53:01 http-bio-8080-exec-15 com.opensymphony.xwork2.interceptor.ParametersInterceptor - Developer Notification (set struts.devMode to false to disable this message):
+Unexpected Exception caught setting 'y' on 'class chzu.lujie.work.view.action.ReplyAction: Error setting expression 'y' with value ['14', ]
+[ERROR] 2015-03-12 22:53:28 http-bio-8080-exec-15 com.opensymphony.xwork2.interceptor.ParametersInterceptor - Developer Notification (set struts.devMode to false to disable this message):
+Unexpected Exception caught setting 'x' on 'class chzu.lujie.work.view.action.ReplyAction: Error setting expression 'x' with value ['6', ]
+[ERROR] 2015-03-12 22:53:28 http-bio-8080-exec-15 com.opensymphony.xwork2.interceptor.ParametersInterceptor - Developer Notification (set struts.devMode to false to disable this message):
+Unexpected Exception caught setting 'y' on 'class chzu.lujie.work.view.action.ReplyAction: Error setting expression 'y' with value ['10', ]
+[ERROR] 2015-03-12 23:06:29 http-bio-8080-exec-17 com.opensymphony.xwork2.interceptor.ParametersInterceptor - Developer Notification (set struts.devMode to false to disable this message):
+Unexpected Exception caught setting 'x' on 'class chzu.lujie.work.view.action.UserAction: Error setting expression 'x' with value ['32', ]
+[ERROR] 2015-03-12 23:06:29 http-bio-8080-exec-17 com.opensymphony.xwork2.interceptor.ParametersInterceptor - Developer Notification (set struts.devMode to false to disable this message):
+Unexpected Exception caught setting 'y' on 'class chzu.lujie.work.view.action.UserAction: Error setting expression 'y' with value ['30', ]
+[ERROR] 2015-03-12 23:07:51 http-bio-8080-exec-16 com.opensymphony.xwork2.interceptor.ParametersInterceptor - Developer Notification (set struts.devMode to false to disable this message):
+Unexpected Exception caught setting 'x' on 'class chzu.lujie.work.view.action.ReplyAction: Error setting expression 'x' with value ['21', ]
+[ERROR] 2015-03-12 23:07:51 http-bio-8080-exec-16 com.opensymphony.xwork2.interceptor.ParametersInterceptor - Developer Notification (set struts.devMode to false to disable this message):
+Unexpected Exception caught setting 'y' on 'class chzu.lujie.work.view.action.ReplyAction: Error setting expression 'y' with value ['10', ]
+[ERROR] 2015-03-12 23:08:32 http-bio-8080-exec-17 org.apache.struts2.dispatcher.Dispatcher - Could not find action or result
+/WorkEachEval/grade_list.action
+There is no Action mapped for namespace [/] and action name [grade_list] associated with context path [/WorkEachEval]. - [unknown location]
+	at com.opensymphony.xwork2.DefaultActionProxy.prepare(DefaultActionProxy.java:185)
+	at org.apache.struts2.impl.StrutsActionProxy.prepare(StrutsActionProxy.java:63)
+	at org.apache.struts2.impl.StrutsActionProxyFactory.createActionProxy(StrutsActionProxyFactory.java:37)
+	at com.opensymphony.xwork2.DefaultActionProxyFactory.createActionProxy(DefaultActionProxyFactory.java:58)
+	at org.apache.struts2.dispatcher.Dispatcher.serviceAction(Dispatcher.java:552)
+	at org.apache.struts2.dispatcher.ng.ExecuteOperations.executeAction(ExecuteOperations.java:77)
+	at org.apache.struts2.dispatcher.ng.filter.StrutsPrepareAndExecuteFilter.doFilter(StrutsPrepareAndExecuteFilter.java:99)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.springframework.orm.hibernate3.support.OpenSessionInViewFilter.doFilterInternal(OpenSessionInViewFilter.java:232)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:108)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:220)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:122)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:501)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:102)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:950)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1040)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:607)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:316)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)

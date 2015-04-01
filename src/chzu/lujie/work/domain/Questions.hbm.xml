@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="chzu.lujie.work.domain">
+	<class name="Questions" table="t_work_questions">
+		<id name="qid">
+			<generator class="native" />
+		</id>
+		<property name="qtext" type="text" length="65536" />
+		<property name="anum" />
+		<property name="qdifficult" />
+		<property name="qscore" />
+		<property name="qtime" type="timestamp" />
+		<property name="remark" />
+
+		<many-to-one name="subject" class="Subject" fetch="select"
+			lazy="false" cascade="save-update">
+			<column name="S_ID" precision="22" scale="0" />
+		</many-to-one>
+
+		<many-to-one name="charpter" class="Charpter" cascade="save-update"
+			fetch="select" lazy="false">
+			<column name="Q_CHARPTER" precision="22" scale="0" />
+		</many-to-one>
+
+		<many-to-one name="knowledge" class="Knowledge" cascade="save-update"
+			fetch="select" lazy="false">
+			<column name="Q_KNOWLEDGE" precision="22" scale="0" />
+		</many-to-one>
+
+		<set name="answerses" cascade="all" inverse="true" lazy="false">
+			<key>
+				<column name="Q_ID" precision="22" />
+			</key>
+			<one-to-many class="Answers" />
+		</set>
+		
+		
+		<!-- <many-to-one name="types" cascade="save-update" -->
+		<!-- class="Types" fetch="select" lazy="false"> -->
+		<!-- <column name="Q_TYPE" precision="22" scale="0" /> -->
+		<!-- </many-to-one> -->
+
+
+
+
+
+		<!-- <set name="stutestpapers" cascade="delete" inverse="true"> -->
+		<!-- <key> -->
+		<!-- <column name="Q_ID" precision="22" scale="0" /> -->
+		<!-- </key> -->
+		<!-- <one-to-many class="Stutestpaper" /> -->
+		<!-- </set> -->
+		<!-- <set name="quesRTests" cascade="all" inverse="true" -->
+		<!-- lazy="false"> -->
+		<!-- <key> -->
+		<!-- <column name="Q_ID" precision="22" scale="0" /> -->
+		<!-- </key> -->
+		<!-- <one-to-many class="com.wjs.tk.po.QuesRTest" /> -->
+		<!-- </set> -->
+	</class>
+</hibernate-mapping>

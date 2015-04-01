@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="chzu.lujie.work.domain">
+	<class name="Testbase" table="t_work_testbase">
+		<id name="tpId" >
+			<generator class="native" />
+		</id>
+		
+		<many-to-one name="subject"  class="Subject"
+			fetch="select" lazy="false">
+			<column name="S_ID" precision="22" scale="0" />
+		</many-to-one>
+		<property name="tpName" />
+		<property name="tpTime" type="timestamp"/>
+		<property name="tpScore" />
+		
+<!-- 		<set name="stutestpapers" cascade="delete" inverse="true"> -->
+<!-- 			<key> -->
+<!-- 				<column name="TP_ID" precision="22" scale="0" /> -->
+<!-- 			</key> -->
+<!-- 			<one-to-many class="Stutestpaper" /> -->
+<!-- 		</set> -->
+<!-- 		<set name="scores" cascade="delete" inverse="true"> -->
+<!-- 			<key> -->
+<!-- 				<column name="TP_ID" precision="22" scale="0" /> -->
+<!-- 			</key> -->
+<!-- 			<one-to-many class="Score" /> -->
+<!-- 		</set> -->
+<!-- 		<set name="quesRTests" cascade="all" inverse="true" -->
+<!-- 			lazy="false"> -->
+<!-- 			<key> -->
+<!-- 				<column name="TP_ID" precision="22" scale="0" /> -->
+<!-- 			</key> -->
+<!-- 			<one-to-many class="com.wjs.tk.po.QuesRTest" /> -->
+<!-- 		</set> -->
+	</class>
+</hibernate-mapping>
