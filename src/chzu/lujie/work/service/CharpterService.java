@@ -12,4 +12,6 @@ public interface CharpterService extends DaoSupport<Charpter>{
 	List<Charpter> findBySubject(Subject subject);
 
 
+
+
 }

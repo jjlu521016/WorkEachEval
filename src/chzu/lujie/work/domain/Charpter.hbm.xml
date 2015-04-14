@@ -29,11 +29,11 @@
 <!-- 			</key> -->
 <!-- 			<one-to-many class="Knowledge" /> -->
 <!-- 		</set> -->
-<!-- 		<set name="questionses" cascade="delete" inverse="true"> -->
-<!-- 			<key> -->
-<!-- 				<column name="Q_CHARPTER" precision="22" scale="0" /> -->
-<!-- 			</key> -->
-<!-- 			<one-to-many class="Questions"/> -->
-<!-- 		</set> -->
+		<set name="questionses" cascade="delete" inverse="true">
+			<key>
+				<column name="q_charpter" precision="22" scale="0" />
+			</key>
+			<one-to-many class="Questions"/>
+		</set>
 	</class>
 </hibernate-mapping>

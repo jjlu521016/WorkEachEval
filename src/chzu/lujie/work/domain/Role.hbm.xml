@@ -19,6 +19,11 @@
 			<many-to-many class="User" column="userId"></many-to-many>
 		</set>
 		
+		<set name="teachers" table="t_work_teacher_role">
+			<key column="roleId"></key>
+			<many-to-many class="Teacher" column="teacherId"></many-to-many>
+		</set>
+		
 		<!--permissions属性，本类与Permission的多对多 -->
 		<set name="permissions" table="t_work_role_permission" lazy="false">
 			<key column="roleId"></key>

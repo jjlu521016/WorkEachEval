@@ -1,10 +1,18 @@
-/**
- * 保存提示及校验
- * @returns {Boolean}
- */
+function FormClose() {
+	/*
+	 * ================================================================================
+	 * 功能描述 : 关闭弹出窗口 作用窗体 : 输入参数 : 无 输出参数 : 无
+	 * ================================================================================
+	 */
+	window.close();
+}
 
 function saveTips() {
-
+	/*
+	 * ================================================================================
+	 * 功能描述 : 保存提示及校验 作用窗体 : 输入参数 : 无 输出参数 : 无
+	 * ================================================================================
+	 */
 	var title = document.getElementById('title').value;
 	if (title == "") {
 		alert("提示：请输入知识点名称！");
@@ -12,36 +20,34 @@ function saveTips() {
 	}
 
 	alert("添加成功！");
-	
+//	window.returnValue = 1;
+
 	window.close();
-	return;
 
 }
 /**
  * 打开一个新的窗口
+ * 
  * @returns {Boolean}
  */
-function editWindows(charpterId) {
-	var url = "/WorkEachEval/knowledge_addUI.action?charpterId="+charpterId+"";
-	var width = 1000;
-	var height = 600;
-	var arguments = window;
+function editWindows(charpterId, kid) {
 
-	if (!width)
-		width = 350;
-	if (!height)
-		height = 350;
-	var left = (screen.width - width) / 2;
-	var top = (screen.height - height) / 2;
-	var features = ""
-			+ "dialogWidth:" + width + "px;"// 宽度
-			+ "dialogHeight:" + height + "px;"// 高度
-			+ "center: yes;"// 是否居中
-			+ "resizable: yes;"// 是否可以改变大小
-			+ "scroll: yes;"// 当内容超过窗口大小时是否显示滚动条
-			+ "status: yes;"// 是否显示状态栏
-	var returnValue = window.showModalDialog(url, arguments, features);
+	var url = "";
+	if (kid == -1) {
+		url = "/WorkEachEval/knowledge_addUI.action?charpterId=" + charpterId
+				+ "";
+	} else {
+		url = "/WorkEachEval/knowledge_addUI.action?kid=" + kid
+				+ "&charpterId=" + charpterId + "";
+	}
 
-	window.parent.right.location.reload(true);
-	return ;
+	var retValue = window
+			.showModalDialog(
+					url,
+					"",
+					"dialogHeight: 420px; dialogWidth: 900px; resizable: Yes; status: yes;center: yes");
+	alert(retValue);
+	if (retValue == 1) {
+		window.parent.right.location.reload(true);
+	}
 }

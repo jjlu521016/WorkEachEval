@@ -13,7 +13,12 @@
 <script charset="utf-8"
 	src="${pageContext.request.contextPath }/kindeditor/lang/zh_CN.js"></script>
 <base target="_self" />
+
+ <script>
+
+   </script>
 </head>
+<!-- <body onload="ChangeMode(document.getElementById('cname').value);"> -->
 <body>
 
 	<!-- 标题显示 -->
@@ -24,7 +29,7 @@
 				<!--页面标题-->
 				<img border="0" width="13" height="13"
 					src="${pageContext.request.contextPath}/style/images/title_arrow.gif" />
-				发表新主题
+				章节管理
 			</div>
 			<div id="Title_End"></div>
 		</div>
@@ -37,7 +42,7 @@
 			name="charpter" cssStyle="margin: 0; padding: 0;">
 
 			<s:hidden name="subjectId"></s:hidden>
-			<s:hidden name="cid"></s:hidden>
+			<s:hidden name="cid" id="cid"></s:hidden>
 
 			<div id="PageHead"></div>
 			<center>
@@ -45,13 +50,13 @@
 					<table border="0" cellspacing="1" cellpadding="1" width="100%"
 						id="InputArea">
 						<tr>
-							<td class="InputAreaBg" height="30" width="50px"><div
+							<td class="InputAreaBg" height="30" width="100px"><div
 									class="InputTitle">
 									章节名称<font color="red">(*)</font>
 								</div></td>
 							<td class="InputAreaBg"><div class="InputContent">
 									<s:textfield name="cname" id="cname" cssClass="InputStyle"
-										cssStyle="width:50%" />
+										cssStyle="width:50%" readonly="readOnly"/>
 								</div></td>
 						</tr>
 						<tr height="240">
@@ -59,7 +64,7 @@
 							<td class="InputAreaBg">
 								<div class="InputContent">
 									<s:textarea name="description" id="description"
-										style="width:650px;height:300px;"></s:textarea>
+										style="width:650px;height:200px;"></s:textarea>
 								</div>
 							</td>
 
@@ -69,19 +74,15 @@
 								type="image" onclick="return saveTips()"
 								src="${pageContext.request.contextPath}/style/blue/images/button/submit.PNG"
 								style="margin-right: 15px;" /> <a
-								href="javascript:history.go(-1);"><img
+								href="javascript:FormClose();"><img
 									src="${pageContext.request.contextPath}/style/blue/images/button/goBack.png" /></a>
+							
 							</td>
 						</tr>
 					</table>
 				</div>
 			</center>
 		</s:form>
-	</div>
-
-	<div class="Description">
-		说明：<br />
-
 	</div>
 
 </body>

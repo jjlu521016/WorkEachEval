@@ -30,3 +30,17 @@ note
 到目前为止还有作业管理系统+互评系统没有开发
 
 
+<s:a 
+									action="charpter_delete?cid=%{cid}&subjectId=%{#subject.sid}" >
+									<img
+										onclick="return delConfirm('你要删除这条数据吗？')"
+										src="${pageContext.request.contextPath}/style/images/delete.png" />
+									</s:a>
+
+									<s:a>
+									<img
+										onclick="return editWindows('<%=subjectId %>','<%=cid %>')"
+										src="${pageContext.request.contextPath}/style/images/edit.png" />
+								</s:a>
+
+

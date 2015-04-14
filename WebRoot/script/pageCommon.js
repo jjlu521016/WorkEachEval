@@ -150,6 +150,20 @@ function delConfirm(message) {
 
 }
 
+function publishConfirm(message) {
+	if (message == null) {
+		message = "确定要发布本次作业吗？";
+
+	}
+	if (window.confirm(message)) {
+		alert("发布成功！！");
+		return;
+	} else {
+		return false;
+	}
+
+}
+
 function saveTip(message) {
 
 	if(document.charpter.cname.value=="")

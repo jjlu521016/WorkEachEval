@@ -25,5 +25,10 @@
   <mapping resource="chzu/lujie/work/domain/Subject.hbm.xml"/>
   <mapping resource="chzu/lujie/work/domain/KnowledgeDetail.hbm.xml"/>
   <mapping resource="chzu/lujie/work/domain/KnowledgeAnaly.hbm.xml"/>
+  <mapping resource="chzu/lujie/work/domain/Teacher.hbm.xml"/>
+  <mapping resource="chzu/lujie/work/domain/Types.hbm.xml"/>
+  <mapping resource="chzu/lujie/work/domain/Questions.hbm.xml"/>
+  <mapping resource="chzu/lujie/work/domain/Answers.hbm.xml"/>
+  <mapping resource="chzu/lujie/work/domain/Exercise.hbm.xml"/>
  </session-factory>
 </hibernate-configuration>

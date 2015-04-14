@@ -14,11 +14,12 @@
 	if (window.parent != window) {
 		window.parent.location.reload(true);
 	}
+
 </script>
 </head>
 
 <body leftmargin=0 topmargin=0 marginwidth=0 marginheight=0
-	class=PageBody>
+	class=PageBody >
 
 
 
@@ -55,6 +56,8 @@
 								type="image" tabindex="3"
 								src="${pageContext.request.contextPath}/style/blue/images/login/userLogin_button.gif" />
 							</td>
+
+
 						</tr>
 						<tr>
 							<td class="Subject"><img border="0"
@@ -62,6 +65,12 @@
 							<td><s:password name="password" id="aa" size="20"
 									tabindex="2" showPassword="false" cssClass="TextField required" /></td>
 						</tr>
+
+<!-- 						<tr> -->
+<!-- 							<td class="Subject">验证码</td> -->
+<!-- 							<td><input type="text" id="checkCode" class="code" size="8"> -->
+<!-- 							<img src="/WEB-INF/jsp/verifycode.jsp"></td> -->
+<!-- 						</tr> -->
 					</table>
 				</div>
 				<div id="CopyRight" align="right">&copy; 2015 版权所有

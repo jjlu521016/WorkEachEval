@@ -1,6 +1,6 @@
 package chzu.lujie.work.domain;
 
-import java.sql.Date;
+import java.util.Date;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -11,26 +11,45 @@ import java.util.Set;
  * 
  */
 public class Questions {
-	private Long qid;
-	private String qtext;
+	private Long qid;//问题ID
+	private String qtext;//题目
+	private String sortnum;//所属批次
 	private String anum;// 问题的编号
-	private String qdifficult;// 问题的难易程度
-	private String qscore;
-	private Date qtime;
-	private String remark;
+	private String qscore;//单个问题的分数
+	private Date qtime;//时间
+	private String remark;//标记
+	private Subject subject;//所属的课程
+	private Charpter charpter;//所属的章节
+	private Types types;//问题所属类型
+//	private Knowledge knowledge;//所属知识点
+	private Set answerses = new HashSet<>();//问题的答案
+	
+	private Exercise exercise;
 
-	private Subject subject;
-	private Charpter charpter;
-	private Knowledge knowledge;
-	private Set answerses = new HashSet<>();
-
-	// TODO
 	/**
 	 * setter and getter
 	 */
 
 	public Long getQid() {
 		return qid;
+	}
+
+	public Types getTypes() {
+		return types;
+	}
+
+	public void setTypes(Types types) {
+		this.types = types;
+	}
+
+
+
+	public String getSortnum() {
+		return sortnum;
+	}
+
+	public void setSortnum(String sortnum) {
+		this.sortnum = sortnum;
 	}
 
 	public void setQid(Long qid) {
@@ -53,13 +72,6 @@ public class Questions {
 		this.anum = anum;
 	}
 
-	public String getQdifficult() {
-		return qdifficult;
-	}
-
-	public void setQdifficult(String qdifficult) {
-		this.qdifficult = qdifficult;
-	}
 
 	public String getQscore() {
 		return qscore;
@@ -101,13 +113,13 @@ public class Questions {
 		this.charpter = charpter;
 	}
 
-	public Knowledge getKnowledge() {
-		return knowledge;
-	}
-
-	public void setKnowledge(Knowledge knowledge) {
-		this.knowledge = knowledge;
-	}
+//	public Knowledge getKnowledge() {
+//		return knowledge;
+//	}
+//
+//	public void setKnowledge(Knowledge knowledge) {
+//		this.knowledge = knowledge;
+//	}
 
 	public Set getAnswerses() {
 		return answerses;
@@ -115,6 +127,14 @@ public class Questions {
 
 	public void setAnswerses(Set answerses) {
 		this.answerses = answerses;
+	}
+
+	public Exercise getExercise() {
+		return exercise;
+	}
+
+	public void setExercise(Exercise exercise) {
+		this.exercise = exercise;
 	}
 
 }

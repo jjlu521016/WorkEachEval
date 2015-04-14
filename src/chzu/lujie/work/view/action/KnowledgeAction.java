@@ -31,13 +31,16 @@ public class KnowledgeAction extends BaseAction<KnowledgeDetail> {
 	 * @return
 	 * @throws Exception
 	 */
-	private Long charptertId;
+	private Long charpterId;
 
 	public String list() throws Exception {
-		
-//		List<KnowledgeDetail> knowledgelist = knowledgeService.findAll();
-//		ActionContext.getContext().put("knowledgelist", knowledgelist);
 
+		Charpter charpter = charpterService.getById(charpterId);
+		ActionContext.getContext().put("charpter", charpter);
+
+		
+		List<KnowledgeDetail> knowledgeList = knowledgeService.findByCharpter(charpter);
+		ActionContext.getContext().put("knowledgeList", knowledgeList);
 		return "list";
 	}
 
@@ -49,7 +52,7 @@ public class KnowledgeAction extends BaseAction<KnowledgeDetail> {
 	public String addUI() throws Exception {
 		
 		// 准备数据
-		Charpter charpter = charpterService.getById(charptertId);
+		Charpter charpter = charpterService.getById(charpterId);
 		ActionContext.getContext().put("charpter", charpter);
 		return "saveUI";
 	}
@@ -58,7 +61,7 @@ public class KnowledgeAction extends BaseAction<KnowledgeDetail> {
 
 	// 表单中已经封装的有content，title
 		
-		model.setCharpter(charpterService.getById(charptertId));
+		model.setCharpter(charpterService.getById(charpterId));
 		model.setAuthor(getCurrentUser());
 		model.setPostTime(new Date());
 		
@@ -68,43 +71,46 @@ public class KnowledgeAction extends BaseAction<KnowledgeDetail> {
 
 	public String editUI() throws Exception {
 		// 准备数据
-//		Subject subject = subjectService.getById(subjectId);
-//		ActionContext.getContext().put("subject", subject);
-//		
-//		Charpter charpter = charpterService.getById(model.getCid());
-//
-//		ActionContext.getContext().getValueStack().push(charpter);
-//		ActionContext.getContext().put("charpter", charpter);
+		Charpter charpter = charpterService.getById(charpterId);
+		ActionContext.getContext().put("charpter", charpter);
+		
+		KnowledgeDetail knowledge = knowledgeService.getById(model.getKid());
+		ActionContext.getContext().getValueStack().push(model.getKid());
 
 		return "saveUI";
 	}
 
 	public String edit() throws Exception {
 		
-//		Charpter charpter = charpterService.getById(model.getCid());
-//		
-//		charpter.setCname(model.getCname());
-//		charpter.setDescription(model.getDescription());
-//		charpter.setSubject(subjectService.getById(subjectId));
-//
-//		charpterService.update(charpter);
+		KnowledgeDetail knowledge = knowledgeService.getById(model.getKid());
+		
+		knowledge.setAuthor(getCurrentUser());
+		knowledge.setCharpter(charpterService.getById(charpterId));
+		knowledge.setContent(model.getContent());
+		knowledge.setIpAddr(ServletActionContext.getRequest().getRemoteAddr());
+		knowledge.setPostTime(new Date());
+		knowledge.setTitle(model.getTitle());
+		
+		knowledgeService.save(knowledge);
 		return "toshow";
 	}
-	
+
+
 	/**
 	 * setter and getter
 	 * 
 	 * @return
 	 */
-	public Long getCharptertId() {
-		return charptertId;
+
+
+	public Long getCharpterId() {
+		return charpterId;
 	}
 
-	public void setCharptertId(Long charptertId) {
-		this.charptertId = charptertId;
+	public void setCharpterId(Long charpterId) {
+		this.charpterId = charpterId;
 	}
-
-
+	
 	
 
 }

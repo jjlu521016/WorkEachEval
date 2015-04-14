@@ -25,7 +25,10 @@
 					<td width="80" class="ForumPageTableTitleLeft"></td>
 					<td width="80" class="ForumPageTableTitleLeft">课程编号</td>
 					<td width="80" class="ForumPageTableTitle">课程名称</td>
+					<td width="80" class="ForumPageTableTitle">任课教师</td>
 					<td  class="ForumPageTableTitle">课程介绍</td>
+					
+					
 				</tr>
 				<tr height="1" class="ForumPageTableTitleLine"><td colspan="9"></td></tr>
 				<tr height="3"><td colspan="9"></td></tr>
@@ -47,7 +50,8 @@
 <!-- 							</ul> -->
 						</td>
 						<td class="ForumPageTableDataLine"><b>
-						<s:a cssClass="ForumPageTopic" action="subject_showsubjectById?sid=%{sid}">${sname}</s:a></b></td>
+						<s:a cssClass="ForumPageTopic" action="subject_showsubjectById?sid=%{sid}">${sname}&nbsp;&nbsp;</s:a></b></td>
+						<td class="ForumPageTableDataLine"><b>${author.name}</b></td>
 						<td class="ForumPageTableDataLine"><b>${description}</b></td>
 		
 						<td width="3"></td>

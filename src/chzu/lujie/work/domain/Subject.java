@@ -15,10 +15,10 @@ public class Subject {
 	private String description;
 	
 	private String subject_code;
-
+	private User author;// 授课人
 //	private Set testbases = new HashSet();
 	private Set charpters = new HashSet();
-//	private Set questionses = new HashSet(); //题库
+	private Set questionses = new HashSet(); //题库
 	
 
 	/*
@@ -64,6 +64,22 @@ public class Subject {
 
 	public void setSubject_code(String subject_code) {
 		this.subject_code = subject_code;
+	}
+
+	public User getAuthor() {
+		return author;
+	}
+
+	public void setAuthor(User author) {
+		this.author = author;
+	}
+
+	public Set getQuestionses() {
+		return questionses;
+	}
+
+	public void setQuestionses(Set questionses) {
+		this.questionses = questionses;
 	}
 
 

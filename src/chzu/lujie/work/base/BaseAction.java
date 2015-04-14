@@ -7,14 +7,18 @@ import javax.annotation.Resource;
 import chzu.lujie.work.domain.User;
 import chzu.lujie.work.service.CharpterService;
 import chzu.lujie.work.service.DepartmentService;
+import chzu.lujie.work.service.ExerciseService;
 import chzu.lujie.work.service.ForumService;
 import chzu.lujie.work.service.KnowledgeAnalyService;
 import chzu.lujie.work.service.KnowledgeService;
 import chzu.lujie.work.service.PermissionService;
+import chzu.lujie.work.service.QuestionService;
 import chzu.lujie.work.service.ReplyService;
 import chzu.lujie.work.service.RoleService;
 import chzu.lujie.work.service.SubjectService;
+import chzu.lujie.work.service.TeacherService;
 import chzu.lujie.work.service.TopicService;
+import chzu.lujie.work.service.TypesService;
 import chzu.lujie.work.service.UserService;
 
 import com.opensymphony.xwork2.ActionContext;
@@ -55,8 +59,10 @@ protected RoleService roleService;
 protected DepartmentService departmentService;
 
 @Resource
-protected UserService userService;
+protected UserService userService; 
 
+@Resource
+protected TeacherService teacherService;
 @Resource
 protected PermissionService permissionService;
 
@@ -80,6 +86,15 @@ protected CharpterService charpterService;
 
 @Resource
 protected KnowledgeService knowledgeService ; 
+
+@Resource
+protected TypesService typesService;
+
+@Resource
+protected QuestionService questionService;
+
+@Resource
+protected ExerciseService exerciseService;
 /**
  * 其他一些常用的变量
  */

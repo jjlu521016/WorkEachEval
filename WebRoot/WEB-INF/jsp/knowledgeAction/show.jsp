@@ -3,15 +3,20 @@
 <head>
 <title>${charpter.cname}中的章节列表</title>
 <%@ include file="/WEB-INF/jsp/public/commons.jspf"%>
-<script language="javascript" src="${pageContext.request.contextPath}/script/knowledge.js" charset="utf-8"></script>
+<script language="javascript"
+	src="${pageContext.request.contextPath}/script/knowledge.js"
+	charset="utf-8"></script>
 <link type="text/css" rel="stylesheet"
 	href="${pageContext.request.contextPath}/style/blue/forum.css" />
-	<%
-  	String charptertId = "";     
-	charptertId = request.getParameter("cid");
-	%>
+<%
+	//接收传入的参数
+
+	String charpterId = "";
+	String kid = "";
+	charpterId = request.getParameter("cid");
+%>
 <script type="text/javascript">
- 
+	
 </script>
 </head>
 <body>
@@ -30,7 +35,7 @@
 		</div>
 	</div>
 
-	<s:form action="charpter_show?sid=%{sid}">
+	<s:form action="charpter_showCharpterById?cid=%{cid}">
 		<div id="MainArea">
 			<table cellspacing="0" cellpadding="0" class="TableStyle">
 
@@ -48,11 +53,20 @@
 
 					<s:iterator value="#knowledgeList" status="status">
 						<tr class="TableDetail1 template">
+							<s:hidden name="kid" id="kid"></s:hidden>
+							<%
+								kid = request.getAttribute("kid").toString();// request.getParameter("cid");//(String)pageContext.getAttribute("cid");
+										//out.println(kid);
+							%>
 							<td>${title}&nbsp;</td>
 							<td>${content}&nbsp;</td>
-							<td><s:a action="knowledge_delete?kid=%{kid}&charptertId=%{#charpter.cid}"
-									onclick="return delConfirm('你要删除这条数据吗？')">删除</s:a> <s:a
-									action="knowledge_editUI?kid=%{kid}&charpterId=%{#charpter.cid}">修改</s:a></td>
+ 							<td>
+ 							
+ 							<s:a action="knowledge_delete?kid=%{kid}&charpterId=%{#charpter.cid}"
+								onclick="return delConfirm()">删除</s:a> <s:a
+								action="knowledge_editUI?kid=%{kid}&charpterId=%{#charpter.cid}">修改</s:a>
+
+								</td>
 						</tr>
 					</s:iterator>
 
@@ -62,9 +76,10 @@
 			<!-- 其他功能超链接 -->
 			<div id="TableTail">
 				<div id="TableTail_inside">
-<%-- 					<s:a action="knowledge_addUI?charpterId=%{#charpter.sid}"> --%>
-						<img onclick="return editWindows('<%=charptertId %>')" src="${pageContext.request.contextPath}/style/images/createNew.png" />
-<%-- 					</s:a> --%>
+					<s:a action="knowledge_addUI?charpterId=%{#charpter.cid}">
+						<img 
+							src="${pageContext.request.contextPath}/style/images/createNew.png" />
+					</s:a>
 				</div>
 			</div>
 		</div>

@@ -14,6 +14,7 @@ public class Role {
 	private String name;
 	private String description;
 	private Set<User> users = new HashSet<User>();
+	private Set<Teacher> teachers = new HashSet<Teacher>();
 	
 	private Set<Permission> permissions = new HashSet<Permission>();
 	
@@ -56,6 +57,14 @@ public class Role {
 
 	public void setPermissions(Set<Permission> permissions) {
 		this.permissions = permissions;
+	}
+
+	public Set<Teacher> getTeachers() {
+		return teachers;
+	}
+
+	public void setTeachers(Set<Teacher> teachers) {
+		this.teachers = teachers;
 	}
 
 

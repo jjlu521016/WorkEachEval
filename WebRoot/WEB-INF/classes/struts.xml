@@ -74,6 +74,22 @@
 			</result>
 			<result name="editInfo">/WEB-INF/jsp/homeAction/top.jsp</result>
 		</action>
+		
+		
+		<!-- 教师管理 -->
+		<action name="teacher_*" class="teacherAction" method="{1}">
+			<result name="list">/WEB-INF/jsp/teacher/list.jsp</result>
+			<result name="addUI">/WEB-INF/jsp/teacher/saveUI.jsp</result>
+			<result name="editUI">/WEB-INF/jsp/teacher/saveUI.jsp</result>
+			<result name="tolist" type="redirectAction">teacher_list</result>
+
+			<result name="logout">/WEB-INF/jsp/logout.jsp</result>
+			<result name="toIndex" type="redirectAction">home_index</result>
+			<!-- 修改个人信息 -->
+			<result name="editInfoUI">/WEB-INF/jsp/admin/userAction/ModifyUI.jsp
+			</result>
+			<result name="editInfo">/WEB-INF/jsp/homeAction/top.jsp</result>
+		</action>
 
 
 		<!-- 整体框架及首页显示 -->
@@ -128,7 +144,12 @@
 			<result name="saveUI">/WEB-INF/jsp/subjectAction/addSubject.jsp
 			</result>
 			<result name="tolist" type="redirectAction">subject_list</result>
+			<!-- 添加知识点之前的页面 -->
 			<result name="showsubjectById" >/WEB-INF/jsp/charpterAction/show.jsp</result>
+			<!-- 添加问题之前的章节页面 -->			
+			<result name="showquestionById" >/WEB-INF/jsp/questionAction/showcharpter.jsp</result>
+			
+			<result name="showexerciseById">/WEB-INF/jsp/exerciseAction/list.jsp</result>
 		</action>
 
 		<!-- 章节管理 -->
@@ -137,6 +158,8 @@
 			<result name="saveUI">/WEB-INF/jsp/charpterAction/saveUI.jsp</result>
 			<result name="toshow" type="redirectAction">subject_showsubjectById?sid=${subjectId}</result>
 			<result name="showCharpterById" >/WEB-INF/jsp/knowledgeAction/show.jsp</result>	
+			
+			<result name="showQuestionById" >/WEB-INF/jsp/questionAction/Questionshow.jsp</result>	
 		</action>
 		
 		<!-- 知识点管理 -->
@@ -145,6 +168,20 @@
 			<result name="toshow" type="redirectAction">charpter_showCharpterById?cid=${charpterId}</result>
 		</action>
 		
+		<!-- 问题管理 -->
+		<action name="question_*" class="questionAction" method="{1}">
+			<result name="list">/WEB-INF/jsp/questionAction/list.jsp</result>
+			<result name="saveUI">/WEB-INF/jsp/questionAction/addQuestion.jsp</result>
+			<result name="toshow" type="redirectAction">charpter_showQuestionById?cid=${charpterId}</result>
+			<result name="showCharpterById" >/WEB-INF/jsp/knowledgeAction/show.jsp</result>	
+		</action>
+		
+		
+		<action name="exercise_*" class="exerciseAction" method="{1}">
+		<result name="showQuestion">/WEB-INF/jsp/questionAction/Questionshow.jsp</result>
+			<result name="saveUI">/WEB-INF/jsp/exerciseAction/saveUI.jsp</result>
+			<result name="toshow" type="redirectAction">subject_showexerciseById?sid=${subjectId}</result>
+		</action>
 	</package>
 
 	<!-- Add packages here -->

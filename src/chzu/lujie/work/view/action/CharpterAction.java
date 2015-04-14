@@ -12,6 +12,7 @@ import com.opensymphony.xwork2.ActionContext;
 import chzu.lujie.work.base.BaseAction;
 import chzu.lujie.work.domain.Charpter;
 import chzu.lujie.work.domain.KnowledgeDetail;
+import chzu.lujie.work.domain.Questions;
 import chzu.lujie.work.domain.Subject;
 
 /**
@@ -33,7 +34,8 @@ public class CharpterAction extends BaseAction<Charpter> {
 
 	public String list() throws Exception {
 
-		List<Subject> subjectlist = subjectService.findAll();
+		//List<Subject> subjectlist = subjectService.findAll();
+		List<Subject> subjectlist = subjectService.findMySubject(getCurrentUser());
 		ActionContext.getContext().put("subjectlist", subjectlist);
 		return "list";
 	}
@@ -97,6 +99,17 @@ public class CharpterAction extends BaseAction<Charpter> {
 		List<KnowledgeDetail> knowledgeList = knowledgeService.findByCharpter(charpter);
 		ActionContext.getContext().put("knowledgeList", knowledgeList);
 		return "showCharpterById";
+	}
+	
+	public String showQuestionById() throws Exception {
+
+		Charpter charpter = charpterService.getById(model.getCid());
+		ActionContext.getContext().put("charpter", charpter);
+
+		
+		List<Questions> questionList = questionService.findByCharpter(charpter);
+		ActionContext.getContext().put("questionList", questionList);
+		return "showQuestionById";
 	}
 	/**
 	 * setter and getter

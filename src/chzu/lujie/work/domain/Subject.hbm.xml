@@ -11,7 +11,8 @@
 		<property name="sname" />
 		<property name="description" />
 		<property name="subject_code" />
-
+		<!-- author属性，本类与User的多对一 -->
+		<many-to-one name="author" class="User" column="authorId"></many-to-one>
 		<!-- testbases属性 ，本类和Testbase的一对多关系 -->
 		<!-- <set name="testbases" cascade="delete" inverse="true"> -->
 		<!-- <key> -->
@@ -20,20 +21,20 @@
 		<!-- <one-to-many class="Testbase" /> -->
 		<!-- </set> -->
 
-<!-- 		charpters属性，本类与Charpter的一对多关系 -->
+		<!-- charpters属性，本类与Charpter的一对多关系 -->
 		<set name="charpters" cascade="delete" inverse="true" lazy="false">
-		<key>
-		<column name="S_ID" precision="22" scale="0" />
-		</key>
-		<one-to-many class="Charpter" />
+			<key>
+				<column name="S_ID" precision="22" scale="0" />
+			</key>
+			<one-to-many class="Charpter" />
 		</set>
 
 		<!-- questionses属性 ，本类和Question类的一对多关系 -->
-		<!-- <set name="questionses" cascade="delete" inverse="true"> -->
-		<!-- <key> -->
-		<!-- <column name="S_ID" precision="22" scale="0" /> -->
-		<!-- </key> -->
-		<!-- <one-to-many class="Questions" /> -->
-		<!-- </set> -->
+		<set name="questionses" cascade="delete" inverse="true">
+			<key>
+				<column name="s_id" precision="22" scale="0" />
+			</key>
+			<one-to-many class="Questions" />
+		</set>
 	</class>
 </hibernate-mapping>

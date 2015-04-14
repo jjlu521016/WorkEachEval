@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="chzu.lujie.work.domain">
+    <class name="Types" table="t_work_Types" >
+       <id name="tid" >
+            <generator class="native"/>
+        </id>
+        <property name="tname" type="java.lang.String">
+            <column name="T_NAME" length="40" />
+        </property>
+        <property name="style" type="java.lang.String">
+            <column name="STYLE" length="1" />
+        </property>
+<!--         <set name="questionses" cascade="delete" inverse="true"> -->
+<!--             <key> -->
+<!--                 <column name="Q_TYPE" precision="22" scale="0" /> -->
+<!--             </key> -->
+<!--             <one-to-many class="com.wjs.tk.po.Questions" /> -->
+<!--         </set> -->
+        
+    </class>
+</hibernate-mapping>
+

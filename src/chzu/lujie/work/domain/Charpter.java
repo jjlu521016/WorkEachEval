@@ -17,7 +17,7 @@ public class Charpter {
 	private Subject subject;
 	
 	private Set knowledgedetail = new HashSet();
-//	private Set questionses = new HashSet();
+	private Set questionses = new HashSet();
 //	private Set knowledges = new HashSet();
 //	
 	/*
@@ -61,6 +61,14 @@ public class Charpter {
 
 	public void setKnowledgedetail(Set knowledgedetail) {
 		this.knowledgedetail = knowledgedetail;
+	}
+
+	public Set getQuestionses() {
+		return questionses;
+	}
+
+	public void setQuestionses(Set questionses) {
+		this.questionses = questionses;
 	}
 
 

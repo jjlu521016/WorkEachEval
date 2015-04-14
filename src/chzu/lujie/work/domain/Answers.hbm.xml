@@ -3,7 +3,7 @@
 "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
 
 <hibernate-mapping package="chzu.lujie.work.domain">
-    <class name="Answers" table="t_work_answers" schema="root">
+    <class name="Answers" table="t_work_answers" >
         <id name="aid" >
         	<generator class="native" />
 		</id>
