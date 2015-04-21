@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="chzu.lujie.work.domain">
+    <class name="AnswersUser" table="t_work_answersuser" >
+        <id name="aid" >
+        	<generator class="native" />
+		</id>
+		<property name="answer" type="text" length="65536"/>
+        <property name="isRight" />
+        <property name="sequence" />
+		
+        <many-to-one name="questions" class="Questions" fetch="select" lazy="false" cascade="all">
+            <column name="questionId" />
+        </many-to-one>
+               
+        <many-to-one name="student" class="User" fetch="select" lazy="false" cascade="all">
+            <column name="studentId" />
+        </many-to-one>
+        
+    </class>
+</hibernate-mapping>
+
