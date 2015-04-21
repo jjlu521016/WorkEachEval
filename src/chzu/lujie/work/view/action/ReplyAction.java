@@ -11,7 +11,9 @@ import com.opensymphony.xwork2.ActionContext;
 import chzu.lujie.work.base.BaseAction;
 import chzu.lujie.work.domain.Forum;
 import chzu.lujie.work.domain.Reply;
+import chzu.lujie.work.domain.Subject;
 import chzu.lujie.work.domain.Topic;
+import chzu.lujie.work.util.QueryHelper;
 
 @Controller
 @Scope("prototype")
@@ -20,8 +22,9 @@ public class ReplyAction extends BaseAction<Reply> {
 	private Long topicId;
 
 	public String addUI() throws Exception {
-		Topic topic = topicService.getById(topicId);
-		ActionContext.getContext().put("topic", topic);
+//		Topic topic = topicService.getById(topicId);
+//		ActionContext.getContext().put("topic", topic);
+		new QueryHelper(Reply.class, "r").preparePageBean(replyService, pageNum, pageSize);
 		return "addUI";
 	}
 

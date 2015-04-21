@@ -8,18 +8,21 @@ import org.springframework.stereotype.Controller;
 import com.opensymphony.xwork2.ActionContext;
 
 import chzu.lujie.work.base.BaseAction;
+import chzu.lujie.work.domain.Charpter;
 import chzu.lujie.work.domain.Forum;
 import chzu.lujie.work.domain.Types;
+import chzu.lujie.work.util.QueryHelper;
 
 @Controller
 @Scope("prototype")
 public class TypesAction extends BaseAction<Types> {
 
 	public String list() throws Exception {
-		List<Types> TypesList = typesService.findAll();
-
-		ActionContext.getContext().put("TypesList", TypesList);
-
+//		List<Types> TypesList = typesService.findAll();
+//
+//		ActionContext.getContext().put("TypesList", TypesList);
+		//分页显示
+		new QueryHelper(Types.class, "c").preparePageBean(typesService, pageNum, pageSize);
 		return "list";
 	}
 

@@ -10,10 +10,11 @@
 		<property name="answer" type="text" length="65536"/>
         <property name="isRight" />
         <property name="sequence" />
-		
         <many-to-one name="questions" class="Questions" fetch="select" lazy="false" cascade="all">
-            <column name="Q_ID" />
+            <column name="answerseId" />
         </many-to-one>
+        
+        
         
     </class>
 </hibernate-mapping>

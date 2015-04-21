@@ -7,11 +7,13 @@ import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Controller;
 
 import chzu.lujie.work.base.BaseAction;
+import chzu.lujie.work.domain.Charpter;
 import chzu.lujie.work.domain.Department;
 import chzu.lujie.work.domain.Role;
 import chzu.lujie.work.domain.User;
 import chzu.lujie.work.util.DepartmentUtils;
 import chzu.lujie.work.util.MD5Utils;
+import chzu.lujie.work.util.QueryHelper;
 
 import com.opensymphony.xwork2.ActionContext;
 
@@ -26,9 +28,11 @@ public class UserAction extends BaseAction<User> {
 
 	public String list() throws Exception {
 
-		List<User> userList = userService.findAll();
-
-		ActionContext.getContext().put("userList", userList);
+//		List<User> userList = userService.findAll();
+//
+//		ActionContext.getContext().put("userList", userList);
+		//分页显示
+		new QueryHelper(User.class, "u").preparePageBean(userService, pageNum, pageSize);
 		return "list";
 	}
 

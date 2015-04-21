@@ -19,7 +19,9 @@ import com.sun.org.glassfish.gmbal.Description;
 import chzu.lujie.work.base.BaseAction;
 import chzu.lujie.work.domain.Permission;
 import chzu.lujie.work.domain.Role;
+import chzu.lujie.work.domain.Subject;
 import chzu.lujie.work.service.RoleService;
+import chzu.lujie.work.util.QueryHelper;
 
 @Controller
 @Scope("prototype")
@@ -29,9 +31,11 @@ public class RoleAction extends BaseAction<Role> {
 
 	public String list() throws Exception {
 		//
-		List<Role> roleList = roleService.findAll();
-		//
-		ActionContext.getContext().put("roleList", roleList);
+//		List<Role> roleList = roleService.findAll();
+//		//
+//		ActionContext.getContext().put("roleList", roleList);
+		//分页显示
+		new QueryHelper(Role.class, "r").preparePageBean(roleService, pageNum, pageSize);
 		return "list";
 	}
 

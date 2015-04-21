@@ -8,7 +8,10 @@ import org.springframework.stereotype.Controller;
 import com.opensymphony.xwork2.ActionContext;
 
 import chzu.lujie.work.base.BaseAction;
+import chzu.lujie.work.base.DaoSupport;
 import chzu.lujie.work.domain.KnowledgeAnaly;
+import chzu.lujie.work.domain.Subject;
+import chzu.lujie.work.util.QueryHelper;
 
 @Controller
 @Scope("prototype")
@@ -16,8 +19,9 @@ public class KnowledgeAnalyManageAction extends BaseAction<KnowledgeAnaly> {
 
 	public String list() throws Exception {
 		
-		List<KnowledgeAnaly> analyList = knowledgeAnalyService.findAll();
-		ActionContext.getContext().put("analyList", analyList);
+//		List<KnowledgeAnaly> analyList = knowledgeAnalyService.findAll();
+//		ActionContext.getContext().put("analyList", analyList);
+		new QueryHelper(KnowledgeAnaly.class, "k").preparePageBean((DaoSupport<?>) knowledgeAnalyService, pageNum, pageSize);
 
 		return "list";
 	}

@@ -41,7 +41,7 @@
 			<!--显示数据列表-->
 			<tbody id="TableData" class="dataContainer" datakey="subjectList">
 
-				<s:iterator value="#subjectList" status="status">
+				<s:iterator value="recordList" status="status">
 					<tr class="TableDetail1 template">
 						<td>${subject_code}&nbsp;</td>
 						<td>${sname}&nbsp;</td>
@@ -65,5 +65,7 @@
 			</div>
 		</div>
 	</div>
+<%@ include file="/WEB-INF/jsp/public/pageView.jspf"%>
+<s:form action="subject_list"></s:form>
 </body>
 </html>

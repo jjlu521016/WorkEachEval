@@ -32,9 +32,10 @@
 		<!--显示数据列表-->
         <tbody id="TableData" class="dataContainer" datakey="roleList">
         
-        <s:iterator value="#roleList">
+        <s:iterator value="recordList" var="r">
 			<tr class="TableDetail1 template">
-				<td>${name}&nbsp;</td>
+				<td>${name}&nbsp;
+				</td>
 				<td width="70%">${description}&nbsp;</td>
 				<td width="10%">
 					<s:a action="role_delete?id=%{id}" onclick="return confirm('确定要删除吗？')">删除</s:a>
@@ -54,5 +55,8 @@
         </div>
     </div>
 </div>
+<!-- 分页信息 -->
+<%@ include  file="/WEB-INF/jsp/public/pageView.jspf"%> 
+<s:form action="role_list"></s:form>
 </body>
 </html>

@@ -2,6 +2,7 @@ package chzu.lujie.work.domain;
 
 import java.util.Date;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 
 /**
@@ -23,6 +24,7 @@ public class Questions {
 	private Types types;//问题所属类型
 //	private Knowledge knowledge;//所属知识点
 	private Set answerses = new HashSet<>();//问题的答案
+//	private List<Answers> answerses;
 	
 	private Exercise exercise;
 
@@ -121,20 +123,31 @@ public class Questions {
 //		this.knowledge = knowledge;
 //	}
 
+//	public Set getAnswerses() {
+//		return answerses;
+//	}
+//
+//	public void setAnswerses(Set answerses) {
+//		this.answerses = answerses;
+//	}
+
+	public Exercise getExercise() {
+		return exercise;
+	}
+
+
+
+	public void setExercise(Exercise exercise) {
+		this.exercise = exercise;
+	}
+
+
 	public Set getAnswerses() {
 		return answerses;
 	}
 
 	public void setAnswerses(Set answerses) {
 		this.answerses = answerses;
-	}
-
-	public Exercise getExercise() {
-		return exercise;
-	}
-
-	public void setExercise(Exercise exercise) {
-		this.exercise = exercise;
 	}
 
 }

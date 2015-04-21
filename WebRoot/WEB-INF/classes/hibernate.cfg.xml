@@ -30,5 +30,6 @@
   <mapping resource="chzu/lujie/work/domain/Questions.hbm.xml"/>
   <mapping resource="chzu/lujie/work/domain/Answers.hbm.xml"/>
   <mapping resource="chzu/lujie/work/domain/Exercise.hbm.xml"/>
+  <mapping resource="chzu/lujie/work/domain/AnswersUser.hbm.xml"/>
  </session-factory>
 </hibernate-configuration>

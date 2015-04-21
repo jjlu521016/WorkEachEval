@@ -8,6 +8,7 @@
 		</id>
 		<property name="name" type="text" length="65536" />
 		<property name="statu" />
+		<property name="flg" />
 		<property name="currentDate" type="timestamp" />
 
 		<many-to-one name="author" class="User" fetch="select"
@@ -27,7 +28,7 @@
 
 		<set name="qustions" cascade="all" inverse="true" lazy="false">
 			<key>
-				<column name="Q_ID" precision="22" />
+				<column name="exerciseId" precision="22" />
 			</key>
 			<one-to-many class="Questions" />
 		</set>

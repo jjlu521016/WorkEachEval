@@ -21,6 +21,7 @@ import chzu.lujie.work.domain.KnowledgeDetail;
 import chzu.lujie.work.domain.Questions;
 import chzu.lujie.work.domain.Subject;
 import chzu.lujie.work.domain.Types;
+import chzu.lujie.work.util.QueryHelper;
 
 /**
  * 章节管理
@@ -35,6 +36,7 @@ public class QuestionAction extends BaseAction<Questions> {
 	private Long subjectId;
 	private Long charpterId;
 	private Long typeId;
+	private Long exerciseId;
 	
 	 Questions questions = new Questions();
 	 
@@ -53,12 +55,13 @@ public class QuestionAction extends BaseAction<Questions> {
 	 * @throws Exception
 	 */
 	public String list() throws Exception {
-		List<Subject> subjectlist = subjectService
-				.findMySubject(getCurrentUser());
-		ActionContext.getContext().put("subjectlist", subjectlist);
+//		List<Subject> subjectlist = subjectService
+//				.findMySubject(getCurrentUser());
+//		ActionContext.getContext().put("subjectlist", subjectlist);
 
-		// List<Subject> subjectlist = subjectService.findAll();
-		// ActionContext.getContext().put("subjectlist", subjectlist);
+//		new QueryHelper(Questions.class, "s").preparePageBean(questionService, pageNum, pageSize);
+		 List<Subject> subjectlist = subjectService.findAll();
+		 ActionContext.getContext().put("subjectlist", subjectlist);
 		return "list";
 	}
 
@@ -147,6 +150,7 @@ public class QuestionAction extends BaseAction<Questions> {
 //		System.out.println("answerList"+answerList.size());
 		
 		Set<Answers> aList = new HashSet<Answers>();
+//		List<Answers> aList = new ArrayList<Answers>();
 		int aLength = 0;
 		if (answerList != null && !answerList.isEmpty()) {
 			aLength = answerList.size();
@@ -155,6 +159,7 @@ public class QuestionAction extends BaseAction<Questions> {
 				if (answerList != null && aLength  != 0) {
 
 					for (int i = 0; i < aLength; i++) {
+						
 						Answers po = new Answers();
 						Answers vo = answerList.get(i);
 						po.setAnswer(vo.getAnswer());
@@ -164,13 +169,14 @@ public class QuestionAction extends BaseAction<Questions> {
 						aList.add(po);
 					}
 				}
-		Questions questions = new Questions();
+		
 		questions.setAnswerses(aList);
 		questions.setCharpter(charpterService.getById(charpterId));
 		questions.setSubject(subjectService.getById(subjectId));
 		questions.setQtime(new Date());
 		questions.setTypes(typesService.getById(typeId));
 		questions.setQtext(model.getQtext());
+		questions.setExercise(exerciseService.getById(exerciseId));
 		
 		
 		questionService.save(questions);
@@ -225,6 +231,14 @@ public class QuestionAction extends BaseAction<Questions> {
 
 	public void setTypeId(Long typeId) {
 		this.typeId = typeId;
+	}
+
+	public Long getExerciseId() {
+		return exerciseId;
+	}
+
+	public void setExerciseId(Long exerciseId) {
+		this.exerciseId = exerciseId;
 	}
 
 }

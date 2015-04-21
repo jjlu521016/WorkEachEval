@@ -11,6 +11,7 @@ public class Exercise implements Serializable {
 	private String name;
 	private Date currentDate;
 	private String statu;
+	private String flg;
 
 	private User author;
 	private Charpter charpter;
@@ -81,6 +82,14 @@ public class Exercise implements Serializable {
 
 	public void setSubject(Subject subject) {
 		this.subject = subject;
+	}
+
+	public String getFlg() {
+		return flg;
+	}
+
+	public void setFlg(String flg) {
+		this.flg = flg;
 	}
 
 }

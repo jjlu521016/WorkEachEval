@@ -76,6 +76,7 @@ var qtextarea = K.create('textarea[name="ptAnswer"]', options);
 			<s:hidden name="subjectId"></s:hidden>
 			<s:hidden name="charpterId"></s:hidden>
 			<s:hidden name="qid" id="qid"></s:hidden>
+			<s:hidden name="exerciseId" ></s:hidden>
 
 			<div id="PageHead"></div>
 			<center>

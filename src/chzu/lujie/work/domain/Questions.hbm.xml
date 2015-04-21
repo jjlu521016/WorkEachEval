@@ -28,12 +28,21 @@
 		<!-- <column name="Q_KNOWLEDGE" precision="22" scale="0" /> -->
 		<!-- </many-to-one> -->
 
-		<set name="answerses" cascade="all" inverse="true" lazy="false">
+		<set name="answerses" cascade="all" order-by="aid" inverse="false" lazy="false">
 			<key>
-				<column name="Q_ID" precision="22" />
+				<column name="answerseId" precision="22" />
 			</key>
+			
 			<one-to-many class="Answers" />
 		</set>
+		
+<!-- 		<list name="answerses"  lazy="false"> -->
+<!-- 			<key> -->
+<!-- 				<column name="qid" precision="22" /> -->
+<!-- 			</key> -->
+<!-- 			<index column="num"></index> -->
+<!-- 			<one-to-many class="Answers" />		 -->
+<!-- 		 </list> -->
 
 
 		<many-to-one name="types" cascade="save-update" class="Types"
@@ -43,7 +52,7 @@
 
 		<many-to-one name="exercise" cascade="save-update" class="Exercise"
 			fetch="select" lazy="false">
-			<column name="Q_ID" precision="22" scale="0" />
+			<column name="exerciseId" precision="22" scale="0" />
 		</many-to-one>
 	</class>
 </hibernate-mapping>

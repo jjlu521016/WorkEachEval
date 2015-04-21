@@ -3,15 +3,10 @@
 <%@ page language="java" import="java.util.*" pageEncoding="utf-8"%>
 <html>
 <head>
-<title>${exercise.name}中的作业</title>
+<title></title>
 <%@ include file="/WEB-INF/jsp/public/commons.jspf"%>
 <link type="text/css" rel="stylesheet"
 	href="${pageContext.request.contextPath}/style/blue/forum.css" />
-<%
-	String subjectId = "";
-	String charpterId = "";
-	subjectId = request.getParameter("sid");
-%>
 <script type="text/javascript">
 	
 </script>
@@ -25,14 +20,13 @@
 			<div id="Title">
 				<!--页面标题-->
 				<img border="0" width="13" height="13"
-					src="${pageContext.request.contextPath}/style/images/title_arrow.gif" /><font
-					color="red"> ${exercise.name}</font>中的作业
+					src="${pageContext.request.contextPath}/style/images/title_arrow.gif" />我的作业
 			</div>
 			<div id="Title_End"></div>
 		</div>
 	</div>
 
-	<s:form action="exercise_show?sid=%{sid}">
+	<s:form action="exercise_show">
 		<div id="MainArea">
 			<table cellspacing="0" cellpadding="0" class="TableStyle">
 
@@ -64,23 +58,10 @@
 						<td>${author.name}&nbsp;</b></td>
 						<td>${currentDate}&nbsp;</td>
 
-						<td>&nbsp;&nbsp; <s:if test="#e.statu != 1">
-								<s:a
-									action="exercise_delete?eid=%{eid}&subjectId=%{#subject.sid}"
-									onclick="return delConfirm('你要删除这条数据吗？')">删除</s:a>&nbsp;&nbsp; <s:a
-									action="exercise_editUI?eid=%{eid}&subjectId=%{#subject.sid}">修改</s:a> &nbsp;&nbsp;
-								
-								
-								<s:a action="exercise_publish?eid=%{eid}&subjectId=%{#subject.sid}"
-								 onclick="return  publishConfirm('确定要发布本次作业吗？发布之后不能更改！')">发布本作业</s:a>
-								</s:if> <s:if test="#e.statu == 1">
-								<font color="red"> 已发布</font>
-							</s:if>
-							
-							&nbsp;&nbsp;
-							<s:a action="exercise_showQuestion?eid=%{eid}&cid=%{charpter.cid}&sid=%{subject.sid}">题目管理</s:a>
+						<td>&nbsp;&nbsp;
+						<s:a action="userAnswer_showQuestion?eid=%{eid}"><font color="red">开始考试</font></s:a>
 						</td>
-
+						
 						</tr>
 					</s:iterator>
 
@@ -88,15 +69,7 @@
 			</table>
 
 			<!-- 其他功能超链接 -->
-			<div id="TableTail">
-				<div id="TableTail_inside">
-					<s:a action="exercise_addUI?subjectId=%{#subject.sid}">
-						<img
-							src="${pageContext.request.contextPath}/style/images/createNew.png" />
-
-					</s:a>
-				</div>
-			</div>
+			<div id="TableTail"></div>
 		</div>
 	</s:form>
 

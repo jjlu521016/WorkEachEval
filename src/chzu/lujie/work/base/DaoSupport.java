@@ -2,6 +2,9 @@ package chzu.lujie.work.base;
 
 import java.util.List;
 
+import chzu.lujie.work.domain.PageBean;
+import chzu.lujie.work.util.QueryHelper;
+
 //传过来一个实体（泛型）
 public interface DaoSupport<T> {
 
@@ -48,5 +51,14 @@ public interface DaoSupport<T> {
 	 * @return
 	 */
 	List<T> findAll();
-
+	/**
+	 * 公共的查询分页信息的方法（最终版）
+	 * 
+	 * @param pageNum
+	 * @param pageSize
+	 * @param queryHelper
+	 *            HQL语句与参数列表
+	 * @return
+	 */
+	PageBean getPageBean(int pageNum, int pageSize, QueryHelper queryHelper);
 }

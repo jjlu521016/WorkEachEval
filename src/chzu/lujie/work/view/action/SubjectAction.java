@@ -11,16 +11,19 @@ import chzu.lujie.work.base.BaseAction;
 import chzu.lujie.work.domain.Charpter;
 import chzu.lujie.work.domain.Exercise;
 import chzu.lujie.work.domain.Subject;
+import chzu.lujie.work.domain.Types;
+import chzu.lujie.work.util.QueryHelper;
 
 @Controller
 @Scope("prototype")
 public class SubjectAction extends BaseAction<Subject> {
 
 	public String list() throws Exception {
-		
-		List<Subject> subjectList = subjectService.findAll();
-		ActionContext.getContext().put("subjectList", subjectList);
 
+		// List<Subject> subjectList = subjectService.findAll();
+		// ActionContext.getContext().put("subjectList", subjectList);
+		// 分页显示
+		new QueryHelper(Subject.class, "s").preparePageBean(subjectService, pageNum, pageSize);
 		return "list";
 	}
 
@@ -61,32 +64,33 @@ public class SubjectAction extends BaseAction<Subject> {
 		ActionContext.getContext().getValueStack().push(subject);
 		return "saveUI";
 	}
-	
+
 	public String showsubjectById() throws Exception {
 
 		Subject subject = subjectService.getById(model.getSid());
 		ActionContext.getContext().put("subject", subject);
-		
+
 		List<Charpter> charpterList = charpterService.findBySubject(subject);
 		ActionContext.getContext().put("charpterList", charpterList);
 		return "showsubjectById";
 	}
-//	gen
+
+	// gen
 	public String showexerciseById() throws Exception {
 
 		Subject subject = subjectService.getById(model.getSid());
 		ActionContext.getContext().put("subject", subject);
-		
-		List<Exercise> exerciseList = exerciseService.findAll();//findMyExercise(getCurrentUser());
+
+		List<Exercise> exerciseList = exerciseService.findAll();// findMyExercise(getCurrentUser());
 		ActionContext.getContext().put("exerciseList", exerciseList);
 		return "showexerciseById";
 	}
-	
+
 	public String showquestionById() throws Exception {
 
 		Subject subject = subjectService.getById(model.getSid());
 		ActionContext.getContext().put("subject", subject);
-		
+
 		List<Charpter> charpterList = charpterService.findBySubject(subject);
 		ActionContext.getContext().put("charpterList", charpterList);
 		return "showquestionById";

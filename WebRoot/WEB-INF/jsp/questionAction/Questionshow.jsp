@@ -1,7 +1,7 @@
 <%@ page language="java" import="java.util.*" pageEncoding="utf-8"%>
 <html>
 <head>
-<title>${charpter.cname}中的章节列表</title>
+<title>${charpter.cname}中的作业问题</title>
 <%@ include file="/WEB-INF/jsp/public/commons.jspf"%>
 <script language="javascript"
 	src="${pageContext.request.contextPath}/script/question.js"
@@ -22,7 +22,6 @@
 </script>
 </head>
 <body>
-
 	<!-- 标题显示 -->
 	<div id="Title_bar">
 		<div id="Title_bar_Head">
@@ -31,7 +30,7 @@
 				<!--页面标题-->
 				<img border="0" width="13" height="13"
 					src="${pageContext.request.contextPath}/style/images/title_arrow.gif" /><font
-					color="red"> 【${exercise}】</font>中的作业问题
+					color="red"> 【${charpter.cname}】</font>中的作业问题
 			</div>
 			<div id="Title_End"></div>
 		</div>
@@ -65,7 +64,13 @@
 // 										out.println(charpterId);
 // 										out.println(subjectId);
 							%>
-							<td >${qid}</td>
+							<td >
+							<s:iterator value="#q.answerses" var="a">
+							<s:if test="#a.isRight==1"><font color="red">${a.answer} </font></s:if> 
+							<s:else>${a.answer} </s:else>
+							</s:iterator>
+							
+							</td>
 							<td>${qtext}&nbsp;</td>
 							<td>
 							 <s:if test="#q.types.tid == 1">选择题</s:if> 
@@ -95,10 +100,11 @@
 			<div id="TableTail">
 				<div id="TableTail_inside">
 					<s:a action="question_addUI?subjectId=%{#charpter.subject.sid}&charpterId=%{#charpter.cid}">
-						<img onclick="return editWindows(<%=subjectId %>','<%=charpterId %>',-1)"
+						<img
 							src="${pageContext.request.contextPath}/style/images/createNew.png" style="visibility: visible;" />
 					</s:a>&nbsp;
 				</div>
+<%-- 				 onclick="return editWindows('<%=subjectId %>','<%=charpterId %>',-1)" --%>
 			</div>
 	<!--分页信息-->
 	<%-- <%@ include file="/WEB-INF/jsp/public/pageView.jspf" %> --%>
