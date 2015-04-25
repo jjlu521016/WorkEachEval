@@ -11,6 +11,8 @@ public interface CharpterService extends DaoSupport<Charpter>{
 	
 	List<Charpter> findBySubject(Subject subject);
 
+//	List<Charpter> findBySubject(Long subjectId);
+
 
 
 

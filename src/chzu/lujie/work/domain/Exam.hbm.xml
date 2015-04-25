@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="chzu.lujie.work.domain">
+	<class name="Exam" table="t_work_exam">
+		<id name="eid">
+			<generator class="native" />
+		</id>
+		<property name="name" type="text" length="65536" />	
+		<property name="requireTime" type="timestamp" />
+		<property name="startTime" type="timestamp" />
+		<property name="stopTime" type="timestamp" />
+		<property name="flg" />
+		<property name="num" />
+		<property name="score" />
+
+		<many-to-one name="author" class="User" fetch="select"
+			lazy="false" cascade="save-update">
+			<column name="authorId" precision="22" scale="0" />
+		</many-to-one>
+
+		<many-to-one name="charpter" class="Charpter" cascade="save-update"
+			fetch="select" lazy="false">
+			<column name="e_charpter" precision="22" scale="0" />
+		</many-to-one>
+		
+		<many-to-one name="subject" class="Subject" cascade="save-update"
+			fetch="select" lazy="false">
+			<column name="e_subject" precision="22" scale="0" />
+		</many-to-one>
+
+	</class>
+</hibernate-mapping>

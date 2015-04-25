@@ -7,6 +7,8 @@ import javax.annotation.Resource;
 import chzu.lujie.work.domain.User;
 import chzu.lujie.work.service.CharpterService;
 import chzu.lujie.work.service.DepartmentService;
+import chzu.lujie.work.service.ExamPaperService;
+import chzu.lujie.work.service.ExamService;
 import chzu.lujie.work.service.ExerciseService;
 import chzu.lujie.work.service.ForumService;
 import chzu.lujie.work.service.KnowledgeAnalyService;
@@ -15,6 +17,7 @@ import chzu.lujie.work.service.PermissionService;
 import chzu.lujie.work.service.QuestionService;
 import chzu.lujie.work.service.ReplyService;
 import chzu.lujie.work.service.RoleService;
+import chzu.lujie.work.service.StudentQuestionRecordService;
 import chzu.lujie.work.service.SubjectService;
 import chzu.lujie.work.service.TeacherService;
 import chzu.lujie.work.service.TopicService;
@@ -95,6 +98,15 @@ protected QuestionService questionService;
 
 @Resource
 protected ExerciseService exerciseService;
+
+@Resource
+protected ExamService examService; 
+
+@Resource
+protected ExamPaperService examPaperService;
+
+@Resource
+protected StudentQuestionRecordService recordService;
 /**
  * 其他一些常用的变量
  */

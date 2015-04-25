@@ -150,8 +150,10 @@
 			<!-- 添加问题之前的章节页面 -->
 			<result name="showquestionById">/WEB-INF/jsp/questionAction/showcharpter.jsp
 			</result>
-
+			<!-- 添加作业之前的章节页面 -->
 			<result name="showexerciseById">/WEB-INF/jsp/exerciseAction/list.jsp</result>
+			<!-- 很具课程显示考试 -->
+			<result name="showExamById">/WEB-INF/jsp/examAction/list.jsp</result>
 		</action>
 
 		<!-- 章节管理 -->
@@ -193,7 +195,27 @@
 			<result name="toshow" type="redirectAction">subject_showexerciseById?sid=${subjectId}
 			</result>
 		</action>
-
+		
+		
+		<action name="exam_*" class="examAction" method="{1}">
+			<result name="showSubject">/WEB-INF/jsp/examAction/showsubject.jsp
+			</result>
+			<result name="list">/WEB-INF/jsp/examAction/liststudent.jsp
+			</result>
+			<result name="saveUI">/WEB-INF/jsp/examAction/saveUI.jsp</result>
+			<result name="toshow" type="redirectAction">subject_showExamById?sid=${subjectId}
+			</result>
+			<result name="createPaper" type="redirectAction">exam_list</result>
+			<result name="error">/WEB-INF/jsp/error.jsp
+			</result>
+		</action>
+		
+		<action name="examPaper_*" class="examPaperAction" method="{1}">
+			<result name="list">/WEB-INF/jsp/exampaperAction/list.jsp</result>
+			<result name="showQuestion">/WEB-INF/jsp/exampaperAction/questionList.jsp</result>
+			
+		</action>
+		
 		<action name="userAnswer_*" class="userAnswerAction" method="{1}">
 			<result name="list">/WEB-INF/jsp/userAnswer/showexecise.jsp</result>
 			<result name="showQuestion">/WEB-INF/jsp/userAnswer/myTest.jsp</result>

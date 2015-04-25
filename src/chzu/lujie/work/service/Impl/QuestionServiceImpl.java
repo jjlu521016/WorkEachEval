@@ -15,8 +15,6 @@ import chzu.lujie.work.domain.KnowledgeDetail;
 import chzu.lujie.work.domain.Questions;
 import chzu.lujie.work.service.KnowledgeService;
 import chzu.lujie.work.service.QuestionService;
-import chzu.lujie.work.view.vo.AnswerVo;
-import chzu.lujie.work.view.vo.QuestionVo;
 
 @Service
 @Transactional

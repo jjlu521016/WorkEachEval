@@ -9,6 +9,7 @@ import com.opensymphony.xwork2.ActionContext;
 
 import chzu.lujie.work.base.BaseAction;
 import chzu.lujie.work.domain.Charpter;
+import chzu.lujie.work.domain.Exam;
 import chzu.lujie.work.domain.Exercise;
 import chzu.lujie.work.domain.Subject;
 import chzu.lujie.work.domain.Types;
@@ -84,6 +85,17 @@ public class SubjectAction extends BaseAction<Subject> {
 		List<Exercise> exerciseList = exerciseService.findAll();// findMyExercise(getCurrentUser());
 		ActionContext.getContext().put("exerciseList", exerciseList);
 		return "showexerciseById";
+	}
+	
+	// gen
+	public String showExamById() throws Exception {
+
+		Subject subject = subjectService.getById(model.getSid());
+		ActionContext.getContext().put("subject", subject);
+
+		List<Exam> examList = examService.findAll();// findMyExercise(getCurrentUser());
+		ActionContext.getContext().put("examList",examList);
+		return "showExamById";
 	}
 
 	public String showquestionById() throws Exception {

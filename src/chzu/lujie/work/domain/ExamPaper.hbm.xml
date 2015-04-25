@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="chzu.lujie.work.domain">
+	<class name="ExamPaper" table="t_work_examPaper">
+		<id name="epid">
+			<generator class="native" />
+		</id>
+
+		<property name="flg" />
+		<property name="stopTime" type="timestamp" />
+
+		<many-to-one name="student" class="User" fetch="select"
+			lazy="false" cascade="save-update">
+			<column name="studentId" precision="22" scale="0" />
+		</many-to-one>
+
+		<many-to-one name="exam" class="Exam" cascade="save-update"
+			fetch="select" lazy="false">
+			<column name="e_exam" precision="22" scale="0" />
+		</many-to-one>
+		
+<!-- 		<many-to-one name="studentQuestionRecord" class="StudentQuestionRecord" cascade="save-update" -->
+<!-- 			fetch="select" lazy="false"> -->
+<!-- 			<column name="e_subject" precision="22" scale="0" /> -->
+<!-- 		</many-to-one> -->
+
+		<list name="records" cascade="all" inverse="false" lazy="false">
+			<key>
+				<column name="recordId" precision="22" />
+			</key>
+			<index column="num"></index>
+			<one-to-many class="StudentQuestionRecord" />
+		</list>
+	</class>
+</hibernate-mapping>
