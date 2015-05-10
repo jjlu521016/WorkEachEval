@@ -25,6 +25,8 @@ public interface BaseDao<T> {
 	 * @param entity
 	 */
 	void update(T entity);
+	
+	void merge(T entity);
 
 	/**
 	 * 按id查询

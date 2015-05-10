@@ -7,7 +7,7 @@ public class AnswersUser implements Serializable{
 	private Questions questions ; 
 	private String answer;//问题的答案
 	private String isRight;//是否正确
-	private String sequence;//the sequence of the question
+	private String mark;//the sequence of the question
 	
 	private User student;
 	
@@ -38,11 +38,11 @@ public class AnswersUser implements Serializable{
 	}
 	
 	
-	public String getSequence() {
-		return sequence;
+	public String getMark() {
+		return mark;
 	}
-	public void setSequence(String sequence) {
-		this.sequence = sequence;
+	public void setMark(String mark) {
+		this.mark = mark;
 	}
 	public User getStudent() {
 		return student;

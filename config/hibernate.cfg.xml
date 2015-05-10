@@ -34,5 +34,7 @@
   <mapping resource="chzu/lujie/work/domain/Exam.hbm.xml"/>
   <mapping resource="chzu/lujie/work/domain/ExamPaper.hbm.xml"/>
   <mapping resource="chzu/lujie/work/domain/StudentQuestionRecord.hbm.xml"/>
+  <mapping resource="chzu/lujie/work/domain/Task.hbm.xml"/>
+  <mapping resource="chzu/lujie/work/domain/Score.hbm.xml"/>
  </session-factory>
 </hibernate-configuration>

@@ -1,5 +1,7 @@
 eclipse.preferences.version=1
 encoding//WebRoot/WEB-INF/jsp/error.jsp=UTF-8
+encoding//WebRoot/WEB-INF/jsp/exampaperAction/questionList.jsp=UTF-8
+encoding//WebRoot/WEB-INF/jsp/exampaperAction/showScore.jsp=UTF-8
 encoding//config/log4j.properties=UTF-8
 encoding//src/chzu/lujie/work/util/HibernateUtil.java=gbk
 encoding/<project>=UTF-8

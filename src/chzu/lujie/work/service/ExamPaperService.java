@@ -7,14 +7,16 @@ import chzu.lujie.work.domain.Exam;
 import chzu.lujie.work.domain.ExamPaper;
 import chzu.lujie.work.domain.User;
 
-
-public interface ExamPaperService extends DaoSupport<ExamPaper>{
+public interface ExamPaperService extends DaoSupport<ExamPaper> {
 
 	ExamPaper createPaper(Exam exam, User currentUser) throws Exception;
 
 	List<ExamPaper> findMyPaper(User currentUser);
 
+	ExamPaper updatePaper(ExamPaper paper);
 
+	void updateFlg(Long paperId);
 
-	
+	int getScore(ExamPaper paper);
+
 }

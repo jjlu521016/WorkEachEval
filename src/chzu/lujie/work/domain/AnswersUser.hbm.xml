@@ -9,7 +9,7 @@
 		</id>
 		<property name="answer" type="text" length="65536"/>
         <property name="isRight" />
-        <property name="sequence" />
+        <property name="mark" />
 		
         <many-to-one name="questions" class="Questions" fetch="select" lazy="false" cascade="all">
             <column name="questionId" />

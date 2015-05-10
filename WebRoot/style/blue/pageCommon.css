@@ -271,6 +271,13 @@ ul {
 	margin: 10px;
 	text-align: center;
 }
+#InputDetailBar1 {
+	float: left;
+	width: 80%;
+	margin-bottom: 35px;
+	margin: 10px;
+	text-align: left;
+}
 
 #InputDetailBar img,
 #InputDetailBar input{
@@ -1053,4 +1060,13 @@ td.tsubmitBtnTD{
 
 .red{
 	color: red;
+}
+
+#showquestion {
+	margin-left:10px;
+	left:30px;
+	color: blue;
+	font: bold;
+	font-size: 20px;
+	
 }

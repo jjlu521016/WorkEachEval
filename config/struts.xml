@@ -29,6 +29,9 @@
 		<global-results>
 			<result name="loginUI">/WEB-INF/jsp/loginUI.jsp</result>
 			<result name="noPermissionError">/WEB-INF/jsp/noPermissionError.jsp</result>
+            <result name="verifycode">/WEB-INF/jsp/verifycode.jsp</result>
+            
+			<result name="registerUI" >/WEB-INF/jsp/registerUI.jsp</result>
 		</global-results>
 
 		<!-- 配置测试用的Action，未与Spring整合，class属性写类的全名 -->
@@ -73,6 +76,8 @@
 			<result name="editInfoUI">/WEB-INF/jsp/admin/userAction/ModifyUI.jsp
 			</result>
 			<result name="editInfo">/WEB-INF/jsp/homeAction/top.jsp</result>
+			<result name="tosuccess" >/WEB-INF/jsp/regsuccess.jsp</result>
+			
 		</action>
 
 
@@ -133,8 +138,6 @@
 			<result name="saveUI">/WEB-INF/jsp/knowledgeAnalyManageAction/saveUI.jsp
 			</result>
 			<result name="tolist" type="redirectAction">knowledgeAnalyManage_list</result>
-
-
 		</action>
 
 		<!--科目管理 -->
@@ -186,8 +189,7 @@
 			<result name="showCharpterById">/WEB-INF/jsp/knowledgeAction/show.jsp
 			</result>
 		</action>
-
-
+		<!-- 练习管理 -->
 		<action name="exercise_*" class="exerciseAction" method="{1}">
 			<result name="showQuestion">/WEB-INF/jsp/questionAction/Questionshow.jsp
 			</result>
@@ -196,7 +198,7 @@
 			</result>
 		</action>
 		
-		
+		<!-- 考试管理 -->
 		<action name="exam_*" class="examAction" method="{1}">
 			<result name="showSubject">/WEB-INF/jsp/examAction/showsubject.jsp
 			</result>
@@ -210,11 +212,22 @@
 			</result>
 		</action>
 		
+		<!-- 作业管理 -->
 		<action name="examPaper_*" class="examPaperAction" method="{1}">
 			<result name="list">/WEB-INF/jsp/exampaperAction/list.jsp</result>
 			<result name="showQuestion">/WEB-INF/jsp/exampaperAction/questionList.jsp</result>
-			
+			<result name="doQuestion">/WEB-INF/jsp/exampaperAction/questionList.jsp</result>
+			<result name="nextQuestion">/WEB-INF/jsp/exampaperAction/questionList.jsp</result>
+			<result name="preQuestion">/WEB-INF/jsp/exampaperAction/questionList.jsp</result>
+			<result name="submitpaper">/WEB-INF/jsp/exampaperAction/showScore.jsp</result>
 		</action>
+		
+		<!-- 批改作业任务管理 -->
+		<action name="task_*" class="taskAction" method="{1}">
+			<result name="list">/WEB-INF/jsp/taskAction/showtask.jsp</result>
+			<result name="getQuestion">/WEB-INF/jsp/taskAction/questionList.jsp</result>
+		</action>
+		
 		
 		<action name="userAnswer_*" class="userAnswerAction" method="{1}">
 			<result name="list">/WEB-INF/jsp/userAnswer/showexecise.jsp</result>

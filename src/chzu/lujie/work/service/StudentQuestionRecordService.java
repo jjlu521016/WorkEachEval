@@ -13,6 +13,11 @@ public interface StudentQuestionRecordService extends DaoSupport<StudentQuestion
 
 	List<StudentQuestionRecord> getByPaper(ExamPaper paper);
 
+	int getCount(ExamPaper paper);
+
+
+	List<StudentQuestionRecord> findSubjective(ExamPaper paper, String type);
+
 
 
 	

@@ -48,6 +48,10 @@ public abstract class DaoSupportImpl<T> implements DaoSupport<T> {
 	public void update(T entity) {
 		getSession().update(entity);
 	}
+	
+	public void merge(T entity) {
+		getSession().merge(entity);
+	}
 
 	public void delete(Long id) {
 		// 获取对象的id

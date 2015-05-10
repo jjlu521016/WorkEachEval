@@ -177,6 +177,39 @@ public class UserAction extends BaseAction<User> {
 		return "logout";
 	}
 	
+	/**
+	 * 注册
+	 * @return
+	 * @throws Exception
+	 */
+	public String register() throws Exception {
+		// 封装到对象中
+		// >> 设置所属部门
+		model.setDepartment(departmentService.getById(departmentId));
+		// >> 设置关联的岗位
+		List<Role> roleList = roleService.getByIds(roleIds);
+		model.setRoles(new HashSet<Role>(roleList));
+		
+		String md5Digest = MD5Utils.GetMD5Code(model.getPassword());
+		model.setPassword(md5Digest);
+		System.out.println("pppppppppppppppppppp----"+md5Digest);
+		// 保存到数据库
+		userService.save(model);
+		return "tosuccess";
+
+	}
+
+	public String registerUI() throws Exception {
+		// 准备数据, departmentList
+		List<Department> topList = departmentService.findTopList();
+		List<Department> departmentList = DepartmentUtils
+				.getAllDepartments(topList);
+		ActionContext.getContext().put("departmentList", departmentList);
+
+		// 准备数据, roleList
+		return "registerUI";
+	}
+	
 	public Long getDepartmentId() {
 		return departmentId;
 	}

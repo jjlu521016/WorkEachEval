@@ -55,13 +55,13 @@
 						<td>${exam.charpter.cname}&nbsp;</td>
 						<td>${stopTime}&nbsp;</td>
 						<td><s:if test="#e.flg == 1">已完成</s:if> <s:if
-								test="#e.flg == 0">未完成</s:if> <%-- 						<td>${statu}&nbsp;</td> --%>
+								test="#e.flg == 0">未完成</s:if> 
 						
 
 						<td>&nbsp;&nbsp; <s:if test="#e.flg != 1">
 									
 								
-								<s:a action="examPaper_showQuestion?epid=%{epid}"
+								<s:a action="examPaper_doQuestion?paperId=%{epid}"
 								 onclick="return  publishConfirm('确定要发布本次作业吗？发布之后不能更改！')">开始本次作业</s:a>
 								</s:if> <s:if test="#e.flg == 1">
 								<font color="red"> 已完成</font>

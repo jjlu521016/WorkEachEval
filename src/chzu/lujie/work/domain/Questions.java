@@ -24,8 +24,8 @@ public class Questions {
 	private Charpter charpter;//所属的章节
 	private Types types;//问题所属类型
 //	private Knowledge knowledge;//所属知识点
-	private Set answerses = new HashSet<>();//问题的答案
-//	private List<Answers> answerses;
+	//private Set answerses = new HashSet<>();//问题的答案
+	private List<Answers> answerses;
 	
 	private Exercise exercise;
 
@@ -142,13 +142,23 @@ public class Questions {
 		this.exercise = exercise;
 	}
 
-
-	public Set getAnswerses() {
+	public List<Answers> getAnswerses() {
 		return answerses;
 	}
 
-	public void setAnswerses(Set answerses) {
+	public void setAnswerses(List<Answers> answerses) {
 		this.answerses = answerses;
 	}
+
+
+//	public Set getAnswerses() {
+//		return answerses;
+//	}
+//
+//	public void setAnswerses(Set answerses) {
+//		this.answerses = answerses;
+//	}
+	
+	
 
 }

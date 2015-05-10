@@ -85,14 +85,15 @@ public class QuestionAction extends BaseAction<Questions> {
 		 
 		return "saveUI";
 	}
-
+/**
+ * 本方法的 V4版本
+ * @return
+ * @throws Exception
+ */
 	public String add() throws Exception {
 		
 		request = ServletActionContext.getRequest();
-		// 把答案存放在一个list 中。
-		String[] texts = request.getParameterValues("answerText");
-		System.out.println("-------->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>"+texts[0]);
-		String sid = request.getParameter("sid");
+		
 		
 		String qAnswer = request.getParameter("qAnswer");
 		String ptAnswer = request.getParameter("ptAnswer");
@@ -107,23 +108,7 @@ public class QuestionAction extends BaseAction<Questions> {
 		System.out.println("<><><><<><<<<><<<><>><><><<><><><><><>>"+flg);
 		switch (flg) {
 		case 1:
-			//处理选择题
-			for (int i = texts.length - 1; i >= 0; i--) {
-				if (!"".equals(texts[i])) {
-					Answers answers = new Answers();
-					if ("isRight".equals(texts[i])&&!"".equals(texts[--i])) {
-						answers.setAnswer(texts[i]);
-						answers.setIsRight("1");// mean this answer is right
-						System.out.println("&&&&&&&&&&&&&---"+answers);
-					} else {
-						
-						answers.setAnswer(texts[i]);
-						answers.setIsRight("0");
-						System.out.println("##################---"+answers);
-					}
-					answerList.add(answers);
-				} 
-			}
+			//由于选择题的相关内容到封装好了，所以此处不需要任何语句
 			break;
 		case 2:
 			//处理判断题
@@ -133,6 +118,9 @@ public class QuestionAction extends BaseAction<Questions> {
 			answers.setAnswer(judge);
 			answers.setIsRight("1");
 			answerList.add(answers);
+			
+			questions.setAnswerses(answerList);
+			
 			break;
 		case 3:
 			//处理普通答案
@@ -141,44 +129,23 @@ public class QuestionAction extends BaseAction<Questions> {
 				vo.setAnswer(ptAnswer);
 				vo.setIsRight("1");
 				answerList.add(vo);
+				
+				questions.setAnswerses(answerList);
 			}
 			break;
 		default:
 			break;
 		}
 		
-//		System.out.println("answerList"+answerList.size());
 		
-		Set<Answers> aList = new HashSet<Answers>();
-//		List<Answers> aList = new ArrayList<Answers>();
-		int aLength = 0;
-		if (answerList != null && !answerList.isEmpty()) {
-			aLength = answerList.size();
-
-		}
-				if (answerList != null && aLength  != 0) {
-
-					for (int i = 0; i < aLength; i++) {
-						
-						Answers po = new Answers();
-						Answers vo = answerList.get(i);
-						po.setAnswer(vo.getAnswer());
-						po.setIsRight(vo.getIsRight());
-						po.setQuestions(questions);
-						po.setSequence(vo.getSequence());
-						aList.add(po);
-					}
-				}
 		
-		questions.setAnswerses(aList);
 		questions.setCharpter(charpterService.getById(charpterId));
 		questions.setSubject(subjectService.getById(subjectId));
 		questions.setQtime(new Date());
 		questions.setTypes(typesService.getById(typeId));
 		questions.setQtext(model.getQtext());
 		questions.setExercise(exerciseService.getById(exerciseId));
-		
-		
+		questions.setQscore(model.getQscore());
 		questionService.save(questions);
 
 		return "toshow";

@@ -15,7 +15,9 @@ import org.aspectj.weaver.patterns.TypePatternQuestions.Question;
 public class StudentQuestionRecord {
 	private Long sqrId;
 	private Questions question;
-	private Set<AnswersUser> answers = new HashSet<AnswersUser>();
+	//private Set<AnswersUser> answers = new HashSet<AnswersUser>();
+	//
+	private List<AnswersUser> answers; 
 	
 	private ExamPaper examPaper;
 	
@@ -39,12 +41,19 @@ public class StudentQuestionRecord {
 	public void setExamPaper(ExamPaper examPaper) {
 		this.examPaper = examPaper;
 	}
-	public Set<AnswersUser> getAnswers() {
+//	public Set<AnswersUser> getAnswers() {
+//		return answers;
+//	}
+//	public void setAnswers(Set<AnswersUser> answers) {
+//		this.answers = answers;
+//	}
+	public List<AnswersUser> getAnswers() {
 		return answers;
 	}
-	public void setAnswers(Set<AnswersUser> answers) {
+	public void setAnswers(List<AnswersUser> answers) {
 		this.answers = answers;
 	}
+	
 
 	
 }

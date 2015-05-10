@@ -14,17 +14,14 @@
 	if (window.parent != window) {
 		window.parent.location.reload(true);
 	}
-
 </script>
+
 </head>
 
 <body leftmargin=0 topmargin=0 marginwidth=0 marginheight=0
-	class=PageBody >
-
-
-
+	class=PageBody>
 	<!-- 显示表单 -->
-	<s:form action="user_login" focusElement="loginNameInput">
+	<s:form action="user_login" focusElement="loginNameInput" name="loginForm" id="loginForm">
 		<div id="CenterAreaBg">
 			<div id="CenterArea">
 
@@ -56,6 +53,10 @@
 								type="image" tabindex="3"
 								src="${pageContext.request.contextPath}/style/blue/images/login/userLogin_button.gif" />
 							</td>
+							<td rowspan="2" style="padding-left: 10px;">
+							 <a href="user_registerUI.action"><img src="${pageContext.request.contextPath}/style/blue/images/login/reg2.png" /></a>	
+							  
+							  	</td>
 
 
 						</tr>
@@ -64,13 +65,18 @@
 								src="${pageContext.request.contextPath}/style/blue/images/login/password.gif" /></td>
 							<td><s:password name="password" id="aa" size="20"
 									tabindex="2" showPassword="false" cssClass="TextField required" /></td>
-						</tr>
 
-<!-- 						<tr> -->
-<!-- 							<td class="Subject">验证码</td> -->
-<!-- 							<td><input type="text" id="checkCode" class="code" size="8"> -->
-<!-- 							<img src="/WEB-INF/jsp/verifycode.jsp"></td> -->
-<!-- 						</tr> -->
+						</tr>
+						<tr>
+							<td></td>
+
+							<td>
+							
+<%-- 							<s:a action="user_registerUI"> --%>
+							
+<%-- 							</s:a> --%>
+							</td>
+						</tr>
 					</table>
 				</div>
 				<div id="CopyRight" align="right">&copy; 2015 版权所有

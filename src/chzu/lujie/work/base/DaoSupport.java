@@ -14,7 +14,7 @@ public interface DaoSupport<T> {
 	 * @param entity
 	 */
 	void save(T entity);
-
+	void merge(T entity);
 	/**
 	 * 删除实体
 	 * 

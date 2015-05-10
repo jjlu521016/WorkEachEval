@@ -35,4 +35,37 @@ public class StudentQuestionRecordImpl extends DaoSupportImpl<StudentQuestionRec
 				
 	}
 
+	@Override
+	public int getCount(ExamPaper paper) {
+		List list = getSession().createQuery(//
+				"from StudentQuestionRecord s where s.examPaper = ?")//
+				.setParameter(0, paper)//
+				.list();
+		int count  = list.size();
+		System.out.println("--------------------------------------count="+count);
+		return count;
+	}
+//根据问题的类型获取问题的个数
+//	@Override
+//	public int getSubjectiveCount(ExamPaper paper, String type) {
+//		String hql="from StudentQuestionRecord s where s.examPaper = ? and s.question.types = ?";
+//		List list = getSession().createQuery(hql)//
+//					.setParameter(0, paper)//
+//					.setParameter(1, type)//
+//					.list();
+//		int count  = list.size();
+//		System.out.println("--------------------------------------count="+count);
+//		return count;
+//	}
+
+	@SuppressWarnings("unchecked")
+	@Override
+	public List<StudentQuestionRecord> findSubjective(ExamPaper paper,String type) {
+		String hql ="from StudentQuestionRecord s where s.examPaper = ? and s.question.types = "+ type;
+		List<StudentQuestionRecord> list = getSession().createQuery(hql)//
+				.setParameter(0, paper)//
+				.list();
+		 return list;
+	}
+
 }

@@ -14,4 +14,5 @@ public interface ExamPaperDao extends DaoSupport<ExamPaper>
 	boolean ispaperexist(Exam exam, User currentUser);
 
 
+
 }

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="chzu.lujie.work.domain">
+    <class name="Score" table="t_work_score" >
+        <id name="sid" >
+        	<generator class="native" />
+		</id>
+		<property name="autoscore"/>
+        <property name="manualscore" />
+        <property name="totalscore" />
+        <property name="opinion" />
+        
+        <many-to-one name="student" class="User" fetch="select" lazy="false" cascade="all">
+            <column name="studentId" />
+        </many-to-one>
+        <many-to-one name="paper" class="ExamPaper" fetch="select" lazy="false" cascade="all">
+            <column name="paperId" />
+        </many-to-one>
+        
+<!--         <many-to-one name="subject" class="Subject" fetch="select" lazy="false" cascade="all"> -->
+<!--             <column name="subjectId" /> -->
+<!--         </many-to-one> -->
+        
+<!--         <many-to-one name="charpter" class="Charpter" fetch="select" lazy="false" cascade="all"> -->
+<!--             <column name="charpterId" /> -->
+<!--         </many-to-one> -->
+        <many-to-one name="tasker" class="User" fetch="select" lazy="false" cascade="all">
+            <column name="taskerId" />
+        </many-to-one>
+
+    </class>
+</hibernate-mapping>
+

@@ -6,21 +6,28 @@
 		<id name="sqrId">
 			<generator class="native" />
 		</id>
-	
+
 
 		<many-to-one name="question" class="Questions" cascade="save-update"
 			fetch="select" lazy="false">
 			<column name="e_q" precision="22" scale="0" />
 		</many-to-one>
-		
 
-		<set name="answers" cascade="all" inverse="true" lazy="false">
+
+		<!-- <set name="answers" cascade="all" inverse="true" lazy="false"> -->
+		<!-- <key> -->
+		<!-- <column name="answerId" precision="22" /> -->
+		<!-- </key> -->
+		<!-- <one-to-many class="AnswersUser" /> -->
+		<!-- </set> -->
+		<list name="answers" cascade="save-update" >
 			<key>
-				<column name="answerId" precision="22" />
+				<column name="rqid" precision="22" />
 			</key>
+			<index column="num"></index>
 			<one-to-many class="AnswersUser" />
-		</set>
-		
+		</list>
+
 		<many-to-one name="examPaper" class="ExamPaper" cascade="save-update"
 			fetch="select" lazy="false">
 			<column name="recordId" precision="22" scale="0" />

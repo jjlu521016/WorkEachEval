@@ -44,7 +44,10 @@ public abstract class BaseDaoImpl<T> implements BaseDao<T>
 	{
 		getSession().update(entity);
 	}
-
+	public void merge(T entity)
+	{
+		getSession().merge(entity);
+	}
 	public void delete(Long id)
 	{
 		// 获取对象的id

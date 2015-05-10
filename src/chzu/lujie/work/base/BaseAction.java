@@ -17,8 +17,10 @@ import chzu.lujie.work.service.PermissionService;
 import chzu.lujie.work.service.QuestionService;
 import chzu.lujie.work.service.ReplyService;
 import chzu.lujie.work.service.RoleService;
+import chzu.lujie.work.service.ScoreService;
 import chzu.lujie.work.service.StudentQuestionRecordService;
 import chzu.lujie.work.service.SubjectService;
+import chzu.lujie.work.service.TaskService;
 import chzu.lujie.work.service.TeacherService;
 import chzu.lujie.work.service.TopicService;
 import chzu.lujie.work.service.TypesService;
@@ -107,6 +109,12 @@ protected ExamPaperService examPaperService;
 
 @Resource
 protected StudentQuestionRecordService recordService;
+
+@Resource
+protected TaskService taskService;
+
+@Resource
+protected ScoreService scoreService;
 /**
  * 其他一些常用的变量
  */

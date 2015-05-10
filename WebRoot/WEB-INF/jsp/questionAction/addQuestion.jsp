@@ -122,20 +122,34 @@ var qtextarea = K.create('textarea[name="ptAnswer"]', options);
 											<div id="myDiv">
 												<div id="selectDiv" style="display: none">
 													<div id="selectSpan">
-														<input type="text" name="answerText" /><input
-															type="checkbox" name="answerText" value='isRight'></input>
-														<br /> <input type="text" name="answerText" /><input
-															type="checkbox" name="answerText" value='isRight'></input>
-														<br /> <input type="text" name="answerText" /><input
-															type="checkbox" name="answerText" value='isRight'></input>
-														<br /> <input type="text" name="answerText" /><input
-															type="checkbox" name="answerText" value='isRight'></input>
+													选项A:<s:textfield name="questions.answerses[0].answer"/>
+														 <s:hidden name="questions.answerses[0].mark" value="A"></s:hidden>
+														 <s:checkbox name="questions.answerses[0].isRight"/>
+														 
+														<br />
+														选项B:<s:textfield name="questions.answerses[1].answer"/>
+														 <s:hidden name="questions.answerses[1].mark" value="B"></s:hidden>
+														 <s:checkbox name="questions.answerses[1].isRight"/>
+														 
+														<br />
+														选项C:<s:textfield name="questions.answerses[2].answer"/>
+														 <s:hidden name="questions.answerses[2].mark" value="C"></s:hidden>
+														 <s:checkbox name="questions.answerses[2].isRight"/>
+														 
+														<br />
+														选项D:<s:textfield name="questions.answerses[3].answer"/>
+														 <s:hidden name="questions.answerses[3].mark" value="D"></s:hidden>
+														 <s:checkbox name="questions.answerses[3].isRight"/>
+														 
+														<br />
+														
+														
 													</div>
 													<div style="color: rgb(255, 0, 0);">是正确答案请勾选</div>
-													<div id="buttonSpan">
-														<input type="button" id="newAnswer" name="but"
-															class="InputStyle" value="增加答案" />
-													</div>
+<!-- 													<div id="buttonSpan"> -->
+<!-- 														<input type="button" id="newAnswer" name="but" -->
+<!-- 															class="InputStyle" value="增加答案" /> -->
+<!-- 													</div> -->
 												</div>
 												<div id='judgeDiv' style="display: none">
 													<div id="judgeSpan">
@@ -153,7 +167,9 @@ var qtextarea = K.create('textarea[name="ptAnswer"]', options);
 													
 
 												</div>
-
+												<div>
+												本题分值：<s:textfield name="qscore"></s:textfield>
+												</div>
 											</div>
 
 

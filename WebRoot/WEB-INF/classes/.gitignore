@@ -1,4 +1,7 @@
-/applicationContext.xml
 /chzu
+/applicationContext.xml
+/hibernate.cfg.xml
+/jdbc.properties
+/log4j.properties
 /org
-/Questions.class
+/struts.xml
