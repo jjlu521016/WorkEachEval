@@ -105,11 +105,12 @@ public class ExamAction extends BaseAction<Exam> {
 		Subject subject = subjectService.getById(subjectId);
 
 		List<Charpter> charpterList = charpterService.findBySubject(subject);
+		 
 		ActionContext.getContext().put("charpterList", charpterList);
 
 		Exam exam = examService.getById(model.getEid());
 
-		ActionContext.getContext().put("exam", exam);
+		ActionContext.getContext().getValueStack().push(exam);
 		if (exam.getCharpter() != null) {
 			charpterId = exam.getCharpter().getCid();
 		}

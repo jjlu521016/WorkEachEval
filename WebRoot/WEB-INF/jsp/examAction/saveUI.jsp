@@ -42,7 +42,6 @@
 		<s:form action="exam_%{eid == null ? 'add' : 'edit'}">
 			<s:hidden name="subjectId"></s:hidden>
 			<s:hidden name="eid" id="eid"></s:hidden>
-			<s:hidden name="name"></s:hidden>
 
 
 			<div id="PageHead"></div>
@@ -66,8 +65,8 @@
 							<td>作业名称：<font color="red">(*)</font></td>
 
 							<td class="InputAreaBg"><div class="InputContent">
-									<s:textfield name="name"  cssClass="InputStyle"
-										cssStyle="width:50%" />
+									<s:textfield name="name" id="name" cssClass="InputStyle"
+										cssStyle="width:50%"/>
 								</div></td>
 						</tr>
 						<tr>
