@@ -15,7 +15,9 @@
         <div id="Title_End"></div>
     </div>
 </div>
-
+<div id="TableTail" align="right">
+       	 <a href="user_querylistUI.action"><input type="button" value="查询" id="searchBtn" ></button></a>
+    </div>   
 <div id="MainArea">
     <table cellspacing="0" cellpadding="0" class="TableStyle">
        

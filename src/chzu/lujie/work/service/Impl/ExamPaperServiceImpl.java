@@ -47,6 +47,7 @@ public class ExamPaperServiceImpl extends DaoSupportImpl<ExamPaper> implements
 	public ExamPaper createPaper(Exam exam, User currentUser) throws Exception {
 
 		ExamPaper paper = new ExamPaper();
+		//TODO
 		List<Questions> list = questionService.findAll();
 		// 检查是否已经生成试卷
 		boolean iscreate = examPaperDao.ispaperexist(exam, currentUser);

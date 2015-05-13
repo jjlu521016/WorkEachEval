@@ -8,6 +8,7 @@
         	<generator class="native" />
 		</id>
 		<property name="flg"></property>
+		<property name="autoscore"></property>
         <many-to-one name="student" class="User" fetch="select" lazy="false" cascade="save-update">
             <column name="studentId" />
         </many-to-one>

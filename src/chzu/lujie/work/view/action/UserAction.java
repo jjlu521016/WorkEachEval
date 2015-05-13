@@ -10,6 +10,7 @@ import chzu.lujie.work.base.BaseAction;
 import chzu.lujie.work.domain.Charpter;
 import chzu.lujie.work.domain.Department;
 import chzu.lujie.work.domain.Role;
+import chzu.lujie.work.domain.Score;
 import chzu.lujie.work.domain.User;
 import chzu.lujie.work.util.DepartmentUtils;
 import chzu.lujie.work.util.MD5Utils;
@@ -24,13 +25,11 @@ public class UserAction extends BaseAction<User> {
 	private Long departmentId;
 	private Long[] roleIds;
 
+	//查询条件的参数
+	String username;
 	// 查询所有数据
 
 	public String list() throws Exception {
-
-//		List<User> userList = userService.findAll();
-//
-//		ActionContext.getContext().put("userList", userList);
 		//分页显示
 		new QueryHelper(User.class, "u").preparePageBean(userService, pageNum, pageSize);
 		return "list";
@@ -225,5 +224,33 @@ public class UserAction extends BaseAction<User> {
 	public void setRoleIds(Long[] roleIds) {
 		this.roleIds = roleIds;
 	}
+	
+	public String querylistUI() throws Exception{
+		List<Department> topList = departmentService.findTopList();
+		List<Department> departmentList = DepartmentUtils
+				.getAllDepartments(topList);
+		ActionContext.getContext().put("departmentList", departmentList);
+		return "querylistUI";
+	}
+/**
+ * 组合条件查询
+ * @return
+ * @throws Exception
+ */
+	public String querylist() throws Exception{
+		System.out.println("_____=="+username);
+		
+		new QueryHelper(User.class, "s")//
+			.addCondition("s.name like ? ","%"+username+"%")//
+			.preparePageBean(userService, pageNum,
+				pageSize);
+		return "list";
+	}
+
+public void setUsername(String username) {
+	this.username = username;
+}
+
+
 
 }

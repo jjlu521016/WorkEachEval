@@ -279,6 +279,13 @@ ul {
 	text-align: left;
 }
 
+#InputDetailBar2 {
+	float: left;
+	width: 30%;
+	margin-bottom: 35px;
+	margin: 10px;
+	text-align: center;
+}
 #InputDetailBar img,
 #InputDetailBar input{
 	margin-right: 15px;

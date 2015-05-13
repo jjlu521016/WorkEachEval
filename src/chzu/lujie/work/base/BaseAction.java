@@ -15,6 +15,7 @@ import chzu.lujie.work.service.KnowledgeAnalyService;
 import chzu.lujie.work.service.KnowledgeService;
 import chzu.lujie.work.service.PermissionService;
 import chzu.lujie.work.service.QuestionService;
+import chzu.lujie.work.service.QuestiontaskerService;
 import chzu.lujie.work.service.ReplyService;
 import chzu.lujie.work.service.RoleService;
 import chzu.lujie.work.service.ScoreService;
@@ -115,6 +116,9 @@ protected TaskService taskService;
 
 @Resource
 protected ScoreService scoreService;
+
+@Resource
+protected QuestiontaskerService questiontaskerService;
 /**
  * 其他一些常用的变量
  */

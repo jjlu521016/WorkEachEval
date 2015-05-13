@@ -11,8 +11,22 @@
 	src="${pageContext.request.contextPath }/kindeditor/kindeditor.js"></script>
 <script charset="utf-8"
 	src="${pageContext.request.contextPath }/kindeditor/lang/zh_CN.js"></script>
-<script charset="utf-8"
-	src="${pageContext.request.contextPath }/script/task.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+		//给上一题的按钮添加事件
+		$("#pre").click(function() {
+			//点击上一题后，将上一题强制转换成
+			$("form").attr("action", "task_preQuestion.action").submit();
+		})
+		
+		$("#uppaper").click(function() {
+			//点击上一题后，将上一题强制转换成
+			$("form").attr("action", "task_submitPaper.action").submit();
+		})
+		
+	});
+	</script>
+
 <script type="text/javascript">
  　　 var editor;
   	  var editor2; 
@@ -65,16 +79,16 @@ textarea {
 		<h1></h1>
 		第${index+1}题：${q.qtext}<font size="4px" color="red">(简答题${q.qscore }分)</font>
 		<hr>
-		<form action="task_nextQuestion.action">
+		<s:form action="task_nextQuestion">
 			<!-- 隐藏字段用于维护数据 -->
 			<s:hidden name="index" />
 			<s:hidden name="paperId" />
-			<s:hidden name="taskId"/>
+			<s:hidden name="stuid"></s:hidden>
+			<s:hidden name="taskId"></s:hidden>
 			学生答案：
 			<s:textarea id="editor1" name="#answer[0].answer"
 				style="width:70%;height:140px;"></s:textarea>
 			<s:hidden name="answer[0].aid" />
-
 
 			<font color="red">参考答案：</font>
 			<s:textarea id="editor2" name="#q.answerses[0].answer"
@@ -83,16 +97,17 @@ textarea {
 
 			<hr>
 			本题得分：
-			<s:textfield name="manualscore"></s:textfield>
+			<s:textfield name="record.score"></s:textfield>
 
-			</br> </br>
-<!-- 			批改意见： -->
-<%-- 			<s:textarea name="opinion" style="width:60%;height:100px;"></s:textarea> --%>
+			</br>
+			批改意见：
+			<s:textarea name="record.opinion" id="opinion" style="width:60%;height:50px;"></s:textarea>
 			<hr>
 			<input type="button" value="上一题" id="pre" /> <input type="submit"
 				value="下一题" /> <input type="button" value="完成" id="uppaper" />
-		</form>
+		</s:form>
 	</div>
 
 </body>
 </html>
+

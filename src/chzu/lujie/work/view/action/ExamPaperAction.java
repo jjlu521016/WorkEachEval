@@ -116,13 +116,12 @@ public class ExamPaperAction extends BaseAction<ExamPaper> {
 		int autoScore = examPaperService.getScore(paper);
 		//把这个作业交给其他几个同学互评	
 		Task task = taskService.getUser(paper, getCurrentUser());
+		task.setAutoscore(Integer.toString(autoScore));
+		boolean iscreate = taskService.isexist(paper, getCurrentUser());
+		System.out.println("---------"+iscreate);
+		if(!iscreate){
 		taskService.merge(task);
-		//将得分和相关信息存储到分数表
-		Score score = new Score();
-		score.setAutoscore(autoScore);
-		score.setPaper(paper);
-		score.setStudent(getCurrentUser());
-		scoreService.merge(score);
+		}
 		ActionContext.getContext().put("autoScore",autoScore );
 		return "submitpaper";
 	}

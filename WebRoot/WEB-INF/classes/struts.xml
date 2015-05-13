@@ -10,7 +10,7 @@
 	<constant name="struts.action.extension" value="action" />
 	<!-- 把主题配置为simple -->
 	<constant name="struts.ui.theme" value="simple" />
-
+	<constant name="struts.i18n.encoding" value="UTF-8"/>
 
 	<package name="default" namespace="/" extends="struts-default">
 
@@ -77,6 +77,8 @@
 			</result>
 			<result name="editInfo">/WEB-INF/jsp/homeAction/top.jsp</result>
 			<result name="tosuccess" >/WEB-INF/jsp/regsuccess.jsp</result>
+			
+			<result name="querylistUI">/WEB-INF/jsp/admin/userAction/search.jsp</result>
 			
 		</action>
 
@@ -225,7 +227,19 @@
 		<!-- 批改作业任务管理 -->
 		<action name="task_*" class="taskAction" method="{1}">
 			<result name="list">/WEB-INF/jsp/taskAction/showtask.jsp</result>
+			<result name="finish">/WEB-INF/jsp/taskAction/finishtask.jsp</result>
 			<result name="getQuestion">/WEB-INF/jsp/taskAction/questionList.jsp</result>
+			<result name="nextQuestion">/WEB-INF/jsp/taskAction/questionList.jsp</result>
+			<result name="preQuestion">/WEB-INF/jsp/taskAction/questionList.jsp</result>
+			<result name="taskfinfish">/WEB-INF/jsp/taskAction/finfish.jsp</result>
+			
+		</action>
+		
+		<!-- 学生成绩管理 -->
+		<action name="score_*" class="scoreAction" method="{1}">
+			<result name="list">/WEB-INF/jsp/ScoreAction/list.jsp</result>
+			<result name="studentlist">/WEB-INF/jsp/ScoreAction/studentlist.jsp</result>
+			<result name="querylistUI">/WEB-INF/jsp/ScoreAction/search.jsp</result>
 		</action>
 		
 		

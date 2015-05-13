@@ -6,9 +6,7 @@ $(document).ready(function() {
 // 		})
 		$("#pre").click(function() {
 			//点击上一题后，将上一题强制转换成
-			alert("hello");
-			return false;
-		//	$("form").attr("action", "task_preQuestion.action").submit();
+			$("form").attr("action", "task_preQuestion.action").submit();
 		})
 		
 		$("#uppaper").click(function() {

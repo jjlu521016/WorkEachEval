@@ -10,5 +10,6 @@ public interface TaskDao extends DaoSupport<Task>
 {
 
 	List<Task> findMyTask(User currentUser);
+	List<Task> findMyfinishTask(User currentUser); 
 
 }

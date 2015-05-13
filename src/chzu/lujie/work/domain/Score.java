@@ -1,6 +1,7 @@
 package chzu.lujie.work.domain;
 
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 
 /**
@@ -20,12 +21,11 @@ public class Score {
 	private int autoscore;
 	//简答题分数
 	private int manualscore;
-	
 	private int totalscore;
-	
-	private String opinion;
-	
-	////
+	//试卷总分
+	private int paperscore;
+	//得分与总分的比之
+	private double rate;
 	
 	public Long getSid() {
 		return sid;
@@ -45,18 +45,6 @@ public class Score {
 	public void setPaper(ExamPaper paper) {
 		this.paper = paper;
 	}
-//	public Subject getSubject() {
-//		return subject;
-//	}
-//	public void setSubject(Subject subject) {
-//		this.subject = subject;
-//	}
-//	public Charpter getCharpter() {
-//		return charpter;
-//	}
-//	public void setCharpter(Charpter charpter) {
-//		this.charpter = charpter;
-//	}
 	
 	public User getTasker() {
 		return tasker;
@@ -82,11 +70,17 @@ public class Score {
 	public void setTasker(User tasker) {
 		this.tasker = tasker;
 	}
-	public String getOpinion() {
-		return opinion;
+	public int getPaperscore() {
+		return paperscore;
 	}
-	public void setOpinion(String opinion) {
-		this.opinion = opinion;
+	public void setPaperscore(int paperscore) {
+		this.paperscore = paperscore;
+	}
+	public double getRate() {
+		return rate;
+	}
+	public void setRate(double rate) {
+		this.rate = rate;
 	}
 	
 	

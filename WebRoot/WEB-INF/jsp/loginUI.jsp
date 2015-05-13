@@ -28,7 +28,7 @@
 				<div id="LogoImg">
 					<div id="titl">
 						<h1 align="left">
-							<font color="#FFFFFF"> 欢迎登陆作业互评系统</font>
+							<font color="#FFFFFF"> 欢迎登录作业互评系统</font>
 						</h1>
 					</div>
 					<div>

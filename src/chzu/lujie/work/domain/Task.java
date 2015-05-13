@@ -7,11 +7,12 @@ public class Task {
 	
 	private ExamPaper examPaper;
 	//批改作业的人员
-
 	private User Tasker1;
 	private User Tasker2;
 	private User Tasker3;
 	private String flg;
+	private String autoscore;
+	
 	public Long getTid() {
 		return tid;
 	}
@@ -55,6 +56,12 @@ public class Task {
 	public void setFlg(String flg) {
 		this.flg = flg;
 	}
-	
+	public String getAutoscore() {
+		return autoscore;
+	}
+	public void setAutoscore(String autoscore) {
+		this.autoscore = autoscore;
+	}
+
 	
 }

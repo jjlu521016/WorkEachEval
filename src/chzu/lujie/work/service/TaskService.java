@@ -15,6 +15,10 @@ public interface TaskService extends DaoSupport<Task>{
 	 * 我的要批改作业列表
 	 */
 	List<Task> findMyTask(User currentUser);
+	List<Task> findMyfinishTask(User currentUser);
+	boolean isexist(ExamPaper paper, User currentUser);
+	Task getScore(ExamPaper paper, User student);
+	void updateFlg(Long tid);
 
 
 

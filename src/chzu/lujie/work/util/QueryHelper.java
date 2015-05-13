@@ -32,7 +32,6 @@ public class QueryHelper {
 	public QueryHelper(Class clazz, String alias) {
 		fromClause = "FROM " + clazz.getSimpleName() + " " + alias;
 	}
-
 	/**
 	 * 拼接Where子句
 	 * 

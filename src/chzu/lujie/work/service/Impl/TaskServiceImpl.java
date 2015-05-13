@@ -6,6 +6,10 @@ import java.util.List;
 
 import javax.annotation.Resource;
 
+import org.hibernate.Query;
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -27,6 +31,8 @@ public class TaskServiceImpl extends DaoSupportImpl<Task> implements TaskService
 	
 	@Resource
 	TaskDao taskDao;
+	@Resource
+	SessionFactory sessionFactory;
 	
 	
 	@Override
@@ -79,5 +85,45 @@ public class TaskServiceImpl extends DaoSupportImpl<Task> implements TaskService
 	public List<Task> findMyTask(User currentUser) {
 		return taskDao.findMyTask(currentUser);
 	}
+	public List<Task> findMyfinishTask(User currentUser) {
+		return taskDao.findMyfinishTask(currentUser);
+	}
+	
+@SuppressWarnings("unchecked")
+@Override
+public boolean isexist(ExamPaper paper, User currentUser) {
+	String hql="from Task t where t.examPaper = ? and t.student=?";
+	List<Task> list = getSession().createQuery(hql)//
+			.setParameter(0, paper)//
+			.setParameter(1, currentUser)//
+			.list();
+	System.out.println("---------------------------"+list+"============"+list.size());
+	if (list != null && list.size() > 0) {
+		return true;
+	} else {
+		return false;
+	}
+}
+@Override
+public Task getScore(ExamPaper paper, User student) {
+	
+	String hql="from Task t where t.examPaper = ? and t.student=?";
+	Task task = (Task) getSession().createQuery(hql)//
+				.setParameter(0, paper)//
+				.setParameter(1, student)
+				.uniqueResult();
+	return task;
+}
+@Override
+public void updateFlg(Long tid) {
+	Session session = sessionFactory.openSession();
+	Transaction tran = session.beginTransaction();
+	String hqlString = "update Task t set t.flg = '1' where t.tid = "
+			+ tid;
+	Query query = session.createQuery(hqlString);
+	query.executeUpdate();
+	tran.commit();
+	session.close();
+}
 
 }

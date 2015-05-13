@@ -2,6 +2,9 @@ package chzu.lujie.work.view.action;
 
 import java.util.List;
 
+import javax.servlet.http.HttpServletRequest;
+
+import org.apache.struts2.ServletActionContext;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Controller;
 
@@ -10,10 +13,11 @@ import com.opensymphony.xwork2.ActionContext;
 import chzu.lujie.work.base.BaseAction;
 import chzu.lujie.work.domain.AnswersUser;
 import chzu.lujie.work.domain.ExamPaper;
+import chzu.lujie.work.domain.QuestionTasker;
 import chzu.lujie.work.domain.Questions;
 import chzu.lujie.work.domain.Score;
-import chzu.lujie.work.domain.StudentQuestionRecord;
 import chzu.lujie.work.domain.Task;
+import chzu.lujie.work.domain.User;
 /**
  * 互评——我的任务
  * @author jielu
@@ -26,28 +30,43 @@ public class TaskAction extends BaseAction<Task> {
 		Long paperId;
 		int index;
 		List<AnswersUser> answers;
+		QuestionTasker record;
 		Long taskId;
-		//接收前端传来的参数
-		int manualscore;
+		
+		Long stuid;
 	/**
 	 * 显示任务列表课程列表
 	 * @return
 	 * @throws Exception
 	 */
 	public String list() throws Exception {
+		
 			List<Task> tasklist = taskService.findMyTask(getCurrentUser());
 			ActionContext.getContext().put("tasklist", tasklist);
+			
 		return "list";
+	}	
+	
+	public String finish() throws Exception {		
+		List<Task> tasklist = taskService.findMyfinishTask(getCurrentUser());
+		ActionContext.getContext().put("tasklist", tasklist);
+		
+	return "finish";
 	}
+	/*
+	 * 点击批改作业
+	 */
 	public String getQuestion() throws Exception{
 		ExamPaper paper = examPaperService.getById(paperId);
-
+		String type="3";
+		//TODO
+		recordService.findSubject(paper,type,getCurrentUser());
 		showQuestionByIndex(paper, index);
 		
 		return "getQuestion";
 	}
 	
-		/**‘
+		/**
 		 * 获取简答题
 		 * @return
 		 * @throws Exception
@@ -62,43 +81,20 @@ public class TaskAction extends BaseAction<Task> {
 	}
 
 	public String nextQuestion() throws Exception {
-		String type="3";
+		//String type="3";
 		// 把答案显示在试卷上
 		ExamPaper paper = recordpaper();	
 		//获取总共有多少题
-		List<StudentQuestionRecord> record = recordService.findSubjective(paper, type);
+		List<QuestionTasker> record = questiontaskerService.findrecord(paper,getCurrentUser());
+		
 		int max = record.size();
 		System.out.println("---------------------------------------------------------------------------max="+max);
 		if (index < max - 1) {
 			index++;
 		}		
 		showQuestionByIndex(paper, index);	
-	//	return "nextQuestion";
-	//}
-		Task task = taskService.getById(taskId);
-		
-		List<Score> scorelist = scoreService.getScoreBytasker(task.getExamPaper(),task.getStudent(),getCurrentUser());
-		if(scorelist.size()>0){
-			Score score  = new Score();
-			//从数据库获得的数据
-			score.setSid(scorelist.get(0).getSid());
-			score.setAutoscore(scorelist.get(0).getAutoscore());
-			score.setManualscore(manualscore);
-			score.setPaper(paper);
-			score.setStudent(task.getStudent());
-			score.setTasker(getCurrentUser());
-			scoreService.merge(score);
-		}
-		else{
-			Score score  = new Score();
-			score.setAutoscore(scorelist.get(0).getAutoscore());
-			score.setManualscore(manualscore);
-			score.setPaper(paper);
-			score.setStudent(task.getStudent());
-			score.setTasker(getCurrentUser());
-			scoreService.merge(score);
-		}
-		return "taskfinish";
+		return "nextQuestion";
+	
 	}
 	public String preQuestion() throws Exception {
 		ExamPaper paper = recordpaper();
@@ -113,30 +109,33 @@ public class TaskAction extends BaseAction<Task> {
 	private ExamPaper recordpaper() {
 		// 把答案显示在试卷上
 		ExamPaper paper = examPaperService.getById(paperId);
-		//ExamPaper paper = examPaperService.getsubjective(paperId);
-		//paper.getRecords().get(index).setAnswers(answers);
-		// 保存试卷
-		//examPaperService.updatePaper(paper);
-		
+		List<QuestionTasker> record1 = questiontaskerService.findrecord(paper,getCurrentUser());
+
+		record1.get(index).setOpinion(record.getOpinion());
+		record1.get(index).setScore(record.getScore());
+		questiontaskerService.update(record1.get(index));
 		return paper;
 	}
 
 	// 显示某张试卷上的第index题
 	private void showQuestionByIndex(ExamPaper paper, int index) {
 		
-		String type = "3";
-		List<StudentQuestionRecord> record = recordService.findSubjective(paper,type); 
-		List<AnswersUser> answer = record.get(index).getAnswers();
-		System.out.println("answer============================="+answer);
-		Questions q = record.get(index).getQuestion();//getRecords().get(index).getQuestion();
+		List<QuestionTasker> record = questiontaskerService.findrecord(paper,getCurrentUser());
+
+		List<AnswersUser> answer = record.get(index).getRecord().getAnswers();
+		Questions q = record.get(index).getRecord().getQuestion();
 		// 将要传入的参数放到Map中	
 		ActionContext.getContext().put("answer", answer);
 		ActionContext.getContext().put("q", q);
 		// 保持前端和后台的关系
 		ActionContext.getContext().put("index", index);
 		ActionContext.getContext().put("paperId", paperId);
+		ActionContext.getContext().put("stuid", stuid);
+		ActionContext.getContext().put("taskId", taskId);
+		ActionContext.getContext().put("record", record.get(index));
 		//显示数据库里记录的本题答案
 		this.answers = paper.getRecords().get(index).getAnswers();
+		this.record = record.get(index);
 
 	}
 
@@ -144,51 +143,71 @@ public class TaskAction extends BaseAction<Task> {
 	public String submitPaper() throws Exception{
 		
 		//更新试卷状态
-		examPaperService.updateFlg(paperId);
-		ExamPaper paper = examPaperService.getById(paperId);
-		//获取选择题和判断题的分数
-		//int score = getSorce(paper,getCurrentUser());
-		
-		//把这个作业交给其他几个同学互评
-		
-		Task task = taskService.getUser(paper, getCurrentUser());
-		taskService.merge(task);
-		return "submitpaper";
+		ExamPaper paper = recordpaper();
+		User student = userService.getById(stuid);
+		Task task = taskService.getScore(paper,student);
+		String subscore = questiontaskerService.getByPaperUser(paper,getCurrentUser());
+		//计算总得分
+		int totalscore = Integer.parseInt(task.getAutoscore()) + Integer.parseInt(subscore);
+		//计算当前试卷的总分
+		int paperScore = recordService.getStudentSorce(paper);
+		//计算得分与总分的比之
+		double rate = (double)totalscore /(double)paperScore;
+		//将数据插入到分数表
+		Score score = new Score();
+		score.setAutoscore(Integer.parseInt(task.getAutoscore()));
+		score.setManualscore(Integer.parseInt(subscore));
+		score.setPaper(paper);
+		score.setStudent(student);
+		score.setTasker(getCurrentUser());
+		score.setTotalscore(totalscore);
+		score.setPaperscore(paperScore);
+		score.setRate(rate);
+		scoreService.merge(score);
+		//更新批改作业的状态
+	//	taskService.updateFlg(taskId);
+		return "taskfinfish";
 	}
 ///////////////////////////////////////////////////////////////////////////////
 	public void setPaperId(Long paperId) {
 		this.paperId = paperId;
 	}
-	public int getIndex() {
-		return index;
-	}
+
 	public void setIndex(int index) {
 		this.index = index;
-	}
-	public List<AnswersUser> getAnswers() {
-		return answers;
 	}
 	public void setAnswers(List<AnswersUser> answers) {
 		this.answers = answers;
 	}
+	public void setTaskId(Long taskId) {
+		this.taskId = taskId;
+	}
+	
+	public void setRecord(QuestionTasker record) {
+		this.record = record;
+	}
+	public void setStuid(Long stuid) {
+		this.stuid = stuid;
+	}
 	public Long getPaperId() {
 		return paperId;
 	}
-	public int getManualscore() {
-		return manualscore;
+	public int getIndex() {
+		return index;
 	}
-	public void setManualscore(int manualscore) {
-		this.manualscore = manualscore;
+	public List<AnswersUser> getAnswers() {
+		return answers;
+	}
+	public QuestionTasker getRecord() {
+		return record;
 	}
 	public Long getTaskId() {
 		return taskId;
 	}
-	public void setTaskId(Long taskId) {
-		this.taskId = taskId;
+	public Long getStuid() {
+		return stuid;
 	}
 
 
 
-	
-	
 }

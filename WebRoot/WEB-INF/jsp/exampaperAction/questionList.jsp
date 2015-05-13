@@ -1,6 +1,6 @@
-<%@page
-	import="sun.reflect.ReflectionFactory.GetReflectionFactoryAction"%>
+
 <%@ page language="java" import="java.util.*" pageEncoding="utf-8"%>
+   <%@ page contentType="text/html;charset=utf-8"%>
 <html>
 <head>
 <title>作业管理</title>
@@ -68,7 +68,7 @@ var editor = K.create('textarea[name="answers[0].answer"]', options);
 		<h1></h1>
 		<font color="black">第${index+1}题：${q.qtext}</font>
 		<hr>
-		<form action="examPaper_nextQuestion.action">
+		<s:form action="examPaper_nextQuestion">
 			<!-- 隐藏字段用于维护数据 -->
 			<s:hidden name="index" />
 			<s:hidden name="paperId" />
@@ -128,7 +128,7 @@ var editor = K.create('textarea[name="answers[0].answer"]', options);
 			<input type="button" value="上一题" id="pre"/>
 			<input type="submit" value="下一题" />
 			<input type="button" value="交卷" id="uppaper"/>
-		</form>
+		</s:form>
 	</div>
 
 </body>

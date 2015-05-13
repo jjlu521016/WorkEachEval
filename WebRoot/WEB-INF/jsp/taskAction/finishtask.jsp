@@ -26,7 +26,6 @@
             	<td >考试学生</td>
                 <td >所属考试</td>
                 <td >批改状态</td>
-                <td >相关操作</td>
             </tr>
         </thead>
 
@@ -39,14 +38,7 @@
 				<td>${student.name}&nbsp;</td>
 				<td>${examPaper.exam.name}&nbsp;</td>
 				<td>
-					<s:if test="#t.flg == 1"><font color="red">已批改</font></s:if> 
-					<s:if test="#t.flg == 0">未批改</s:if> 
-				</td>
-				<td>
-					<s:if test="#t.flg == 1"><font color="red">已完成批改</font></s:if> 
-					<s:if test="#t.flg == 0">
-						<s:a action="task_getQuestion?paperId=%{examPaper.epid}&taskId=%{tid}&stuid=%{student.id}">批改作业</s:a>
-					</s:if> 
+				<font color="red">已批改</font>	
 				</td>
 			</tr>
         </s:iterator>

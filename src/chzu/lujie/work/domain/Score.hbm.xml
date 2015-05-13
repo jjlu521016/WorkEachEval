@@ -10,7 +10,8 @@
 		<property name="autoscore"/>
         <property name="manualscore" />
         <property name="totalscore" />
-        <property name="opinion" />
+        <property name="paperscore" />
+        <property name="rate" />
         
         <many-to-one name="student" class="User" fetch="select" lazy="false" cascade="all">
             <column name="studentId" />
@@ -19,16 +20,10 @@
             <column name="paperId" />
         </many-to-one>
         
-<!--         <many-to-one name="subject" class="Subject" fetch="select" lazy="false" cascade="all"> -->
-<!--             <column name="subjectId" /> -->
-<!--         </many-to-one> -->
-        
-<!--         <many-to-one name="charpter" class="Charpter" fetch="select" lazy="false" cascade="all"> -->
-<!--             <column name="charpterId" /> -->
-<!--         </many-to-one> -->
         <many-to-one name="tasker" class="User" fetch="select" lazy="false" cascade="all">
             <column name="taskerId" />
         </many-to-one>
+        
 
     </class>
 </hibernate-mapping>
