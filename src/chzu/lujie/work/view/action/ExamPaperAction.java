@@ -11,12 +11,14 @@ import org.springframework.stereotype.Controller;
 
 import chzu.lujie.work.base.BaseAction;
 import chzu.lujie.work.domain.AnswersUser;
+import chzu.lujie.work.domain.Exam;
 import chzu.lujie.work.domain.ExamPaper;
 import chzu.lujie.work.domain.Questions;
 import chzu.lujie.work.domain.Score;
 import chzu.lujie.work.domain.StudentQuestionRecord;
 import chzu.lujie.work.domain.Task;
 import chzu.lujie.work.service.StudentQuestionRecordService;
+import chzu.lujie.work.util.QueryHelper;
 
 import com.opensymphony.xwork2.ActionContext;
 
@@ -44,10 +46,14 @@ public class ExamPaperAction extends BaseAction<ExamPaper> {
 	 * @throws Exception
 	 */
 	public String list() throws Exception {
-
-		List<ExamPaper> paperlist = examPaperService
-				.findMyPaper(getCurrentUser());
-		ActionContext.getContext().put("paperlist", paperlist);
+		new QueryHelper(ExamPaper.class, "e").addCondition("e.student = ?", getCurrentUser())
+		.addCondition(true, "e.flg = ?", "0").preparePageBean(examPaperService, pageNum, pageSize);
+		return "list";
+	}
+	
+	public String finish() throws Exception {
+		new QueryHelper(ExamPaper.class, "e").addCondition("e.student = ?", getCurrentUser())
+		.addCondition(true, "e.flg = ?", "1").preparePageBean(examPaperService, pageNum, pageSize);
 		return "list";
 	}
 

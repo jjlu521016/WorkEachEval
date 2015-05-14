@@ -17,6 +17,8 @@ public interface ExamService extends DaoSupport<Exam>{
 
 	ExamPaper createPaper(Exam exam, User currentUser);
 
+	void updateFlg(Long eid);
+
 
 	
 }

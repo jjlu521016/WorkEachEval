@@ -42,8 +42,6 @@
 		<s:form action="exam_%{eid == null ? 'add' : 'edit'}">
 			<s:hidden name="subjectId"></s:hidden>
 			<s:hidden name="eid" id="eid"></s:hidden>
-
-
 			<div id="PageHead"></div>
 			<center>
 				<div class="ItemBlockBorder">

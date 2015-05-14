@@ -12,7 +12,7 @@
 </script>
 </head>
 <body>
-
+${flg };;
 	<!-- 标题显示 -->
 	<div id="Title_bar">
 		<div id="Title_bar_Head">
@@ -48,7 +48,7 @@
 				<!--显示数据列表-->
 				<tbody id="TableData" class="dataContainer" datakey="paperlist">
 
-					<s:iterator value="#paperlist" var="e" status="status">
+					<s:iterator value="recordList" var="e" status="status">
 						<s:hidden name="epid" id="epid"></s:hidden>
 						<td>${exam.name}&nbsp;</b></td>
 						<td>${exam.subject.sname}&nbsp;</b></td>
@@ -77,18 +77,13 @@
 
 			<!-- 其他功能超链接 -->
 			<div id="TableTail">
-				<div id="TableTail_inside">
-					<s:a action="exam_addUI?subjectId=%{#subject.sid}">
-						<img
-							src="${pageContext.request.contextPath}/style/images/createNew.png" />
-
-					</s:a>
-				</div>
+			<!--分页信息-->
+	<%@ include file="/WEB-INF/jsp/public/pageView.jspf" %>
+	<s:form action="examPaper_list"></s:form>
 			</div>
 		</div>
 
-	<!--分页信息-->
-	<%-- <%@ include file="/WEB-INF/jsp/public/pageView.jspf" %> --%>
+	
 
 </body>
 </html>

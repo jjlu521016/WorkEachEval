@@ -12,6 +12,8 @@ import chzu.lujie.work.domain.Exam;
 import chzu.lujie.work.domain.ExamPaper;
 import chzu.lujie.work.domain.Exercise;
 import chzu.lujie.work.domain.Subject;
+import chzu.lujie.work.domain.User;
+import chzu.lujie.work.util.QueryHelper;
 
 import com.opensymphony.xwork2.ActionContext;
 
@@ -42,8 +44,7 @@ public class ExamAction extends BaseAction<Exam> {
 
 	public String list() throws Exception {
 
-		List<Exam> examlist = examService.findAll();
-		ActionContext.getContext().put("examlist", examlist);
+		new QueryHelper(Exam.class, "e").addCondition("e.flg = ?", "1").preparePageBean(examService, pageNum, pageSize);
 		return "list";
 	}
 
@@ -154,11 +155,12 @@ public class ExamAction extends BaseAction<Exam> {
 			return "error";
 		}
 		// 生成作业
-		
-		
 		return "createPaper";
 	}
-
+	public String publish() throws Exception{
+		examService.updateFlg(model.getEid());
+		return "toshow";
+	}
 	/**
 	 * setter and getter
 	 * 

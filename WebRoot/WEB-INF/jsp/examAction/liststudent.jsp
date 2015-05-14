@@ -49,7 +49,7 @@
 				<!--显示数据列表-->
 				<tbody id="TableData" class="dataContainer" datakey="examlist">
 
-					<s:iterator value="examlist" var="e" status="status">
+					<s:iterator value="recordList" var="e" status="status">
 						<s:hidden name="qid" id="qid"></s:hidden>
 						<td>${name}&nbsp;</b></td>
 						<td>${subject.sname}&nbsp;</b></td>
@@ -61,12 +61,9 @@
 						<td>${author.name}&nbsp;</b></td>
 						
 
-						<td>&nbsp;&nbsp; <s:if test="#e.flg != 1">
-								<s:a action="exam_createPaper?eid=%{eid}&subjectId=%{#subject.sid}"
+						<td>&nbsp;&nbsp; 
+						<s:a action="exam_createPaper?eid=%{eid}&subjectId=%{#subject.sid}" 
 								 onclick="return  publishConfirm('确定要发布本次作业吗？发布之后不能更改！')">生成作业</s:a>
-								</s:if> <s:if test="#e.flg == 1">
-								<font color="red"> 以生成作业</font>
-							</s:if>
 						
 						</td>
 
@@ -89,7 +86,8 @@
 		</div>
 
 	<!--分页信息-->
-	<%-- <%@ include file="/WEB-INF/jsp/public/pageView.jspf" %> --%>
+	<%@ include file="/WEB-INF/jsp/public/pageView.jspf" %>
+	<s:form action="exam_list"></s:form>
 
 </body>
 </html>

@@ -4,6 +4,10 @@ import java.util.List;
 
 import javax.annotation.Resource;
 
+import org.hibernate.Query;
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -28,6 +32,8 @@ public class ExamServiceImpl extends DaoSupportImpl<Exam> implements
 	ExamPaperDao examPaperDao;
 	@Resource
 	QuestionService questionService;
+	@Resource
+	SessionFactory sessionFactory;
 	@Override
 	public ExamPaper createPaper(Exam exam, User currentUser) {
 
@@ -52,6 +58,18 @@ public class ExamServiceImpl extends DaoSupportImpl<Exam> implements
 		
 		examPaperDao.save(paper);
 		return paper;
+	}
+	@Override
+	public void updateFlg(Long eid) {
+		Session session = sessionFactory.openSession();
+		Transaction tran = session.beginTransaction();
+		String hqlString = "update Exam e set e.flg = '1' where e.eid = "
+				+ eid;
+		Query query = session.createQuery(hqlString);
+		query.executeUpdate();
+		tran.commit();
+		session.close();
+		
 	}
 
 
