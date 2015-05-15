@@ -12,7 +12,7 @@
 	<constant name="struts.ui.theme" value="simple" />
 	<constant name="struts.i18n.encoding" value="UTF-8"/>
 
-	<package name="default" namespace="/" extends="struts-default">
+	<package name="default" namespace="/" extends="json-default">
 
 		<interceptors>
 			<!-- 声明拦截器 -->
@@ -79,6 +79,13 @@
 			<result name="tosuccess" >/WEB-INF/jsp/regsuccess.jsp</result>
 			
 			<result name="querylistUI">/WEB-INF/jsp/admin/userAction/search.jsp</result>
+<!-- 			<result name="success" type="json"></result> -->
+
+			
+			<result type="stream" name="ajax-success">
+			    <param name="contentType">text/html</param>
+			    <param name="inputName">inputStream</param>
+			</result>
 			
 		</action>
 

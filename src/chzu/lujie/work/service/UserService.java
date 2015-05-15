@@ -7,6 +7,8 @@ public interface UserService extends DaoSupport<User>{
 
 	User findByLoginNameAndPassword(String loginName, String password);
 
+	boolean getLoginName(String username);
+
 //	public List<User> finAll() ;
 //
 //		// TODO Auto-generated method stub

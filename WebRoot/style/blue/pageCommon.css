@@ -1077,3 +1077,17 @@ td.tsubmitBtnTD{
 	font-size: 20px;
 	
 }
+
+.formtips{width: 200px;margin:2px;padding:2px;}
+.onWaiting{
+	background: url(../style/blue/images/signup-loading.gif) no-repeat 0 center;
+	padding-left:25px;
+}
+.onError{
+    background:#FFE0E9 url(../style/blue/images/validateFalse.gif) no-repeat 0 center;
+	padding-left:25px;
+}
+.onSuccess{
+    background:#E9FBEB url(../style/blue/images/validateOK.gif) no-repeat 0 center;
+	padding-left:25px;
+}

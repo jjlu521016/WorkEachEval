@@ -1,8 +1,13 @@
 package chzu.lujie.work.view.action;
 
+import java.io.ByteArrayInputStream;
+import java.io.InputStream;
 import java.util.HashSet;
 import java.util.List;
 
+import javax.servlet.http.HttpServletRequest;
+
+import org.apache.struts2.ServletActionContext;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Controller;
 
@@ -24,7 +29,15 @@ public class UserAction extends BaseAction<User> {
 
 	private Long departmentId;
 	private Long[] roleIds;
+	
+	private String responseText;   //返回的结果
+	private boolean flag;          //主要是为了效果好看点
+	User u;
 
+	private InputStream inputStream;
+	public InputStream getInputStream() {
+		return inputStream;
+	}
 	//查询条件的参数
 	String username;
 	// 查询所有数据
@@ -209,6 +222,21 @@ public class UserAction extends BaseAction<User> {
 		return "registerUI";
 	}
 	
+
+
+public String checkUserIsExist() throws Exception{
+	HttpServletRequest request = ServletActionContext.getRequest();
+	String loginName=request.getParameter("loginName");
+	if(userService.getLoginName(loginName)){
+		inputStream = new ByteArrayInputStream("0".getBytes("UTF-8")); 
+	} else {
+		inputStream = new ByteArrayInputStream("1".getBytes("UTF-8")); 
+		
+	}
+	
+	return "ajax-success";
+}
+	
 	public Long getDepartmentId() {
 		return departmentId;
 	}
@@ -249,6 +277,30 @@ public class UserAction extends BaseAction<User> {
 
 public void setUsername(String username) {
 	this.username = username;
+}
+
+public String getResponseText() {
+	return responseText;
+}
+
+public void setResponseText(String responseText) {
+	this.responseText = responseText;
+}
+
+public boolean isFlag() {
+	return flag;
+}
+
+public void setFlag(boolean flag) {
+	this.flag = flag;
+}
+
+public User getU() {
+	return u;
+}
+
+public void setU(User u) {
+	this.u = u;
 }
 
 

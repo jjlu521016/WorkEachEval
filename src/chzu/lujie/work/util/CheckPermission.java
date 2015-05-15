@@ -27,7 +27,7 @@ public class CheckPermission extends AbstractInterceptor {
 		{
 			
 			//如果去登陆,放行
-			if(PermUrl.startsWith("user_login")||PermUrl.startsWith("user_register")){
+			if(PermUrl.startsWith("user_login")||PermUrl.startsWith("user_register")||PermUrl.startsWith("user_checkUserIsExist")){
 				return invocation.invoke();
 			}
 			else{

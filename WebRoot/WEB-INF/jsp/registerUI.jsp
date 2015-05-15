@@ -24,8 +24,7 @@
 
 	<!--显示表单内容-->
 	<div id=MainArea>
-
-		<s:form action="user_register" onsubmit="return check();">
+<s:form action="user_register" >
 			<div class="ItemBlock_Title1">
 				<!-- 信息说明 -->
 				<div class="ItemBlock_Title1">
@@ -83,7 +82,7 @@
 						<tr>
 							<td>用户类型：</td>
 							<td><s:radio id="roleIds" name="roleIds"
-									list="#{'3':'学生','2':'教师'}" listKey="key" listValue="value" />
+									list="#{'3':'学生','2':'教师'}" listKey="key" listValue="value" value="3" />
 							</td>
 						</tr>
 					</table>
@@ -93,10 +92,17 @@
 			<!-- 表单操作 -->
 			<div id="InputDetailBar1">
 				<input type="image"
-					src="${pageContext.request.contextPath}/style/images/save.png" />
+					src="${pageContext.request.contextPath}/style/images/save.png" name="save"  disabled="disabled" />
 				<a href="javascript:history.go(-1);"><img
 					src="${pageContext.request.contextPath}/style/images/goBack.png" /></a>
+					</br>
+					</br>
+					<div style="border-left: ">
+			<font color="red">说明：所有带（*）都填写正确后，保存按钮才可用！</font>
 			</div>
+			</div>
+			
+			
 		</s:form>
 	</div>
 </body>

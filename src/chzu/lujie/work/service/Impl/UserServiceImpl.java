@@ -30,4 +30,17 @@ public class UserServiceImpl extends DaoSupportImpl<User> implements
 				.uniqueResult();
 	}
 
+	@SuppressWarnings("unchecked")
+	@Override
+	public boolean getLoginName(String username) {
+		String hql="from User u where u.loginName='"+username+"'";//r.email='"+email+"'";		
+		List<User> list = getSession().createQuery(hql).list();
+		if(list!=null&&list.size()>0){
+			//数据库已经存在
+			return true;
+		}
+		//数据库中不存在
+		return false;      
+	}
+
 }
