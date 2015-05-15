@@ -37,46 +37,19 @@ public class SubjectServiceImpl extends DaoSupportImpl<Subject> implements
 		}
 	}
 
-	// @Override
-	// protected Session getSession() {
-	// // TODO Auto-generated method stub
-	// return super.getSession();
-	// }
-	//
-	// @Override
-	// public void save(Subject entity) {
-	// // TODO Auto-generated method stub
-	// super.save(entity);
-	// }
-	//
-	// @Override
-	// public void update(Subject entity) {
-	// // TODO Auto-generated method stub
-	// super.update(entity);
-	// }
-	//
-	// @Override
-	// public void delete(Long id) {
-	// // TODO Auto-generated method stub
-	// super.delete(id);
-	// }
-	//
-	// @Override
-	// public Subject getById(Long id) {
-	// // TODO Auto-generated method stub
-	// return super.getById(id);
-	// }
-	//
-	// @Override
-	// public List<Subject> getByIds(Long[] ids) {
-	// // TODO Auto-generated method stub
-	// return super.getByIds(ids);
-	// }
-	//
-	// @Override
-	// public List<Subject> findAll() {
-	// // TODO Auto-generated method stub
-	// return super.findAll();
-	// }
+	@SuppressWarnings("unchecked")
+	@Override
+	public boolean checkScode(String scode) {
+		String hql="from Subject s where s.subject_code='"+scode+"'";		
+		List<Subject> list = getSession().createQuery(hql).list();
+		if(list!=null&&list.size()>0){
+			//数据库已经存在
+			return true;
+		}
+		//数据库中不存在
+		return false;     
+	}
+
+	
 
 }

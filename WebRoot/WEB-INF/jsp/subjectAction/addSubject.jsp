@@ -1,8 +1,11 @@
 <%@ page language="java" import="java.util.*" pageEncoding="utf-8"%>
 <html>
 <head>
-	<title>知识点设置</title>
+	<title>课程信息</title>
     <%@ include file="/WEB-INF/jsp/public/commons.jspf" %>
+    <script language="javascript" src="${pageContext.request.contextPath}/script/subject.js" charset="utf-8"></script>
+   
+  	 
 </head>
 <body>
 
@@ -11,7 +14,7 @@
     <div id="Title_bar_Head">
         <div id="Title_Head"></div>
         <div id="Title"><!--页面标题-->
-            <img border="0" width="13" height="13" src="${pageContext.request.contextPath}/style/images/title_arrow.gif"/> 版块设置
+            <img border="0" width="13" height="13" src="${pageContext.request.contextPath}/style/images/title_arrow.gif"/> 课程信息
         </div>
         <div id="Title_End"></div>
     </div>
@@ -24,7 +27,7 @@
     	<s:hidden name="sid"></s:hidden>   	
     
         <div class="ItemBlock_Title1"><!-- 信息说明<DIV CLASS="ItemBlock_Title1">
-        	<IMG BORDER="0" WIDTH="4" HEIGHT="7" SRC="${pageContext.request.contextPath}/style/blue/images/item_point.gif" /> 版块信息 </DIV>  -->
+        	<IMG BORDER="0" WIDTH="4" HEIGHT="7" SRC="${pageContext.request.contextPath}/style/blue/images/item_point.gif" /> 课程信息 </DIV>  -->
         </div>
         
         <!-- 表单内容显示 -->
@@ -33,11 +36,11 @@
                 <table cellpadding="0" cellspacing="0" class="mainForm">
                 <tr>
                         <td width="100">课程编号</td>
-                        <td><s:textfield name="subject_code" cssClass="InputStyle" /> *</td>
+                        <td><s:textfield name="subject_code" cssClass="InputStyle" required="true" requiredLabel="true" /> </td>
                     </tr>
                     <tr>
                         <td width="100">课程名称</td>
-                        <td><s:textfield name="sname" cssClass="InputStyle" /> *</td>
+                        <td><s:textfield name="sname" cssClass="InputStyle" required="true"/></td>
                     </tr>
                     <tr>
                         <td>课程说明</td> 

@@ -14,6 +14,7 @@ import chzu.lujie.work.domain.Charpter;
 import chzu.lujie.work.domain.KnowledgeDetail;
 import chzu.lujie.work.domain.Questions;
 import chzu.lujie.work.domain.Subject;
+import chzu.lujie.work.util.QueryHelper;
 
 /**
  * 章节管理
@@ -103,12 +104,13 @@ public class CharpterAction extends BaseAction<Charpter> {
 	
 	public String showQuestionById() throws Exception {
 
-		Charpter charpter = charpterService.getById(model.getCid());
-		ActionContext.getContext().put("charpter", charpter);
-
+//		Charpter charpter = charpterService.getById(model.getCid());
+//		ActionContext.getContext().put("charpter", charpter);
+//		
+//		List<Questions> questionList = questionService.findByCharpter(charpter);
+//		ActionContext.getContext().put("questionList", questionList);
 		
-		List<Questions> questionList = questionService.findByCharpter(charpter);
-		ActionContext.getContext().put("questionList", questionList);
+		new QueryHelper(Questions.class, "s").addCondition("s.charpter.cid = ?", model.getCid()).preparePageBean(questionService, pageNum, pageSize);
 		return "showQuestionById";
 	}
 	/**

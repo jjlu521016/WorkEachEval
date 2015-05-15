@@ -61,10 +61,9 @@ ${flg };;
 						<td>&nbsp;&nbsp; <s:if test="#e.flg != 1">
 									
 								
-								<s:a action="examPaper_doQuestion?paperId=%{epid}"
-								 onclick="return  publishConfirm('确定要发布本次作业吗？发布之后不能更改！')">开始本次作业</s:a>
+								<s:a action="examPaper_doQuestion?paperId=%{epid}">开始本次作业</s:a>
 								</s:if> <s:if test="#e.flg == 1">
-								<font color="red"> 已完成</font>
+								<s:a action="examPaper_doQuestion?paperId=%{epid}&bz=1"> <font color="red"> 查看作业</font></s:a>
 							</s:if>
 						
 						</td>

@@ -73,9 +73,9 @@
 							<td class="InputAreaBg" colspan="2" align="center"><input
 								type="image" onclick="return saveTips()"
 								src="${pageContext.request.contextPath}/style/blue/images/button/submit.PNG"
-								style="margin-right: 15px;" /> <a
-								href="javascript:FormClose();"><img
-									src="${pageContext.request.contextPath}/style/blue/images/button/goBack.png" /></a>
+								style="margin-right: 15px;" />
+								<a href="javascript:history.go(-1);"><img
+					src="${pageContext.request.contextPath}/style/images/goBack.png" /></a>
 							
 							</td>
 						</tr>

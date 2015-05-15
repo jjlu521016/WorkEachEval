@@ -48,28 +48,18 @@
 						<td>题目类型</td>
 						<td width="250px">所属课程</td>
 						<td width="250px">所属章节</td>
-						<td>相关操作</td>
+						<td  width="100px">相关操作</td>
 					</tr>
 				</thead>
 
 				<!--显示数据列表-->
 				<tbody id="TableData" class="dataContainer" datakey="questionList">
 
-					<s:iterator value="#questionList"  var ="q" status="status">
+					<s:iterator value="recordList"  var ="q" status="status">
 						<tr class="TableDetail1 template">
 							<s:hidden name="qid" id="qid"></s:hidden>
-							<%
-								qid = request.getAttribute("qid").toString();// request.getParameter("cid");//(String)pageContext.getAttribute("cid");
-// 										out.println(qid);
-// 										out.println(charpterId);
-// 										out.println(subjectId);
-							%>
 							<td >
-							<s:iterator value="#q.answerses" var="a">
-							<s:if test="#a.isRight==1"><font color="red">${a.answer} </font></s:if> 
-							<s:else>${a.answer} </s:else>
-							</s:iterator>
-							
+							1
 							</td>
 							<td>${qtext}&nbsp;</td>
 							<td>
@@ -78,15 +68,9 @@
 							<s:if test="#q.types.tid == 3">简答题</s:if>
 							<td>${subject.sname }&nbsp; </td>
 							<td>${charpter.cname }</td>
-							<td><s:a
-									action="question_delete?qid=%{qid}&charpterId=%{#charpter.cid}">
-									<img onclick="return delConfirm('你要删除这条数据吗？')"
-										src="${pageContext.request.contextPath}/style/images/delete.png" />
-								</s:a> <s:a>
-									<img
-										onclick="return editWindows('<%=charpterId %>','<%=subjectId %>','<%=qid %>')"
-										src="${pageContext.request.contextPath}/style/images/edit.png" />
-								</s:a></td>
+							<td><s:a action="question_delete?qid=%{qid}"
+								onclick="return delConfirm()">删除</s:a> <s:a
+								action="question_editUI?qid=%{qid}">修改</s:a></td></td>
 						</tr>
 					</s:iterator>
 
@@ -104,10 +88,10 @@
 							src="${pageContext.request.contextPath}/style/images/createNew.png" style="visibility: visible;" />
 					</s:a>&nbsp;
 				</div>
-<%-- 				 onclick="return editWindows('<%=subjectId %>','<%=charpterId %>',-1)" --%>
 			</div>
 	<!--分页信息-->
-	<%-- <%@ include file="/WEB-INF/jsp/public/pageView.jspf" %> --%>
+	<%@ include file="/WEB-INF/jsp/public/pageView.jspf" %>
+	<s:form action="charpter_showQuestionById?cid=%{#charpter.cid}&sid=%{#subject.sid}"></s:form>
 
 
 </body>

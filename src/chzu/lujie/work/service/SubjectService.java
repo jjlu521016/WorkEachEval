@@ -10,4 +10,6 @@ public interface SubjectService extends DaoSupport<Subject> {
 
 	List<Subject> findMySubject(User currentUser);
 
+	boolean checkScode(String scode);
+
 }

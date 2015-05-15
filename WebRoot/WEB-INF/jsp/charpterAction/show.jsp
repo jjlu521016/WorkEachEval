@@ -64,7 +64,7 @@
 									action="charpter_showCharpterById?cid=%{cid}">查看该章节知识点&nbsp;&nbsp;</s:a>
 									<td><s:a action="charpter_delete?cid=%{cid}"
 								onclick="return delConfirm()">删除</s:a> <s:a
-								action="charpter__editUI?cid=%{cid}">修改</s:a></td>
+								action="charpter_editUI?cid=%{cid}">修改</s:a></td>
 						
 <%-- 								onclick="return editWindows('<%=subjectId %>','<%=charpterId %>')"
 onclick="return delConfirm('你要删除这条数据吗？')" --%>

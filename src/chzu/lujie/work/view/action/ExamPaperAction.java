@@ -13,6 +13,7 @@ import chzu.lujie.work.base.BaseAction;
 import chzu.lujie.work.domain.AnswersUser;
 import chzu.lujie.work.domain.Exam;
 import chzu.lujie.work.domain.ExamPaper;
+import chzu.lujie.work.domain.QuestionTasker;
 import chzu.lujie.work.domain.Questions;
 import chzu.lujie.work.domain.Score;
 import chzu.lujie.work.domain.StudentQuestionRecord;
@@ -37,6 +38,7 @@ public class ExamPaperAction extends BaseAction<ExamPaper> {
 	Long paperId;
 	int index;
 	List<AnswersUser> answers;
+	String bz;
 	
 
 	/**
@@ -92,20 +94,28 @@ public class ExamPaperAction extends BaseAction<ExamPaper> {
 		// 把答案显示在试卷上
 		
 		ExamPaper paper = examPaperService.getById(paperId);
-		paper.getRecords().get(index).setAnswers(answers);
-		// 保存试卷
-		examPaperService.update(paper);
+		if(paper.getFlg().equals("0")){
+			paper.getRecords().get(index).setAnswers(answers);
+			// 保存试卷
+			examPaperService.update(paper);
+		}
 		return paper;
 	}
 
 	// 显示某张试卷上的第index题
 	private void showQuestionByIndex(ExamPaper paper, int index) {
 		Questions q = paper.getRecords().get(index).getQuestion();
+		if(paper.getFlg().equals("1")){
+		List<QuestionTasker> questionList = questiontaskerService.getTasker(paper,q);
+		ActionContext.getContext().put("questionList", questionList);
+		}
 		// 将要传入的参数放到Map中	
 		ActionContext.getContext().put("q", q);
 		// 保持前端和后台的关系
 		ActionContext.getContext().put("index", index);
 		ActionContext.getContext().put("paperId", paperId);
+		ActionContext.getContext().put("bz", bz);
+		
 		//显示数据库里记录的本题答案
 		this.answers = paper.getRecords().get(index).getAnswers();
 
@@ -179,5 +189,15 @@ public class ExamPaperAction extends BaseAction<ExamPaper> {
 	public List<AnswersUser> getAnswers() {
 		return answers;
 	}
+
+	public String getBz() {
+		return bz;
+	}
+
+	public void setBz(String bz) {
+		this.bz = bz;
+	}
+
+
 
 }

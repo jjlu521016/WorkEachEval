@@ -5,6 +5,7 @@ import java.util.List;
 import chzu.lujie.work.base.DaoSupport;
 import chzu.lujie.work.domain.ExamPaper;
 import chzu.lujie.work.domain.QuestionTasker;
+import chzu.lujie.work.domain.Questions;
 import chzu.lujie.work.domain.User;
 
 
@@ -15,6 +16,8 @@ public interface QuestiontaskerService extends DaoSupport<QuestionTasker>{
 	QuestionTasker updateInfo(int manualscore, String opinion);
 
 	String getByPaperUser(ExamPaper paper, User currentUser);
+
+	List<QuestionTasker> getTasker(ExamPaper paper, Questions q);
 
 
 

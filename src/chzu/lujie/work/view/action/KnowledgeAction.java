@@ -75,7 +75,7 @@ public class KnowledgeAction extends BaseAction<KnowledgeDetail> {
 		ActionContext.getContext().put("charpter", charpter);
 		
 		KnowledgeDetail knowledge = knowledgeService.getById(model.getKid());
-		ActionContext.getContext().getValueStack().push(model.getKid());
+		ActionContext.getContext().getValueStack().push(knowledge);
 
 		return "saveUI";
 	}

@@ -66,7 +66,7 @@
 									class="InputTitle">标题</div></td>
 							<td class="InputAreaBg"><div class="InputContent">
 									<s:textfield name="title" cssClass="InputStyle"
-										cssStyle="width:100%" />
+										cssStyle="width:100%" required="true" />
 								</div></td>
 						</tr>
 						<tr height="240">

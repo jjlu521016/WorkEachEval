@@ -1,7 +1,12 @@
 package chzu.lujie.work.view.action;
 
+import java.io.ByteArrayInputStream;
+import java.io.InputStream;
 import java.util.List;
 
+import javax.servlet.http.HttpServletRequest;
+
+import org.apache.struts2.ServletActionContext;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Controller;
 
@@ -18,6 +23,8 @@ import chzu.lujie.work.util.QueryHelper;
 @Controller
 @Scope("prototype")
 public class SubjectAction extends BaseAction<Subject> {
+	
+	private InputStream inputStream;
 
 	public String list() throws Exception {
 
@@ -107,4 +114,29 @@ public class SubjectAction extends BaseAction<Subject> {
 		ActionContext.getContext().put("charpterList", charpterList);
 		return "showquestionById";
 	}
+	
+	public String check() throws Exception{
+		HttpServletRequest request = ServletActionContext.getRequest();
+		String scode=request.getParameter("scode");
+		if(subjectService.checkScode(scode)){
+			inputStream = new ByteArrayInputStream("0".getBytes("UTF-8")); 
+			System.out.println("11");
+		} else {
+			inputStream = new ByteArrayInputStream("1".getBytes("UTF-8")); 
+			System.out.println("00");
+			
+		}
+		
+		return "ajax-success";
+	}
+
+	public InputStream getInputStream() {
+		return inputStream;
+	}
+
+	public void setInputStream(InputStream inputStream) {
+		this.inputStream = inputStream;
+	}
+	
+	
 }

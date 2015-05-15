@@ -8,6 +8,7 @@ import org.springframework.transaction.annotation.Transactional;
 import chzu.lujie.work.base.DaoSupportImpl;
 import chzu.lujie.work.domain.ExamPaper;
 import chzu.lujie.work.domain.QuestionTasker;
+import chzu.lujie.work.domain.Questions;
 import chzu.lujie.work.domain.StudentQuestionRecord;
 import chzu.lujie.work.domain.User;
 import chzu.lujie.work.service.QuestiontaskerService;
@@ -45,6 +46,15 @@ public class QuestionTaskerServiceImpl extends DaoSupportImpl<QuestionTasker> im
 		return score;
 	}
 
-	
+	@Override
+	public List<QuestionTasker> getTasker(ExamPaper paper, Questions q) {
+		String hql="from QuestionTasker qt where qt.record.question = ? and qt.examPaper=?";
+		List<QuestionTasker> list = (List<QuestionTasker>) getSession().createQuery(hql)//
+									.setParameter(0, q)//
+									.setParameter(1, paper)//
+									.list();
+		
+		return list;
+	}
 
 }

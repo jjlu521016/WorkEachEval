@@ -43,7 +43,6 @@
 				<thead>
 					<tr align="CENTER" valign="MIDDLE" id="TableTitle">
 						<td width="250px">知识点名称</td>
-						<td width="250px">知识点说明</td>
 						<td>相关操作</td>
 					</tr>
 				</thead>
@@ -59,7 +58,6 @@
 										//out.println(kid);
 							%>
 							<td>${title}&nbsp;</td>
-							<td>${content}&nbsp;</td>
  							<td>
  							
  							<s:a action="knowledge_delete?kid=%{kid}&charpterId=%{#charpter.cid}"
