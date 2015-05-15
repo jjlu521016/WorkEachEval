@@ -35,8 +35,8 @@ public class CharpterAction extends BaseAction<Charpter> {
 
 	public String list() throws Exception {
 
-		//List<Subject> subjectlist = subjectService.findAll();
-		List<Subject> subjectlist = subjectService.findMySubject(getCurrentUser());
+		List<Subject> subjectlist = subjectService.findAll();
+		//List<Subject> subjectlist = subjectService.findMySubject(getCurrentUser());
 		ActionContext.getContext().put("subjectlist", subjectlist);
 		return "list";
 	}
@@ -74,7 +74,6 @@ public class CharpterAction extends BaseAction<Charpter> {
 		Charpter charpter = charpterService.getById(model.getCid());
 
 		ActionContext.getContext().getValueStack().push(charpter);
-//		ActionContext.getContext().put("charpter", charpter);
 
 		return "saveUI";
 	}

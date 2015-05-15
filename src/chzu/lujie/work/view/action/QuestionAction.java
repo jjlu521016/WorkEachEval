@@ -17,10 +17,12 @@ import com.opensymphony.xwork2.ActionContext;
 import chzu.lujie.work.base.BaseAction;
 import chzu.lujie.work.domain.Answers;
 import chzu.lujie.work.domain.Charpter;
+import chzu.lujie.work.domain.Department;
 import chzu.lujie.work.domain.KnowledgeDetail;
 import chzu.lujie.work.domain.Questions;
 import chzu.lujie.work.domain.Subject;
 import chzu.lujie.work.domain.Types;
+import chzu.lujie.work.util.DepartmentUtils;
 import chzu.lujie.work.util.QueryHelper;
 
 /**
@@ -153,28 +155,31 @@ public class QuestionAction extends BaseAction<Questions> {
 	public String editUI() throws Exception {
 
 		// 准备数据
-		Subject subject = subjectService.getById(subjectId);
-		ActionContext.getContext().put("subject", subject);
-
-		Charpter charpter = charpterService.getById(charpterId);
-		ActionContext.getContext().put("charpter", charpter);
-
 		List<Types> typeList = typesService.findAll();
-
 		ActionContext.getContext().put("typeList", typeList);
-
+		
+		ActionContext.getContext().put("subjectId", subjectId);
+		ActionContext.getContext().put("charpterId", charpterId);
+		
+		if (questions.getTypes() != null) {
+			typeId = questions.getTypes().getTid();
+		}
+		Questions questions = questionService.getById(model.getQid());
+		ActionContext.getContext().getValueStack().push(questions);
 		return "saveUI";
 	}
 
 	public String edit() throws Exception {
-
-		// Charpter charpter = charpterService.getById(model.getCid());
-		//
-		// charpter.setCname(model.getCname());
-		// charpter.setDescription(model.getDescription());
-		// charpter.setSubject(subjectService.getById(subjectId));
-
-		// charpterService.update(charpter);
+		
+		questions.setQid(model.getQid());
+		questions.setCharpter(charpterService.getById(charpterId));
+		questions.setSubject(subjectService.getById(subjectId));
+		questions.setQtime(new Date());
+		questions.setTypes(typesService.getById(typeId));
+		questions.setQtext(model.getQtext());
+		questions.setExercise(exerciseService.getById(exerciseId));
+		questions.setQscore(model.getQscore());
+		questionService.save(questions);
 		return "toshow";
 	}
 

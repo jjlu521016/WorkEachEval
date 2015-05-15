@@ -43,12 +43,16 @@ public class ExamPaperServiceImpl extends DaoSupportImpl<ExamPaper> implements
 	/**
 	 * 自动生成作业
 	 */
+	@SuppressWarnings("unchecked")
 	@Override
 	public ExamPaper createPaper(Exam exam, User currentUser) throws Exception {
 
 		ExamPaper paper = new ExamPaper();
 		//TODO
-		List<Questions> list = questionService.findAll();
+		//List<Questions> list = questionService.findAll();
+		String hql="from Questions q where q.charpter = ? ";
+		
+		List<Questions> list = getSession().createQuery(hql).setParameter(0, exam.getCharpter()).list();
 		// 检查是否已经生成试卷
 		boolean iscreate = examPaperDao.ispaperexist(exam, currentUser);
 		System.out.println("-----------------------------" + iscreate);

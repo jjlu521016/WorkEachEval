@@ -60,7 +60,7 @@ var qtextarea = K.create('textarea[name="ptAnswer"]', options);
 			<div id="Title">
 				<!--页面标题-->
 				<img border="0" width="13" height="13"
-					src="${pageContext.request.contextPath}/style/images1/title_arrow.gif" />添加试题
+					src="${pageContext.request.contextPath}/style/images/title_arrow.gif" />添加试题
 			</div>
 			<div id="Title_End"></div>
 		</div>
@@ -103,9 +103,6 @@ var qtextarea = K.create('textarea[name="ptAnswer"]', options);
 									class="InputTitle">
 									问题描述<font color="red">(*)</font>
 								</div></td>
-
-
-
 							<td class="InputAreaBg"><div class="InputContent">
 									<s:textfield name="qtext" id="qdescription" cssClass="InputStyle"
 										cssStyle="width:80%" />
@@ -185,9 +182,9 @@ var qtextarea = K.create('textarea[name="ptAnswer"]', options);
 							<td class="InputAreaBg" colspan="2" align="center"><input
 								type="image" 
 								src="${pageContext.request.contextPath}/style/blue/images/button/submit.PNG"
-								style="margin-right: 15px;" /> <a
-								href="javascript:FormClose();"><img
-									src="${pageContext.request.contextPath}/style/blue/images/button/goBack.png" /></a>
+								style="margin-right: 15px;" /> 
+							<a href="javascript:history.go(-1);"><img
+					src="${pageContext.request.contextPath}/style/images/goBack.png" /></a>
 
 							</td>
 						</tr>

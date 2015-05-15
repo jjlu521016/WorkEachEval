@@ -12,7 +12,6 @@
 </script>
 </head>
 <body>
-
 	<!-- 标题显示 -->
 	<div id="Title_bar">
 		<div id="Title_bar_Head">
@@ -57,12 +56,12 @@
 						<td>${startTime}&nbsp;</b></td>
 						<td>${stopTime}&nbsp;</td>
 						<td><s:if test="#e.flg == 1">已发布</s:if> <s:if
-								test="#e.flg == 0">未发布</s:if> <%-- 						<td>${statu}&nbsp;</td> --%>
+								test="#e.flg == 0">未发布</s:if>
 						<td>${author.name}&nbsp;</b></td>
 						
 
 						<td>&nbsp;&nbsp; 
-						<s:a action="exam_createPaper?eid=%{eid}&subjectId=%{#subject.sid}" 
+						<s:a action="exam_createPaper?eid=%{eid}&subjectId=%{subject.sid}&charpterId=%{charpter.cid}" 
 								 onclick="return  publishConfirm('确定要发布本次作业吗？发布之后不能更改！')">生成作业</s:a>
 						
 						</td>
@@ -75,13 +74,13 @@
 
 			<!-- 其他功能超链接 -->
 			<div id="TableTail">
-				<div id="TableTail_inside">
-					<s:a action="exam_addUI?subjectId=%{#subject.sid}">
-						<img
-							src="${pageContext.request.contextPath}/style/images/createNew.png" />
+<!-- 				<div id="TableTail_inside"> -->
+<%-- 					<s:a action="exam_addUI?subjectId=%{#subject.sid}"> --%>
+<!-- 						<img -->
+<%-- 							src="${pageContext.request.contextPath}/style/images/createNew.png" /> --%>
 
-					</s:a>
-				</div>
+<%-- 					</s:a> --%>
+<!-- 				</div> -->
 			</div>
 		</div>
 

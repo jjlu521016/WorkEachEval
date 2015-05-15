@@ -27,7 +27,9 @@ function addB() {
 	oDiv.appendChild(br);
 }
 // 根据下拉框控制显示的div层
-function showDiv() {
+
+//
+$(document).ready(function(){
 	var objS = document.getElementById("typeId").value;
 	var selectDiv = document.getElementById("selectDiv");
 	var judgeDiv = document.getElementById("judgeDiv");
@@ -49,6 +51,32 @@ function showDiv() {
 		selectDiv.style.display = 'none';
 		notSelectDiv.style.display = 'block';
 	}
+	
+})
+
+function showDiv() {
+var objS = document.getElementById("typeId").value;
+	var selectDiv = document.getElementById("selectDiv");
+	var judgeDiv = document.getElementById("judgeDiv");
+	var notSelectDiv = document.getElementById("notSelectDiv");
+	if (objS == '1') {
+
+		notSelectDiv.style.display = 'none';
+		judgeDiv.style.display = 'none';
+		selectDiv.style.display = 'block';
+	} else if (objS == '2') {
+
+		notSelectDiv.style.display = 'none';
+		selectDiv.style.display = 'none';
+		judgeDiv.style.display = 'block';
+
+	} else {
+
+		judgeDiv.style.display = 'none';
+		selectDiv.style.display = 'none';
+		notSelectDiv.style.display = 'block';
+	}
+
 }
 
 /*
