@@ -100,7 +100,7 @@ public class SubjectAction extends BaseAction<Subject> {
 		Subject subject = subjectService.getById(model.getSid());
 		ActionContext.getContext().put("subject", subject);
 
-		List<Exam> examList = examService.findAll();// findMyExercise(getCurrentUser());
+		List<Exam> examList = examService.getBysubject(subject);//findAll();// findMyExercise(getCurrentUser());
 		ActionContext.getContext().put("examList",examList);
 		return "showExamById";
 	}

@@ -36,10 +36,10 @@ public class QuestionTaskerServiceImpl extends DaoSupportImpl<QuestionTasker> im
 	@SuppressWarnings("unchecked")
 	@Override
 	public String getByPaperUser(ExamPaper paper, User currentUser) {
-		String hql ="select sum(qt.score)  from QuestionTasker qt where qt.examPaper = ? and qt.tasker= ?";
+		String hql ="select sum(qt.score)  from QuestionTasker qt where qt.examPaper = ?";// and qt.tasker= ?";
 		List list = getSession().createQuery(hql)//
 				.setParameter(0, paper)//
-				.setParameter(1, currentUser)//
+				//.setParameter(1, currentUser)//
 				.list();
 		//将查询的sum值转换成String 
 		String score = list.get(0).toString();

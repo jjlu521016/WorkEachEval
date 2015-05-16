@@ -22,7 +22,6 @@
 </script>
 </head>
 <body>
-
 	<!-- 标题显示 -->
 	<div id="Title_bar">
 		<div id="Title_bar_Head">
@@ -35,9 +34,6 @@
 			</div>
 			<div id="Title_End"></div>
 		</div>
-	</div>
-
-	<s:form action="charpter_showQuestionById?cid=%{cid}">
 		<div id="MainArea">
 			<table cellspacing="0" cellpadding="0" class="TableStyle">
 
@@ -69,9 +65,9 @@
 							<s:if test="#q.types.tid == 3">简答题</s:if>
 							<td>${subject.sname }&nbsp; </td>
 							<td>${charpter.cname }</td>
-							<td><s:a action="question_delete?qid=%{qid}&subjectId=%{subject.sid}&charpterId=%{charpter.cid}"
+							<td><s:a action="question_delete?qid=%{qid}&eid=%{eid}&subjectId=%{subject.sid}&charpterId=%{charpter.cid}"
 								onclick="return delConfirm()">删除</s:a> <s:a
-								action="question_editUI?qid=%{qid}&subjectId=%{subject.sid}&charpterId=%{charpter.cid}&typeId=%{#q.types.tid}">修改</s:a></td></td>
+								action="question_editUI?qid=%{qid}&eid=%{eid}&subjectId=%{subject.sid}&charpterId=%{charpter.cid}&typeId=%{#q.types.tid}">修改</s:a></td></td>
 						</tr>
 					</s:iterator>
 
@@ -79,12 +75,10 @@
 			</table>
 
 			
-		</div>
-	</s:form>
 <!-- 其他功能超链接 -->
 			<div id="TableTail">
 				<div id="TableTail_inside">
-					<s:a action="question_addUI?charpterId=%{cid}">
+					<s:a action="question_addUI?&eid=%{eid}&subjectId=%{subjectId}&charpterId=%{charpterId}">
 						<img
 							src="${pageContext.request.contextPath}/style/images/createNew.png" style="visibility: visible;" />
 					</s:a>&nbsp;
@@ -92,8 +86,6 @@
 			</div>
 	<!--分页信息-->
 	<%@ include file="/WEB-INF/jsp/public/pageView.jspf" %>
-	<s:form action="charpter_showQuestionById?cid=%{cid}"></s:form>
-
-
+	<s:form action="exam_showQuestionById?eid=%{eid}&subjectId=%{subjectId}&charpterId=%{charpterId}"></s:form>
 </body>
 </html>

@@ -18,6 +18,7 @@ import chzu.lujie.work.domain.Exam;
 import chzu.lujie.work.domain.ExamPaper;
 import chzu.lujie.work.domain.Questions;
 import chzu.lujie.work.domain.StudentQuestionRecord;
+import chzu.lujie.work.domain.Subject;
 import chzu.lujie.work.domain.User;
 import chzu.lujie.work.service.ExamService;
 import chzu.lujie.work.service.QuestionService;
@@ -34,6 +35,7 @@ public class ExamServiceImpl extends DaoSupportImpl<Exam> implements
 	QuestionService questionService;
 	@Resource
 	SessionFactory sessionFactory;
+	@SuppressWarnings("unchecked")
 	@Override
 	public ExamPaper createPaper(Exam exam, User currentUser) {
 
@@ -41,8 +43,9 @@ public class ExamServiceImpl extends DaoSupportImpl<Exam> implements
 		paper.setExam(exam);
 		paper.setStudent(currentUser);
 
-		List<Questions> list =questionService.findAll();
-		
+		//List<Questions> list =questionService.findAll();
+		String hql = "from question q where q.exam=?";
+		List<Questions> list = getSession().createQuery(hql).setParameter(0, exam).list();
 	
 		
 		System.out.println("------------------>>>>"+list.size());
@@ -70,6 +73,13 @@ public class ExamServiceImpl extends DaoSupportImpl<Exam> implements
 		tran.commit();
 		session.close();
 		
+	}
+	@Override
+	public List<Exam> getBysubject(Subject subject) {
+		String hql="from Exam e where e.subject =?";
+		List<Exam> list = getSession().createQuery(hql).setParameter(0, subject).list();
+		
+		return list;
 	}
 
 

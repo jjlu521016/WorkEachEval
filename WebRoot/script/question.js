@@ -45,7 +45,7 @@ $(document).ready(function(){
 		selectDiv.style.display = 'none';
 		judgeDiv.style.display = 'block';
 
-	} else {
+	} else if(objS == '3'){
 
 		judgeDiv.style.display = 'none';
 		selectDiv.style.display = 'none';

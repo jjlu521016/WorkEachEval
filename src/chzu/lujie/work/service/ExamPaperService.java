@@ -19,4 +19,5 @@ public interface ExamPaperService extends DaoSupport<ExamPaper> {
 
 	int getScore(ExamPaper paper);
 
+
 }

@@ -22,6 +22,7 @@ import chzu.lujie.work.service.ScoreService;
 import chzu.lujie.work.service.StudentQuestionRecordService;
 import chzu.lujie.work.service.SubjectService;
 import chzu.lujie.work.service.TaskService;
+import chzu.lujie.work.service.TaskerpaperService;
 import chzu.lujie.work.service.TeacherService;
 import chzu.lujie.work.service.TopicService;
 import chzu.lujie.work.service.TypesService;
@@ -119,6 +120,9 @@ protected ScoreService scoreService;
 
 @Resource
 protected QuestiontaskerService questiontaskerService;
+
+@Resource
+protected TaskerpaperService taskerpaperService; 
 /**
  * 其他一些常用的变量
  */

@@ -50,9 +50,9 @@ public class ExamPaperServiceImpl extends DaoSupportImpl<ExamPaper> implements
 		ExamPaper paper = new ExamPaper();
 		//TODO
 		//List<Questions> list = questionService.findAll();
-		String hql="from Questions q where q.charpter = ? ";
 		
-		List<Questions> list = getSession().createQuery(hql).setParameter(0, exam.getCharpter()).list();
+		String hql = "from Questions q where q.exam=?";
+		List<Questions> list = getSession().createQuery(hql).setParameter(0, exam).list();
 		// 检查是否已经生成试卷
 		boolean iscreate = examPaperDao.ispaperexist(exam, currentUser);
 		System.out.println("-----------------------------" + iscreate);
@@ -181,4 +181,5 @@ public class ExamPaperServiceImpl extends DaoSupportImpl<ExamPaper> implements
 				.setParameter(0, currentUser)//
 				.list();
 	}
+
 }

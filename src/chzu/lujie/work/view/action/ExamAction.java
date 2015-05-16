@@ -11,6 +11,7 @@ import chzu.lujie.work.domain.Charpter;
 import chzu.lujie.work.domain.Exam;
 import chzu.lujie.work.domain.ExamPaper;
 import chzu.lujie.work.domain.Exercise;
+import chzu.lujie.work.domain.Questions;
 import chzu.lujie.work.domain.Subject;
 import chzu.lujie.work.domain.User;
 import chzu.lujie.work.util.QueryHelper;
@@ -142,6 +143,7 @@ public class ExamAction extends BaseAction<Exam> {
 
 	public String createPaper() throws Exception {
 		Exam exam = examService.getById(model.getEid());
+		
 		//判断试卷是否已经生成
 		
 		try{
@@ -157,6 +159,14 @@ public class ExamAction extends BaseAction<Exam> {
 		// 生成作业
 		return "createPaper";
 	}
+	//根据作业的id来查询作业
+	public String showQuestionById() throws Exception {
+		new QueryHelper(Questions.class, "q").addCondition("q.exam.eid = ?", model.getEid()).preparePageBean(questionService, pageNum, pageSize);
+		System.out.println("---------------------------------------eid="+model.getEid());
+		return "showquestionById";
+	}
+	
+	
 	public String publish() throws Exception{
 		examService.updateFlg(model.getEid());
 		return "toshow";

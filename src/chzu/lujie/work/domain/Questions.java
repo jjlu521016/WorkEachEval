@@ -28,6 +28,8 @@ public class Questions {
 	private List<Answers> answerses;
 	
 	private Exercise exercise;
+	
+	private Exam exam;
 
 	/**
 	 * setter and getter
@@ -148,6 +150,14 @@ public class Questions {
 
 	public void setAnswerses(List<Answers> answerses) {
 		this.answerses = answerses;
+	}
+
+	public Exam getExam() {
+		return exam;
+	}
+
+	public void setExam(Exam exam) {
+		this.exam = exam;
 	}
 
 

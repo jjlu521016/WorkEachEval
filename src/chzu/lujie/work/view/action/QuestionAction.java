@@ -39,6 +39,8 @@ public class QuestionAction extends BaseAction<Questions> {
 	private Long charpterId;
 	private Long typeId;
 	private Long exerciseId;
+	
+	private Long eid;
 
 	Questions questions = new Questions();
 
@@ -145,7 +147,8 @@ public class QuestionAction extends BaseAction<Questions> {
 		questions.setQtime(new Date());
 		questions.setTypes(typesService.getById(typeId));
 		questions.setQtext(model.getQtext());
-		questions.setExercise(exerciseService.getById(exerciseId));
+		questions.setExam(examService.getById(eid));
+		//questions.setExercise(exerciseService.getById(exerciseId));
 		questions.setQscore(model.getQscore());
 		questionService.save(questions);
 
@@ -177,7 +180,8 @@ public class QuestionAction extends BaseAction<Questions> {
 		questions.setQtime(new Date());
 		questions.setTypes(typesService.getById(typeId));
 		questions.setQtext(model.getQtext());
-		questions.setExercise(exerciseService.getById(exerciseId));
+		questions.setExam(examService.getById(eid));
+		//questions.setExercise(exerciseService.getById(exerciseId));
 		questions.setQscore(model.getQscore());
 		questionService.save(questions);
 		return "toshow";
@@ -213,6 +217,14 @@ public class QuestionAction extends BaseAction<Questions> {
 
 	public void setExerciseId(Long exerciseId) {
 		this.exerciseId = exerciseId;
+	}
+
+	public Long getEid() {
+		return eid;
+	}
+
+	public void setEid(Long eid) {
+		this.eid = eid;
 	}
 
 }

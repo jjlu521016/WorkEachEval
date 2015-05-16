@@ -17,6 +17,7 @@ import chzu.lujie.work.domain.QuestionTasker;
 import chzu.lujie.work.domain.Questions;
 import chzu.lujie.work.domain.Score;
 import chzu.lujie.work.domain.Task;
+import chzu.lujie.work.domain.Taskerpaper;
 import chzu.lujie.work.domain.User;
 /**
  * 互评——我的任务
@@ -148,24 +149,38 @@ public class TaskAction extends BaseAction<Task> {
 		Task task = taskService.getScore(paper,student);
 		String subscore = questiontaskerService.getByPaperUser(paper,getCurrentUser());
 		//计算总得分
-		int totalscore = Integer.parseInt(task.getAutoscore()) + Integer.parseInt(subscore);
+		int totalscore = Integer.parseInt(task.getAutoscore()) + (Integer.parseInt(subscore)/3);
 		//计算当前试卷的总分
 		int paperScore = recordService.getStudentSorce(paper);
 		//计算得分与总分的比之
 		double rate = (double)totalscore /(double)paperScore;
+		
 		//将数据插入到分数表
 		Score score = new Score();
-		score.setAutoscore(Integer.parseInt(task.getAutoscore()));
-		score.setManualscore(Integer.parseInt(subscore));
-		score.setPaper(paper);
-		score.setStudent(student);
-		score.setTasker(getCurrentUser());
-		score.setTotalscore(totalscore);
-		score.setPaperscore(paperScore);
-		score.setRate(rate);
-		scoreService.merge(score);
-		//更新批改作业的状态
-	//	taskService.updateFlg(taskId);
+		//将试卷和批改人添加到中间表里，用于判断批改人时候已经批改过。
+		Taskerpaper tpaper= new Taskerpaper();
+		tpaper.setPaper(paper);
+		tpaper.setTasker(getCurrentUser());
+		tpaper.setStudent(student);
+		taskerpaperService.merge(tpaper);
+		//根据学生试卷查询在分数表中是否已经存在记录
+		List<Score> scorelist = scoreService.getScoreByPaper(paper);
+
+		//判断数据库中是否有该试卷的数据，没有则插入数据，否则更新数据
+		if(scorelist.size()<0){
+			score.setAutoscore(Integer.parseInt(task.getAutoscore()));
+			score.setManualscore(Integer.parseInt(subscore));
+			score.setPaper(paper);
+			score.setStudent(student);
+			//score.setTasker(getCurrentUser());
+			score.setTotalscore(totalscore);
+			score.setPaperscore(paperScore);
+			score.setRate(rate);
+			scoreService.merge(score);
+		}
+		else{
+			scoreService.updateScoreInfo(scorelist.get(0).getSid(),Integer.parseInt(subscore)/3,totalscore,rate);
+		}
 		return "taskfinfish";
 	}
 ///////////////////////////////////////////////////////////////////////////////

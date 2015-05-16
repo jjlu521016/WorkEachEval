@@ -46,8 +46,8 @@
 						<td width="60px">作业状态</td>
 						<td width="100px">开始时间</td>
 						<td width="100px">结束时间</td>
-						<td width="100px">发布人</td>
-						<td>相关操作</td>
+						<td width="80px">发布人</td>
+						<td width="250px">相关操作</td>
 					</tr>
 				</thead>
 
@@ -72,7 +72,7 @@
 									onclick="return delConfirm('你要删除这条数据吗？')">删除</s:a>&nbsp;&nbsp; <s:a
 									action="exam_editUI?eid=%{eid}&subjectId=%{#subject.sid}">修改</s:a> &nbsp;&nbsp;
 								
-								
+								<s:a action="exam_showQuestionById?eid=%{eid}&charpterId=%{charpter.cid}&subjectId=%{#subject.sid }">题目管理</s:a>&nbsp;&nbsp
 								<s:a action="exam_publish?eid=%{eid}&subjectId=%{#subject.sid}"
 								 onclick="return  publishConfirm('确定要发布本次作业吗？发布之后不能更改！')">发布本作业</s:a>
 								</s:if> <s:if test="#e.flg == 1">

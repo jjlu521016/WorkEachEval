@@ -27,24 +27,30 @@
 				<tr align="CENTER" valign="MIDDLE" id="TableTitle">
 					<td width="100px">学生姓名</td>
 					<td width="200px">考试名称</td>
-					<td width="100px">批改人</td>
 					<td width="100px">主观题得分</td>
 					<td width="100px">客观题得分</td>
 					<td width="100px">总得分</td>
+					<td width="100px">试卷总分</td>
+					<td width="100px">是否及格</td>
 				</tr>
 			</thead>
 
 			<!--显示数据列表-->
 			<tbody id="TableData" class="dataContainer" datakey="scoreList">
 
-				<s:iterator value="recordList">
+				<s:iterator value="recordList" var="r">
 					<tr class="TableDetail1 template">
 						<td>${student.name}&nbsp;</td>
 						<td>${paper.exam.name}&nbsp;</td>
-						<td>${tasker.name}&nbsp;</td>
 						<td>${autoscore}&nbsp;</td>
 						<td>${manualscore}&nbsp;</td>
 						<td>${totalscore}&nbsp;</td>
+						<td>${paperscore}&nbsp;</td>
+						<td><s:if test="#r.rate < '0.6'">
+								<font color="red">不及格</font>
+							</s:if> <s:else>
+						及格
+				</s:else></td>
 					</tr>
 				</s:iterator>
 

@@ -10,6 +10,7 @@ import chzu.lujie.work.domain.ExamPaper;
 import chzu.lujie.work.domain.Exercise;
 import chzu.lujie.work.domain.KnowledgeDetail;
 import chzu.lujie.work.domain.Questions;
+import chzu.lujie.work.domain.Subject;
 import chzu.lujie.work.domain.User;
 
 
@@ -18,6 +19,8 @@ public interface ExamService extends DaoSupport<Exam>{
 	ExamPaper createPaper(Exam exam, User currentUser);
 
 	void updateFlg(Long eid);
+
+	List<Exam> getBysubject(Subject subject);
 
 
 	

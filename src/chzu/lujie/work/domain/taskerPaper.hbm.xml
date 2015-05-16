@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="chzu.lujie.work.domain">
+	<class name="Taskerpaper" table="t_work_taskpaper">
+		<id name="tpid">
+			<generator class="native" />
+		</id>
+
+		<many-to-one name="tasker" class="User" fetch="select"
+			lazy="false" cascade="save-update">
+			<column name="taskerId" precision="22" scale="0" />
+		</many-to-one>
+
+		<many-to-one name="paper" class="ExamPaper" cascade="save-update"
+			fetch="select" lazy="false">
+			<column name="paperId" precision="22" scale="0" />
+		</many-to-one>
+		
+		<many-to-one name="student" class="User" fetch="select"
+			lazy="false" cascade="save-update">
+			<column name="studentId" precision="22" scale="0" />
+		</many-to-one>
+
+	</class>
+</hibernate-mapping>

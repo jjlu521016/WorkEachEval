@@ -198,7 +198,8 @@
 			<result name="list">/WEB-INF/jsp/questionAction/list.jsp</result>
 			<result name="saveUI">/WEB-INF/jsp/questionAction/addQuestion.jsp
 			</result>
-			<result name="toshow" type="redirectAction">charpter_showQuestionById?cid=${charpterId}
+			<result name="toshow" type="redirectAction">
+					exam_showQuestionById?eid=${eid}&amp;subjectId=${subjectId}&amp;charpterId=${charpterId}
 			</result>
 			<result name="showCharpterById">/WEB-INF/jsp/knowledgeAction/show.jsp
 			</result>
@@ -220,6 +221,8 @@
 			</result>
 			<result name="saveUI">/WEB-INF/jsp/examAction/saveUI.jsp</result>
 			<result name="toshow" type="redirectAction">subject_showExamById?sid=${subjectId}
+			</result>
+			<result name="showquestionById">/WEB-INF/jsp/questionAction/Questionshow.jsp
 			</result>
 			<result name="createPaper" type="redirectAction">exam_list</result>
 			<result name="error">/WEB-INF/jsp/error.jsp

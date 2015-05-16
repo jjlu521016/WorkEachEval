@@ -12,7 +12,6 @@
 </script>
 </head>
 <body>
-${flg };;
 	<!-- 标题显示 -->
 	<div id="Title_bar">
 		<div id="Title_bar_Head">

@@ -171,7 +171,7 @@ var editor = K.create('textarea[name="q.answers[0].answer"]', options);
 		</br></br>
 	<!-- 显示批改信息 -->
 		<div id="MainArea">
-		<h4>本题批改信息</h4>
+		<h4>本题批改详细信息</h4>
 				<table cellspacing="0" cellpadding="0" class="TableStyle">
 					<!-- 表头-->
 					<thead>
@@ -183,8 +183,10 @@ var editor = K.create('textarea[name="q.answers[0].answer"]', options);
 					<!--显示数据列表-->
 					<tbody id="TableData" class="dataContainer" datakey="questionList">
 						<s:iterator value="questionList" var="e" status="status">
+						
 						<td class="ForumPageTableDataLine"><b>${e.score}</b></td>
 						<td class="ForumPageTableDataLine"><b>${e.opinion}</b></td>
+						</tr>
 						</s:iterator>
 					</tbody>
 				</table>

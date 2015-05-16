@@ -28,7 +28,9 @@
   var qtextarea;
 　　KindEditor.ready(function(K) {
   　　editor = K.create('#description');
-  qtextFiled = K.create('#qdescription');
+  qtextFiled = K.create('#qdescription',{
+	  items : []
+　　});
   qtextarea = K.create('#qtextarea');
   
 });
@@ -72,7 +74,7 @@ var qtextarea = K.create('textarea[name="ptAnswer"]', options);
 		<s:form action="question_%{qid == null ? 'add' : 'edit'}"
 			name="charpter" cssStyle="margin: 0; padding: 0;"
 			onsubmit="return checkOnSubmit() ">
-
+			<s:hidden name="eid"></s:hidden>
 			<s:hidden name="subjectId"></s:hidden>
 			<s:hidden name="charpterId"></s:hidden>
 			<s:hidden name="qid" id="qid"></s:hidden>
