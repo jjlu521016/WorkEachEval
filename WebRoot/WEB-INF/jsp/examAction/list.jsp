@@ -43,9 +43,9 @@
 
 						<td width="150px">所属课程</td>
 						<td width="150px">所属章节</td>
-						<td width="60px">作业状态</td>
 						<td width="100px">开始时间</td>
 						<td width="100px">结束时间</td>
+						<td width="100px">发布状态</td>
 						<td width="80px">发布人</td>
 						<td width="250px">相关操作</td>
 					</tr>

@@ -43,7 +43,11 @@ public class KnowledgeAction extends BaseAction<KnowledgeDetail> {
 		ActionContext.getContext().put("knowledgeList", knowledgeList);
 		return "list";
 	}
-
+	public String studentList() throws Exception{
+		List<Subject> subjectlist = subjectService.findAll();
+		ActionContext.getContext().put("subjectlist", subjectlist);
+		return "studentList";
+	}
 	public String delete() throws Exception {
 		knowledgeService.delete(model.getKid());
 		return "toshow";

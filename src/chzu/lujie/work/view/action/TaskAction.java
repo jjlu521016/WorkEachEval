@@ -148,16 +148,18 @@ public class TaskAction extends BaseAction<Task> {
 		User student = userService.getById(stuid);
 		Task task = taskService.getScore(paper,student);
 		String subscore = questiontaskerService.getByPaperUser(paper,getCurrentUser());
+		//转换类型
+		int subScore = (Integer.parseInt(subscore)/3);
 		//计算总得分
-		int totalscore = Integer.parseInt(task.getAutoscore()) + (Integer.parseInt(subscore)/3);
+		int totalscore = Integer.parseInt(task.getAutoscore())+subScore;
 		//计算当前试卷的总分
 		int paperScore = recordService.getStudentSorce(paper);
 		//计算得分与总分的比之
 		double rate = (double)totalscore /(double)paperScore;
 		
 		//将数据插入到分数表
-		Score score = new Score();
-		//将试卷和批改人添加到中间表里，用于判断批改人时候已经批改过。
+		
+		//将试卷和批改人添加到中间表里，用于判断批改人时候是否已经批改过。
 		Taskerpaper tpaper= new Taskerpaper();
 		tpaper.setPaper(paper);
 		tpaper.setTasker(getCurrentUser());
@@ -166,10 +168,11 @@ public class TaskAction extends BaseAction<Task> {
 		//根据学生试卷查询在分数表中是否已经存在记录
 		List<Score> scorelist = scoreService.getScoreByPaper(paper);
 
+		Score score = new Score();
 		//判断数据库中是否有该试卷的数据，没有则插入数据，否则更新数据
-		if(scorelist.size()<0){
+		if(scorelist.size()<=0){
 			score.setAutoscore(Integer.parseInt(task.getAutoscore()));
-			score.setManualscore(Integer.parseInt(subscore));
+			score.setManualscore(subScore);
 			score.setPaper(paper);
 			score.setStudent(student);
 			//score.setTasker(getCurrentUser());

@@ -37,7 +37,6 @@
 
 						<td width="150px">所属课程</td>
 						<td width="150px">所属章节</td>
-						<td width="60px">作业状态</td>
 						<td width="100px">开始时间</td>
 						<td width="100px">结束时间</td>
 						<td width="100px">发布人</td>
@@ -55,8 +54,6 @@
 						<td>${charpter.cname}&nbsp;</td>
 						<td>${startTime}&nbsp;</b></td>
 						<td>${stopTime}&nbsp;</td>
-						<td><s:if test="#e.flg == 1">已发布</s:if> <s:if
-								test="#e.flg == 0">未发布</s:if>
 						<td>${author.name}&nbsp;</b></td>
 						
 
