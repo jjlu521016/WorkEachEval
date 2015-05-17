@@ -163,11 +163,10 @@ public class ExamPaperServiceImpl extends DaoSupportImpl<ExamPaper> implements
 			List<Answers> answerlist = record.getQuestion().getAnswerses();
 			// 判断题匹配正确答案，
 			// 注意是两个布尔值的比较！
-			if (userlist.get(0).getIsRight()
-					.equals(answerlist.get(0).getIsRight())) {
+			if (userlist.get(0).getIsRight().equals(answerlist.get(0).getAnswer())) {
 				result = result
 						+ Integer.parseInt(record.getQuestion().getQscore());
-				// System.out.println("###########################"+result);
+				 System.out.println("###########################"+result);
 			}
 
 		}

@@ -117,9 +117,7 @@ var editor = K.create('textarea[name="q.answers[0].answer"]', options);
 				<s:if test="#bz==1">
 				<hr>
 				参考答案：</br>
-			<s:textarea id="editor2" name="#q.answerses[0].answer"
-				style="width:70%;height:140px;"></s:textarea>
-			<s:hidden name="answers[0].aid" />
+			<s:textarea id="editor2" name="#q.answerses[0].answer" style="width:70%;height:140px;"></s:textarea> 
 			</s:if>
 			</s:elseif>
 			<hr>
@@ -169,18 +167,15 @@ var editor = K.create('textarea[name="q.answers[0].answer"]', options);
 	<s:if test="#bz==1">
 	<s:if test="#q.types.tid==3">
 		</br></br>
-	<!-- 显示批改信息 -->
 		<div id="MainArea">
 		<h4>本题批改详细信息</h4>
 				<table cellspacing="0" cellpadding="0" class="TableStyle">
-					<!-- 表头-->
 					<thead>
 						<tr align="CENTER" valign="MIDDLE" id="TableTitle">
 							<td >本题得分</td>
 							<td >本题评语</td>
 						</tr>
 					</thead>
-					<!--显示数据列表-->
 					<tbody id="TableData" class="dataContainer" datakey="questionList">
 						<s:iterator value="questionList" var="e" status="status">
 						
