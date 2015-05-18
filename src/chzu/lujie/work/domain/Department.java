@@ -11,6 +11,7 @@ import java.util.Set;
  */
 public class Department {
 	private Long id;
+	private String depaertmentCode;
 	private Set<User> users = new HashSet<User>();
 	private Department parent;
 	private Set<Department> children = new HashSet<Department>();
@@ -64,6 +65,14 @@ public class Department {
 
 	public void setDescription(String description) {
 		this.description = description;
+	}
+
+	public String getDepaertmentCode() {
+		return depaertmentCode;
+	}
+
+	public void setDepaertmentCode(String depaertmentCode) {
+		this.depaertmentCode = depaertmentCode;
 	}
 
 }

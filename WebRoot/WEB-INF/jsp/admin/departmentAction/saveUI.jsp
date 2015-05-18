@@ -39,6 +39,9 @@
                     </s:select>
                    
                     </tr>
+                    <tr><td>编号</td>
+                        <td><s:textfield  name="depaertmentCode" cssClass="InputStyle"/> *</td>
+                    </tr>
                     <tr><td>院系、专业名称</td>
                         <td><s:textfield  name="name" cssClass="InputStyle"/> *</td>
                     </tr>

@@ -71,6 +71,7 @@ public class DepartmentAction extends BaseAction<Department> {
 		// 从数据库取出原对象
 		Department department = departmentService.getById(model.getId());
 		// 设置要修改的属性
+		department.setDepaertmentCode(model.getDepaertmentCode());
 		department.setName(model.getName());
 		department.setDescription(model.getDescription());
 		department.setParent(departmentService.getById(parentId));

@@ -56,7 +56,7 @@
 						<tr class="TableDetail1 template">
 							<s:hidden name="qid" id="qid"></s:hidden>
 							<td >
-							1
+							${(currentPage -1)*pageSize + status.count}
 							</td>
 							<td>${qtext}&nbsp;</td>
 							<td>
@@ -82,6 +82,11 @@
 						<img
 							src="${pageContext.request.contextPath}/style/images/createNew.png" style="visibility: visible;" />
 					</s:a>&nbsp;
+					<s:a action="subject_showExamById?sid=%{subjectId}">
+						<img
+							src="${pageContext.request.contextPath}/style/images/goBack.png" />
+
+					</s:a>
 				</div>
 			</div>
 	<!--分页信息-->

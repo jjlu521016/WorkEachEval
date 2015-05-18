@@ -77,6 +77,7 @@
 			</result>
 			<result name="editInfo">/WEB-INF/jsp/homeAction/top.jsp</result>
 			<result name="tosuccess" >/WEB-INF/jsp/regsuccess.jsp</result>
+			<result name="info">/WEB-INF/jsp/admin/userAction/ModifyUI.jsp</result>
 			
 			<result name="querylistUI">/WEB-INF/jsp/admin/userAction/search.jsp</result>
 <!-- 			<result name="success" type="json"></result> -->

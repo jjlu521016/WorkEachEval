@@ -87,6 +87,7 @@ public class QuestionAction extends BaseAction<Questions> {
 		List<Types> typeList = typesService.findAll();
 
 		ActionContext.getContext().put("typeList", typeList);
+		ActionContext.getContext().put("subjectId", subjectId);
 
 		return "saveUI";
 	}

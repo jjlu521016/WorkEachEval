@@ -237,6 +237,32 @@ public String checkUserIsExist() throws Exception{
 	return "ajax-success";
 }
 	
+public String info() throws Exception{
+	// 准备数据, departmentList
+		List<Department> topList = departmentService.findTopList();
+		List<Department> departmentList = DepartmentUtils
+				.getAllDepartments(topList);
+		ActionContext.getContext().put("departmentList", departmentList);
+
+		// 准备数据, roleList
+		List<Role> roleList = roleService.findAll();
+		ActionContext.getContext().put("roleList", roleList);
+		
+		
+		// 准备回显的数据
+		ActionContext.getContext().getValueStack().push(getCurrentUser());
+		if (getCurrentUser().getDepartment() != null) {
+			departmentId = getCurrentUser().getDepartment().getId();
+		}
+		if (getCurrentUser().getRoles() != null) {
+			roleIds = new Long[getCurrentUser().getRoles().size()];
+			int index = 0;
+			for (Role role : getCurrentUser().getRoles()) {
+				roleIds[index++] = role.getId();
+			}
+		}
+	return "info";
+}
 	public Long getDepartmentId() {
 		return departmentId;
 	}

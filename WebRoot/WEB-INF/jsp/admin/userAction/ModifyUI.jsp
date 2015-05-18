@@ -3,6 +3,16 @@
 <head>
 <title>用户信息</title>
 <%@ include file="/WEB-INF/jsp/public/commons.jspf"%>
+<script type="text/javascript">
+	$(document).ready(function(){
+		var uid = $(':hidden[name=id]').val();
+		if(uid==""){}
+		else{
+			$(':text[name=loginName]').attr("readonly","true");
+		}	
+		
+	})
+</script>
 </head>
 <body>
 
@@ -23,14 +33,11 @@
 	<!--显示表单内容-->
 	<div id=MainArea>
 
-		<s:form action="user_%{id == null ? 'add' : 'edit'}">
+		<s:form action="user_%{id == null ? 'add' : 'edit'}" >
 			<s:hidden name="id"></s:hidden>
 			<s:hidden name="password"></s:hidden>
-			
-			<s:hidden name="departmentId"></s:hidden>
 			<s:hidden name="roleIds"></s:hidden>
-						
-						
+
 			<div class="ItemBlock_Title1">
 				<!-- 信息说明 -->
 				<div class="ItemBlock_Title1">
@@ -44,15 +51,21 @@
 			<div class="ItemBlockBorder">
 				<div class="ItemBlock">
 					<table cellpadding="0" cellspacing="0" class="mainForm">
-
 						<tr>
-							<td>登录名</td>
-							<td><s:textfield name="loginName" cssClass="InputStyle" />
-								<font color="red">*</font></td>
+							<td width="100">所属院系</td>
+							<td><s:select name="departmentId" cssClass="SelectStyle"
+									list="#departmentList" listKey="id" listValue="name"
+									headerKey="" headerValue="==请选择部门==" required="true"/></td>
+						</tr>
+						<tr>
+							<td>修改密码：</td>
+							<td>
+							<s:password name="orpasswd" cssClass="InputStyle"></s:password>
+							</td>
 						</tr>
 						<tr>
 							<td>姓名</td>
-							<td><s:textfield name="name" cssClass="InputStyle" /> <font
+							<td><s:textfield name="name" cssClass="InputStyle"  required="true" /> <font
 								color="red">*</font></td>
 						</tr>
 						<tr>

@@ -11,6 +11,7 @@
 		</id>
 		<property name="name" />
 		<property name="description" />
+		<property name="depaertmentCode"></property>
 
 
 		<!-- users属性，本类与User的一对多 -->

@@ -3,6 +3,7 @@ package chzu.lujie.work.service.Impl;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 import javax.annotation.Resource;
 
@@ -37,9 +38,11 @@ public class TaskServiceImpl extends DaoSupportImpl<Task> implements TaskService
 	
 	@Override
 	public Task getUser(ExamPaper paper, User currentUser) {
-		HashSet<Integer> set = new HashSet<Integer>();
+		Set<Object> set  = new HashSet<Object>();
+	
 		
-		List array = new ArrayList();
+		///////////////////////////
+		//List array = new ArrayList();
 		// 根据角色查询用户：由于没有t_work_user_role实体。所以不能使用HQL语句。
 		// hibernate如果使用原生sql语句进行query查询时，hibernate是不会自动把结果包装成实体的
 		@SuppressWarnings("unchecked")
@@ -52,8 +55,10 @@ public class TaskServiceImpl extends DaoSupportImpl<Task> implements TaskService
 		int maxSize = list.size();
 		while (true) {
 			int randNumber = (int) (Math.random() * maxSize + 1) - 1;		
-			array.add(randNumber);
-			if(array.size()>=3){
+			//array.add(randNumber);
+			set.add(randNumber);
+			
+			if(set.size()>=3){
 				break;
 			}
 			try {
@@ -62,10 +67,14 @@ public class TaskServiceImpl extends DaoSupportImpl<Task> implements TaskService
 				e.printStackTrace();
 			}
 		}
+		
+		User u1 = (User) list.get((int) set.toArray()[0]);
+		User u2 = (User) list.get((int) set.toArray()[1]);
+		User u3 = (User) list.get((int) set.toArray()[2]);
 		//随机抽取几个学生进行作业互评
-		User u1 = (User) list.get((int) array.get(0));
-		User u2 = (User) list.get((int) array.get(1));
-		User u3 = (User) list.get((int) array.get(2));
+//		User u1 = (User) list.get((int) array.get(0));
+//		User u2 = (User) list.get((int) array.get(1));
+//		User u3 = (User) list.get((int) array.get(2));
 
 		Task task = new Task();
 		task.setExamPaper(paper);
