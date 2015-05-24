@@ -18,7 +18,6 @@
 			<div id="Title_End"></div>
 		</div>
 	</div>
-
 	<div id="MainArea">
 		<table cellspacing="0" cellpadding="0" class="TableStyle">
 			<!-- 表头-->
@@ -27,6 +26,7 @@
 					value="查询" id="searchBtn">
 				</button></a>
 			</div>
+			
 			<thead>
 				<tr align="CENTER" valign="MIDDLE" id="TableTitle">
 					<td width="100px">学生姓名</td>
@@ -36,6 +36,7 @@
 					<td width="100px">总得分</td>
 					<td width="100px">试卷总分</td>
 					<td width="100px">是否及格</td>
+					<td width="100px">答题详情</td>
 				</tr>
 			</thead>
 
@@ -55,6 +56,9 @@
 							</s:if> <s:else>
 						及格
 				</s:else></td>
+				<td>
+					<s:a action="examPaper_doQuestion?paperId=%{paper.epid}&bz=1&studentId=%{student.id}">答题详情</s:a>
+				</td>
 					</tr>
 				</s:iterator>
 
