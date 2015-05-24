@@ -166,8 +166,6 @@ public class InitInstaller {
 		session.save(new Permission("章节列表", "subject_showcharpterById", menu7));
 		session.save(new Permission("知识点列表", "charpter_showKnowledgeById", menu7));
 		session.save(new Permission("查看知识点", "knowledge_showUI", menu7));
-		
-		
 	}
 
 	public static void main(String[] args) {
