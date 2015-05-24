@@ -43,6 +43,11 @@ public class KnowledgeAction extends BaseAction<KnowledgeDetail> {
 		ActionContext.getContext().put("knowledgeList", knowledgeList);
 		return "list";
 	}
+	
+	public String slist() throws Exception {
+
+		return "slist";
+	}
 	public String studentList() throws Exception{
 		List<Subject> subjectlist = subjectService.findAll();
 		ActionContext.getContext().put("subjectlist", subjectlist);
@@ -99,7 +104,16 @@ public class KnowledgeAction extends BaseAction<KnowledgeDetail> {
 		return "toshow";
 	}
 
+	public String showUI() throws Exception {
+		// 准备数据
+		Charpter charpter = charpterService.getById(charpterId);
+		ActionContext.getContext().put("charpter", charpter);
+		
+		KnowledgeDetail knowledge = knowledgeService.getById(model.getKid());
+		ActionContext.getContext().getValueStack().push(knowledge);
 
+		return "showUI";
+	}
 	/**
 	 * setter and getter
 	 * 

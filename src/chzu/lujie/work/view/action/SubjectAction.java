@@ -83,6 +83,17 @@ public class SubjectAction extends BaseAction<Subject> {
 		return "showsubjectById";
 	}
 
+	public String showcharpterById() throws Exception {
+
+		Subject subject = subjectService.getById(model.getSid());
+		ActionContext.getContext().put("subject", subject);
+
+		List<Charpter> charpterList = charpterService.findBySubject(subject);
+		ActionContext.getContext().put("charpterList", charpterList);
+		return "showcharpterById";
+	}
+
+	
 	// gen
 	public String showexerciseById() throws Exception {
 

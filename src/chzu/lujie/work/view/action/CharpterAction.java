@@ -40,6 +40,13 @@ public class CharpterAction extends BaseAction<Charpter> {
 		ActionContext.getContext().put("subjectlist", subjectlist);
 		return "list";
 	}
+	public String subjectlist() throws Exception {
+
+		List<Subject> subjectlist = subjectService.findAll();
+		//List<Subject> subjectlist = subjectService.findMySubject(getCurrentUser());
+		ActionContext.getContext().put("subjectlist", subjectlist);
+		return "subjectlist";
+	}
 
 	public String delete() throws Exception {
 
@@ -99,6 +106,17 @@ public class CharpterAction extends BaseAction<Charpter> {
 		List<KnowledgeDetail> knowledgeList = knowledgeService.findByCharpter(charpter);
 		ActionContext.getContext().put("knowledgeList", knowledgeList);
 		return "showCharpterById";
+	}
+	
+	public String showKnowledgeById() throws Exception {
+
+		Charpter charpter = charpterService.getById(model.getCid());
+		ActionContext.getContext().put("charpter", charpter);
+
+		
+		List<KnowledgeDetail> knowledgeList = knowledgeService.findByCharpter(charpter);
+		ActionContext.getContext().put("knowledgeList", knowledgeList);
+		return "showKnowledgeById";
 	}
 	
 	public String showQuestionById() throws Exception {

@@ -50,7 +50,7 @@
 <!-- 							</ul> -->
 						</td>
 						<td class="ForumPageTableDataLine"><b>
-						<s:a cssClass="ForumPageTopic" action="subject_showsubjectById?sid=%{sid}">${sname}&nbsp;&nbsp;</s:a></b></td>
+						<s:a cssClass="ForumPageTopic" action="subject_showcharpterById?sid=%{sid}">${sname}&nbsp;&nbsp;</s:a></b></td>
 						<td class="ForumPageTableDataLine"><b>${author.name}</b></td>
 						<td class="ForumPageTableDataLine"><b>${description}</b></td>
 		

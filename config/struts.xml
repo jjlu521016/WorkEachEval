@@ -10,7 +10,7 @@
 	<constant name="struts.action.extension" value="action" />
 	<!-- 把主题配置为simple -->
 	<constant name="struts.ui.theme" value="simple" />
-	<constant name="struts.i18n.encoding" value="UTF-8"/>
+	<constant name="struts.i18n.encoding" value="UTF-8" />
 
 	<package name="default" namespace="/" extends="json-default">
 
@@ -29,9 +29,9 @@
 		<global-results>
 			<result name="loginUI">/WEB-INF/jsp/loginUI.jsp</result>
 			<result name="noPermissionError">/WEB-INF/jsp/noPermissionError.jsp</result>
-            <result name="verifycode">/WEB-INF/jsp/verifycode.jsp</result>
-            
-			<result name="registerUI" >/WEB-INF/jsp/registerUI.jsp</result>
+			<result name="verifycode">/WEB-INF/jsp/verifycode.jsp</result>
+
+			<result name="registerUI">/WEB-INF/jsp/registerUI.jsp</result>
 		</global-results>
 
 		<!-- 配置测试用的Action，未与Spring整合，class属性写类的全名 -->
@@ -76,18 +76,19 @@
 			<result name="editInfoUI">/WEB-INF/jsp/admin/userAction/ModifyUI.jsp
 			</result>
 			<result name="editInfo">/WEB-INF/jsp/homeAction/top.jsp</result>
-			<result name="tosuccess" >/WEB-INF/jsp/regsuccess.jsp</result>
-			<result name="info">/WEB-INF/jsp/admin/userAction/ModifyUI.jsp</result>
-			
-			<result name="querylistUI">/WEB-INF/jsp/admin/userAction/search.jsp</result>
-<!-- 			<result name="success" type="json"></result> -->
-
-			
-			<result type="stream" name="ajax-success">
-			    <param name="contentType">text/html</param>
-			    <param name="inputName">inputStream</param>
+			<result name="tosuccess">/WEB-INF/jsp/regsuccess.jsp</result>
+			<result name="info">/WEB-INF/jsp/admin/userAction/ModifyUI.jsp
 			</result>
-			
+
+			<result name="querylistUI">/WEB-INF/jsp/admin/userAction/search.jsp</result>
+			<!-- <result name="success" type="json"></result> -->
+
+
+			<result type="stream" name="ajax-success">
+				<param name="contentType">text/html</param>
+				<param name="inputName">inputStream</param>
+			</result>
+
 		</action>
 
 
@@ -167,28 +168,37 @@
 			<result name="showexerciseById">/WEB-INF/jsp/exerciseAction/list.jsp</result>
 			<!-- 很具课程显示考试 -->
 			<result name="showExamById">/WEB-INF/jsp/examAction/list.jsp</result>
-			
+			<!-- 学生点击查看知识点是显示的 -->
+			<result name="showcharpterById">/WEB-INF/jsp/charpterAction/charptershow.jsp
+			</result>
+
 			<result type="stream" name="ajax-success">
-			    <param name="contentType">text/html</param>
-			    <param name="inputName">inputStream</param>
+				<param name="contentType">text/html</param>
+				<param name="inputName">inputStream</param>
 			</result>
 		</action>
 
 		<!-- 章节管理 -->
 		<action name="charpter_*" class="charpterAction" method="{1}">
 			<result name="list">/WEB-INF/jsp/charpterAction/list.jsp</result>
+			<result name="subjectlist">/WEB-INF/jsp/charpterAction/subjectList.jsp
+			</result>
 			<result name="saveUI">/WEB-INF/jsp/charpterAction/saveUI.jsp</result>
 			<result name="toshow" type="redirectAction">subject_showsubjectById?sid=${subjectId}
 			</result>
 			<result name="showCharpterById">/WEB-INF/jsp/knowledgeAction/show.jsp
 			</result>
-
+			<result name="showKnowledgeById">/WEB-INF/jsp/knowledgeAction/studentshow.jsp
+			</result>
 			<result name="showQuestionById">/WEB-INF/jsp/questionAction/Questionshow.jsp
 			</result>
 		</action>
 
 		<!-- 知识点管理 -->
 		<action name="knowledge_*" class="knowledgeAction" method="{1}">
+			<result name="list">/WEB-INF/jsp/knowledgeAction/list.jsp</result>
+			<result name="showUI">/WEB-INF/jsp/knowledgeAction/showUI.jsp
+			</result>
 			<result name="saveUI">/WEB-INF/jsp/knowledgeAction/saveUI.jsp</result>
 			<result name="toshow" type="redirectAction">charpter_showCharpterById?cid=${charpterId}
 			</result>
@@ -200,7 +210,7 @@
 			<result name="saveUI">/WEB-INF/jsp/questionAction/addQuestion.jsp
 			</result>
 			<result name="toshow" type="redirectAction">
-					exam_showQuestionById?eid=${eid}&amp;subjectId=${subjectId}&amp;charpterId=${charpterId}
+				exam_showQuestionById?eid=${eid}&amp;subjectId=${subjectId}&amp;charpterId=${charpterId}
 			</result>
 			<result name="showCharpterById">/WEB-INF/jsp/knowledgeAction/show.jsp
 			</result>
@@ -213,7 +223,7 @@
 			<result name="toshow" type="redirectAction">subject_showexerciseById?sid=${subjectId}
 			</result>
 		</action>
-		
+
 		<!-- 考试管理 -->
 		<action name="exam_*" class="examAction" method="{1}">
 			<result name="showSubject">/WEB-INF/jsp/examAction/showsubject.jsp
@@ -229,17 +239,22 @@
 			<result name="error">/WEB-INF/jsp/error.jsp
 			</result>
 		</action>
-		
+
 		<!-- 作业管理 -->
 		<action name="examPaper_*" class="examPaperAction" method="{1}">
 			<result name="list">/WEB-INF/jsp/exampaperAction/list.jsp</result>
-			<result name="showQuestion">/WEB-INF/jsp/exampaperAction/questionList.jsp</result>
-			<result name="doQuestion">/WEB-INF/jsp/exampaperAction/questionList.jsp</result>
-			<result name="nextQuestion">/WEB-INF/jsp/exampaperAction/questionList.jsp</result>
-			<result name="preQuestion">/WEB-INF/jsp/exampaperAction/questionList.jsp</result>
-			<result name="submitpaper">/WEB-INF/jsp/exampaperAction/showScore.jsp</result>
+			<result name="showQuestion">/WEB-INF/jsp/exampaperAction/questionList.jsp
+			</result>
+			<result name="doQuestion">/WEB-INF/jsp/exampaperAction/questionList.jsp
+			</result>
+			<result name="nextQuestion">/WEB-INF/jsp/exampaperAction/questionList.jsp
+			</result>
+			<result name="preQuestion">/WEB-INF/jsp/exampaperAction/questionList.jsp
+			</result>
+			<result name="submitpaper">/WEB-INF/jsp/exampaperAction/showScore.jsp
+			</result>
 		</action>
-		
+
 		<!-- 批改作业任务管理 -->
 		<action name="task_*" class="taskAction" method="{1}">
 			<result name="list">/WEB-INF/jsp/taskAction/showtask.jsp</result>
@@ -248,17 +263,17 @@
 			<result name="nextQuestion">/WEB-INF/jsp/taskAction/questionList.jsp</result>
 			<result name="preQuestion">/WEB-INF/jsp/taskAction/questionList.jsp</result>
 			<result name="taskfinfish">/WEB-INF/jsp/taskAction/finfish.jsp</result>
-			
+
 		</action>
-		
+
 		<!-- 学生成绩管理 -->
 		<action name="score_*" class="scoreAction" method="{1}">
 			<result name="list">/WEB-INF/jsp/ScoreAction/list.jsp</result>
 			<result name="studentlist">/WEB-INF/jsp/ScoreAction/studentlist.jsp</result>
 			<result name="querylistUI">/WEB-INF/jsp/ScoreAction/search.jsp</result>
 		</action>
-		
-		
+
+
 		<action name="userAnswer_*" class="userAnswerAction" method="{1}">
 			<result name="list">/WEB-INF/jsp/userAnswer/showexecise.jsp</result>
 			<result name="showQuestion">/WEB-INF/jsp/userAnswer/myTest.jsp</result>

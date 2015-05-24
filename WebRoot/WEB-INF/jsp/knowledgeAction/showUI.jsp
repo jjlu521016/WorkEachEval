@@ -16,7 +16,11 @@
 	<script>
         　　 var editor;
          　　KindEditor.ready(function(K) {
-                 　　editor = K.create('#editor_id');
+                 　　editor = K.create('#editor_id',{
+               	  items : [],
+            	  readonlyMode : true
+
+              　　});
          　　});
          　　var options = {
         	cssPath :'<%=request.getContextPath()%>/kindeditor/themes/qq/qq.css',
@@ -28,6 +32,8 @@
 
    　　　　var editor = K.create('textarea[name="content"]', options);
  　　　 </script>
+ 
+ 
 <%
 	//章节ID	
 	String charpterId = "";
@@ -75,7 +81,7 @@
 								</div></td>
 							<td class="InputAreaBg"><div class="InputContent">
 									<s:textfield name="title" id="title" cssClass="InputStyle"
-										cssStyle="width:50%" />
+										cssStyle="width:50%" readonly="true"/>
 								</div></td>
 						</tr>
 						<tr height="240">
@@ -92,10 +98,8 @@
 
 						</tr>
 						<tr height="30">
-							<td class="InputAreaBg" colspan="2" align="center"><input
-								type="image" onclick="return saveTips()"
-								src="${pageContext.request.contextPath}/style/blue/images/button/submit.PNG"
-								style="margin-right: 15px;" /><a href="javascript:history.go(-1);"><img
+							<td class="InputAreaBg" colspan="2" align="center">
+								<a href="javascript:history.go(-1);"><img
 					src="${pageContext.request.contextPath}/style/images/goBack.png" /></a>
 							</td>
 						</tr>
