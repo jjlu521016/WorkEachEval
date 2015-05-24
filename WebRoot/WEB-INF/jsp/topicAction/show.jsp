@@ -70,17 +70,18 @@
 								<img border="0"
 									src="${pageContext.request.contextPath}/style/images/reply.gif" />
 							回复
-						</s:a> <a href="moveUI.html"><img border="0"
-								src="${pageContext.request.contextPath}/style/images/edit.gif" />移动到其他版块</a>
-							<a href="#" onClick="return confirm('要把本主题设为精华吗？')"><img
-								border="0"
-								src="${pageContext.request.contextPath}/style/images/topicType_1.gif" />精华</a>
-							<a href="#" onClick="return confirm('要把本主题设为置顶吗？')"><img
-								border="0"
-								src="${pageContext.request.contextPath}/style/images/topicType_2.gif" />置顶</a>
-							<a href="#" onClick="return confirm('要把本主题设为普通吗？')"><img
-								border="0"
-								src="${pageContext.request.contextPath}/style/images/topicType_0.gif" />普通</a>
+						</s:a>
+<!-- 						 <a href="moveUI.html"><img border="0" -->
+<%-- 								src="${pageContext.request.contextPath}/style/images/edit.gif" />移动到其他版块</a> --%>
+<!-- 							<a href="#" onClick="return confirm('要把本主题设为精华吗？')"><img -->
+<!-- 								border="0" -->
+<%-- 								src="${pageContext.request.contextPath}/style/images/topicType_1.gif" />精华</a> --%>
+<!-- 							<a href="#" onClick="return confirm('要把本主题设为置顶吗？')"><img -->
+<!-- 								border="0" -->
+<%-- 								src="${pageContext.request.contextPath}/style/images/topicType_2.gif" />置顶</a> --%>
+<!-- 							<a href="#" onClick="return confirm('要把本主题设为普通吗？')"><img -->
+<!-- 								border="0" -->
+<%-- 								src="${pageContext.request.contextPath}/style/images/topicType_0.gif" />普通</a> --%>
 						</td>
 						<td width="3" class="ForumPageTableTitleRight">&nbsp;</td>
 					</tr>
@@ -224,7 +225,8 @@
 
 		<!--快速回复-->
 		<div class="QuictReply">
-			<form action="reply_add">
+			<s:form action="reply_add">
+			<s:hidden name="topicId" value="%{#topic.id}"></s:hidden>
 				<div style="padding-left: 3px;">
 					<table border="0" cellspacing="1" width="98%" cellpadding="5"
 						class="TableStyle">
@@ -249,14 +251,10 @@
 						</tr>
 					</table>
 				</div>
-			</form>
+			</s:form>
 		</div>
 	</div>
 
-	<div class="Description">
-		说明：<br /> 1，主帖只在第一页显示。<br />
-		2，只有是管理员才可以进行“移动”、“编辑”、“删除”、“精华”、“置顶”的操作。<br /> 3，删除主帖，就会删除所有的跟帖（回复）。<br />
-	</div>
 
 </body>
 </html>
