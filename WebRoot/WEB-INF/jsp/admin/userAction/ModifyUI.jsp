@@ -33,7 +33,7 @@
 	<!--显示表单内容-->
 	<div id=MainArea>
 
-		<s:form action="user_%{id == null ? 'add' : 'edit'}" >
+		<s:form action="user_Modify" >
 			<s:hidden name="id"></s:hidden>
 			<s:hidden name="password"></s:hidden>
 			<s:hidden name="roleIds"></s:hidden>
@@ -58,9 +58,14 @@
 									headerKey="" headerValue="==请选择院系==" required="true"/></td>
 						</tr>
 						<tr>
+							<td>登录名</td>
+							<td><s:textfield name="loginName" cssClass="InputStyle" required="true" />
+								<font color="red">*</font></td>
+						</tr>
+						<tr>
 							<td>修改密码：</td>
 							<td>
-							<s:password name="orpasswd" cssClass="InputStyle"></s:password>
+							<s:password name="newpasswd" cssClass="InputStyle"></s:password>
 							</td>
 						</tr>
 						<tr>

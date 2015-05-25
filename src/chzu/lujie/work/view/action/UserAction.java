@@ -33,6 +33,7 @@ public class UserAction extends BaseAction<User> {
 	private String responseText;   //返回的结果
 	private boolean flag;          //主要是为了效果好看点
 	User u;
+	private String newpasswd;//修改密码
 
 	private InputStream inputStream;
 	public InputStream getInputStream() {
@@ -87,7 +88,13 @@ public class UserAction extends BaseAction<User> {
 		user.setName(model.getName());
 		user.setEmail(model.getEmail());
 		user.setGender(model.getGender());
-		user.setPassword(model.getPassword());
+		if(newpasswd==""||newpasswd==null||newpasswd.length()==0){
+			user.setPassword(model.getPassword());
+		}
+		else{
+			String md5Digest = MD5Utils.GetMD5Code(newpasswd);
+			user.setPassword(md5Digest);
+		}
 		user.setPhoneNumber(model.getPhoneNumber());
 
 		// >> 设置所属部门
@@ -98,6 +105,31 @@ public class UserAction extends BaseAction<User> {
 
 		userService.update(user);
 		return "tolist";
+	}
+	public String Modify() throws Exception {
+		User user = userService.getById(model.getId());
+
+		user.setLoginName(model.getLoginName());
+		user.setName(model.getName());
+		user.setEmail(model.getEmail());
+		user.setGender(model.getGender());
+		if(newpasswd==""||newpasswd==null||newpasswd.length()==0){
+			user.setPassword(model.getPassword());
+		}
+		else{
+			String md5Digest = MD5Utils.GetMD5Code(newpasswd);
+			user.setPassword(md5Digest);
+		}
+		user.setPhoneNumber(model.getPhoneNumber());
+
+		// >> 设置所属部门
+		user.setDepartment(departmentService.getById(departmentId));
+		// >> 设置关联的岗位
+		List<Role> roleList = roleService.getByIds(roleIds);
+		user.setRoles(new HashSet<Role>(roleList));
+
+		userService.update(user);
+		return "Modifysuccess";
 	}
 ///////////////////////////////////////////////////////////////////////////////	
 //	个人信息更改
@@ -327,6 +359,14 @@ public User getU() {
 
 public void setU(User u) {
 	this.u = u;
+}
+
+public String getNewpasswd() {
+	return newpasswd;
+}
+
+public void setNewpasswd(String newpasswd) {
+	this.newpasswd = newpasswd;
 }
 
 
