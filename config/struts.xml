@@ -258,6 +258,7 @@
 		<!-- 批改作业任务管理 -->
 		<action name="task_*" class="taskAction" method="{1}">
 			<result name="list">/WEB-INF/jsp/taskAction/showtask.jsp</result>
+			<result name="show">/WEB-INF/jsp/taskAction/show.jsp</result>
 			<result name="finish">/WEB-INF/jsp/taskAction/finishtask.jsp</result>
 			<result name="getQuestion">/WEB-INF/jsp/taskAction/questionList.jsp</result>
 			<result name="nextQuestion">/WEB-INF/jsp/taskAction/questionList.jsp</result>

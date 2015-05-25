@@ -19,6 +19,7 @@ import chzu.lujie.work.domain.Score;
 import chzu.lujie.work.domain.Task;
 import chzu.lujie.work.domain.Taskerpaper;
 import chzu.lujie.work.domain.User;
+import chzu.lujie.work.util.QueryHelper;
 /**
  * 互评——我的任务
  * @author jielu
@@ -35,6 +36,11 @@ public class TaskAction extends BaseAction<Task> {
 		Long taskId;
 		
 		Long stuid;
+		
+		public String show() throws Exception{
+			new QueryHelper(Task.class, "u").preparePageBean(taskService, pageNum, pageSize);
+			return "show";
+		}
 	/**
 	 * 显示任务列表课程列表
 	 * @return

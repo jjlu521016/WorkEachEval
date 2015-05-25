@@ -55,7 +55,7 @@
 							<td width="100">所属院系</td>
 							<td><s:select name="departmentId" cssClass="SelectStyle"
 									list="#departmentList" listKey="id" listValue="name"
-									headerKey="" headerValue="==请选择部门==" required="true"/></td>
+									headerKey="" headerValue="==请选择院系==" required="true"/></td>
 						</tr>
 						<tr>
 							<td>修改密码：</td>

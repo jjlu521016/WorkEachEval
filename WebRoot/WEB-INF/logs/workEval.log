@@ -1053,3 +1053,785 @@ Unexpected Exception caught setting 'y' on 'class chzu.lujie.work.view.action.Re
 Unexpected Exception caught setting 'x' on 'class chzu.lujie.work.view.action.UserAction: Error setting expression 'x' with value ['29', ]
 [ERROR] 2015-05-25 09:53:52 http-bio-8080-exec-8 com.opensymphony.xwork2.interceptor.ParametersInterceptor - Developer Notification (set struts.devMode to false to disable this message):
 Unexpected Exception caught setting 'y' on 'class chzu.lujie.work.view.action.UserAction: Error setting expression 'y' with value ['27', ]
+[WARN ] 2015-05-25 09:58:42 localhost-startStop-1 org.hibernate.util.DTDEntityResolver - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[WARN ] 2015-05-25 09:58:42 localhost-startStop-1 org.hibernate.util.DTDEntityResolver - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[WARN ] 2015-05-25 09:58:42 localhost-startStop-1 org.hibernate.util.DTDEntityResolver - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[WARN ] 2015-05-25 09:58:42 localhost-startStop-1 org.hibernate.util.DTDEntityResolver - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[WARN ] 2015-05-25 09:58:42 localhost-startStop-1 org.hibernate.util.DTDEntityResolver - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[WARN ] 2015-05-25 09:58:42 localhost-startStop-1 org.hibernate.util.DTDEntityResolver - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[WARN ] 2015-05-25 09:58:42 localhost-startStop-1 org.hibernate.util.DTDEntityResolver - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[WARN ] 2015-05-25 09:58:42 localhost-startStop-1 org.hibernate.util.DTDEntityResolver - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[WARN ] 2015-05-25 09:58:42 localhost-startStop-1 org.hibernate.util.DTDEntityResolver - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[WARN ] 2015-05-25 09:58:42 localhost-startStop-1 org.hibernate.util.DTDEntityResolver - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[WARN ] 2015-05-25 09:58:42 localhost-startStop-1 org.hibernate.util.DTDEntityResolver - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[WARN ] 2015-05-25 09:58:42 localhost-startStop-1 org.hibernate.util.DTDEntityResolver - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[WARN ] 2015-05-25 09:58:42 localhost-startStop-1 org.hibernate.util.DTDEntityResolver - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[WARN ] 2015-05-25 09:58:42 localhost-startStop-1 org.hibernate.util.DTDEntityResolver - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[WARN ] 2015-05-25 09:58:43 localhost-startStop-1 org.hibernate.util.DTDEntityResolver - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[WARN ] 2015-05-25 09:58:43 localhost-startStop-1 org.hibernate.util.DTDEntityResolver - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[WARN ] 2015-05-25 09:58:43 localhost-startStop-1 org.hibernate.util.DTDEntityResolver - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[WARN ] 2015-05-25 09:58:43 localhost-startStop-1 org.hibernate.util.DTDEntityResolver - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[WARN ] 2015-05-25 09:58:43 localhost-startStop-1 org.hibernate.util.DTDEntityResolver - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[WARN ] 2015-05-25 09:58:43 localhost-startStop-1 org.hibernate.util.DTDEntityResolver - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[WARN ] 2015-05-25 09:58:43 localhost-startStop-1 org.hibernate.util.DTDEntityResolver - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[WARN ] 2015-05-25 09:58:43 localhost-startStop-1 org.hibernate.util.DTDEntityResolver - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[WARN ] 2015-05-25 09:58:43 localhost-startStop-1 org.hibernate.util.DTDEntityResolver - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[WARN ] 2015-05-25 09:58:43 localhost-startStop-1 org.hibernate.util.DTDEntityResolver - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[WARN ] 2015-05-25 09:58:48 localhost-startStop-1 org.hibernate.impl.SessionFactoryObjectFactory - Could not bind factory to JNDI
+javax.naming.NamingException: Name is not valid
+	at org.apache.naming.NamingContext.bind(NamingContext.java:892)
+	at org.apache.naming.NamingContext.rebind(NamingContext.java:225)
+	at org.apache.naming.SelectorContext.rebind(SelectorContext.java:216)
+	at javax.naming.InitialContext.rebind(Unknown Source)
+	at org.hibernate.util.NamingHelper.bind(NamingHelper.java:97)
+	at org.hibernate.impl.SessionFactoryObjectFactory.addInstance(SessionFactoryObjectFactory.java:113)
+	at org.hibernate.impl.SessionFactoryImpl.<init>(SessionFactoryImpl.java:365)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1842)
+	at org.springframework.orm.hibernate3.LocalSessionFactoryBean.newSessionFactory(LocalSessionFactoryBean.java:793)
+	at org.springframework.orm.hibernate3.LocalSessionFactoryBean.buildSessionFactory(LocalSessionFactoryBean.java:715)
+	at org.springframework.orm.hibernate3.AbstractSessionFactoryBean.afterPropertiesSet(AbstractSessionFactoryBean.java:189)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1612)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1549)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:539)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:475)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:304)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:300)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:445)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:419)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:544)
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:155)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:87)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessPropertyValues(CommonAnnotationBeanPostProcessor.java:304)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1185)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:537)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:475)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:304)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:300)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:195)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:700)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:760)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:482)
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:403)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:306)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:106)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4973)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5467)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1559)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1549)
+	at java.util.concurrent.FutureTask$Sync.innerRun(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+[ERROR] 2015-05-25 09:58:49 localhost-startStop-1 org.hibernate.tool.hbm2ddl.SchemaUpdate - Unsuccessful: alter table t_work_questions add index FKDD2618CA3AB17055 (Q_TYPE), add constraint FKDD2618CA3AB17055 foreign key (Q_TYPE) references t_work_Types (tid)
+[ERROR] 2015-05-25 09:58:49 localhost-startStop-1 org.hibernate.tool.hbm2ddl.SchemaUpdate - Can't create table 'workeacheval.#sql-1950_17' (errno: 150)
+[ERROR] 2015-05-25 09:59:15 http-bio-8080-exec-7 com.opensymphony.xwork2.interceptor.ParametersInterceptor - Developer Notification (set struts.devMode to false to disable this message):
+Unexpected Exception caught setting 'x' on 'class chzu.lujie.work.view.action.UserAction: Error setting expression 'x' with value ['24', ]
+[ERROR] 2015-05-25 09:59:15 http-bio-8080-exec-7 com.opensymphony.xwork2.interceptor.ParametersInterceptor - Developer Notification (set struts.devMode to false to disable this message):
+Unexpected Exception caught setting 'y' on 'class chzu.lujie.work.view.action.UserAction: Error setting expression 'y' with value ['31', ]
+[WARN ] 2015-05-25 10:05:52 ContainerBackgroundProcessor[StandardEngine[Catalina]] org.hibernate.impl.SessionFactoryObjectFactory - Could not unbind factory from JNDI
+javax.naming.NamingException: Name is not valid
+	at org.apache.naming.NamingContext.unbind(NamingContext.java:269)
+	at org.apache.naming.NamingContext.unbind(NamingContext.java:304)
+	at org.apache.naming.SelectorContext.unbind(SelectorContext.java:268)
+	at javax.naming.InitialContext.unbind(Unknown Source)
+	at org.hibernate.impl.SessionFactoryObjectFactory.removeInstance(SessionFactoryObjectFactory.java:139)
+	at org.hibernate.impl.SessionFactoryImpl.close(SessionFactoryImpl.java:966)
+	at org.springframework.orm.hibernate3.AbstractSessionFactoryBean.destroy(AbstractSessionFactoryBean.java:230)
+	at org.springframework.orm.hibernate3.LocalSessionFactoryBean.destroy(LocalSessionFactoryBean.java:832)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:257)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:540)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:516)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:824)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:485)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:921)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:895)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:841)
+	at org.springframework.web.context.ContextLoader.closeWebApplicationContext(ContextLoader.java:579)
+	at org.springframework.web.context.ContextLoaderListener.contextDestroyed(ContextLoaderListener.java:115)
+	at org.apache.catalina.core.StandardContext.listenerStop(StandardContext.java:5014)
+	at org.apache.catalina.core.StandardContext.stopInternal(StandardContext.java:5659)
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:232)
+	at org.apache.catalina.core.StandardContext.reload(StandardContext.java:3981)
+	at org.apache.catalina.loader.WebappLoader.backgroundProcess(WebappLoader.java:425)
+	at org.apache.catalina.core.ContainerBase.backgroundProcess(ContainerBase.java:1345)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1530)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1540)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1540)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.run(ContainerBase.java:1519)
+	at java.lang.Thread.run(Unknown Source)
+[WARN ] 2015-05-25 10:06:13 ContainerBackgroundProcessor[StandardEngine[Catalina]] com.mchange.v2.c3p0.management.ActiveManagementCoordinator - A C3P0Registry mbean is already registered. This probably means that an application using c3p0 was undeployed, but not all PooledDataSources were closed prior to undeployment. This may lead to resource leaks over time. Please take care to close all PooledDataSources.
+[WARN ] 2015-05-25 10:06:16 ContainerBackgroundProcessor[StandardEngine[Catalina]] org.hibernate.util.DTDEntityResolver - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[WARN ] 2015-05-25 10:06:16 ContainerBackgroundProcessor[StandardEngine[Catalina]] org.hibernate.util.DTDEntityResolver - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[WARN ] 2015-05-25 10:06:16 ContainerBackgroundProcessor[StandardEngine[Catalina]] org.hibernate.util.DTDEntityResolver - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[WARN ] 2015-05-25 10:06:16 ContainerBackgroundProcessor[StandardEngine[Catalina]] org.hibernate.util.DTDEntityResolver - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[WARN ] 2015-05-25 10:06:16 ContainerBackgroundProcessor[StandardEngine[Catalina]] org.hibernate.util.DTDEntityResolver - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[WARN ] 2015-05-25 10:06:16 ContainerBackgroundProcessor[StandardEngine[Catalina]] org.hibernate.util.DTDEntityResolver - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[WARN ] 2015-05-25 10:06:16 ContainerBackgroundProcessor[StandardEngine[Catalina]] org.hibernate.util.DTDEntityResolver - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[WARN ] 2015-05-25 10:06:16 ContainerBackgroundProcessor[StandardEngine[Catalina]] org.hibernate.util.DTDEntityResolver - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[WARN ] 2015-05-25 10:06:16 ContainerBackgroundProcessor[StandardEngine[Catalina]] org.hibernate.util.DTDEntityResolver - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[WARN ] 2015-05-25 10:06:16 ContainerBackgroundProcessor[StandardEngine[Catalina]] org.hibernate.util.DTDEntityResolver - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[WARN ] 2015-05-25 10:06:16 ContainerBackgroundProcessor[StandardEngine[Catalina]] org.hibernate.util.DTDEntityResolver - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[WARN ] 2015-05-25 10:06:16 ContainerBackgroundProcessor[StandardEngine[Catalina]] org.hibernate.util.DTDEntityResolver - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[WARN ] 2015-05-25 10:06:16 ContainerBackgroundProcessor[StandardEngine[Catalina]] org.hibernate.util.DTDEntityResolver - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[WARN ] 2015-05-25 10:06:16 ContainerBackgroundProcessor[StandardEngine[Catalina]] org.hibernate.util.DTDEntityResolver - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[WARN ] 2015-05-25 10:06:16 ContainerBackgroundProcessor[StandardEngine[Catalina]] org.hibernate.util.DTDEntityResolver - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[WARN ] 2015-05-25 10:06:16 ContainerBackgroundProcessor[StandardEngine[Catalina]] org.hibernate.util.DTDEntityResolver - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[WARN ] 2015-05-25 10:06:16 ContainerBackgroundProcessor[StandardEngine[Catalina]] org.hibernate.util.DTDEntityResolver - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[WARN ] 2015-05-25 10:06:16 ContainerBackgroundProcessor[StandardEngine[Catalina]] org.hibernate.util.DTDEntityResolver - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[WARN ] 2015-05-25 10:06:16 ContainerBackgroundProcessor[StandardEngine[Catalina]] org.hibernate.util.DTDEntityResolver - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[WARN ] 2015-05-25 10:06:16 ContainerBackgroundProcessor[StandardEngine[Catalina]] org.hibernate.util.DTDEntityResolver - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[WARN ] 2015-05-25 10:06:16 ContainerBackgroundProcessor[StandardEngine[Catalina]] org.hibernate.util.DTDEntityResolver - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[WARN ] 2015-05-25 10:06:16 ContainerBackgroundProcessor[StandardEngine[Catalina]] org.hibernate.util.DTDEntityResolver - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[WARN ] 2015-05-25 10:06:17 ContainerBackgroundProcessor[StandardEngine[Catalina]] org.hibernate.util.DTDEntityResolver - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[WARN ] 2015-05-25 10:06:17 ContainerBackgroundProcessor[StandardEngine[Catalina]] org.hibernate.util.DTDEntityResolver - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[WARN ] 2015-05-25 10:06:23 ContainerBackgroundProcessor[StandardEngine[Catalina]] org.hibernate.impl.SessionFactoryObjectFactory - Could not bind factory to JNDI
+javax.naming.NamingException: Name is not valid
+	at org.apache.naming.NamingContext.bind(NamingContext.java:892)
+	at org.apache.naming.NamingContext.rebind(NamingContext.java:225)
+	at org.apache.naming.SelectorContext.rebind(SelectorContext.java:216)
+	at javax.naming.InitialContext.rebind(Unknown Source)
+	at org.hibernate.util.NamingHelper.bind(NamingHelper.java:97)
+	at org.hibernate.impl.SessionFactoryObjectFactory.addInstance(SessionFactoryObjectFactory.java:113)
+	at org.hibernate.impl.SessionFactoryImpl.<init>(SessionFactoryImpl.java:365)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1842)
+	at org.springframework.orm.hibernate3.LocalSessionFactoryBean.newSessionFactory(LocalSessionFactoryBean.java:793)
+	at org.springframework.orm.hibernate3.LocalSessionFactoryBean.buildSessionFactory(LocalSessionFactoryBean.java:715)
+	at org.springframework.orm.hibernate3.AbstractSessionFactoryBean.afterPropertiesSet(AbstractSessionFactoryBean.java:189)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1612)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1549)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:539)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:475)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:304)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:300)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:445)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:419)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:544)
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:155)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:87)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessPropertyValues(CommonAnnotationBeanPostProcessor.java:304)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1185)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:537)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:475)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:304)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:300)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:195)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:700)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:760)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:482)
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:403)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:306)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:106)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4973)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5467)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.StandardContext.reload(StandardContext.java:3988)
+	at org.apache.catalina.loader.WebappLoader.backgroundProcess(WebappLoader.java:425)
+	at org.apache.catalina.core.ContainerBase.backgroundProcess(ContainerBase.java:1345)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1530)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1540)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1540)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.run(ContainerBase.java:1519)
+	at java.lang.Thread.run(Unknown Source)
+[ERROR] 2015-05-25 10:06:24 ContainerBackgroundProcessor[StandardEngine[Catalina]] org.hibernate.tool.hbm2ddl.SchemaUpdate - Unsuccessful: alter table t_work_questions add index FKDD2618CA3AB17055 (Q_TYPE), add constraint FKDD2618CA3AB17055 foreign key (Q_TYPE) references t_work_Types (tid)
+[ERROR] 2015-05-25 10:06:24 ContainerBackgroundProcessor[StandardEngine[Catalina]] org.hibernate.tool.hbm2ddl.SchemaUpdate - Can't create table 'workeacheval.#sql-1950_1a' (errno: 150)
+[ERROR] 2015-05-25 10:12:43 http-bio-8080-exec-16 com.opensymphony.xwork2.interceptor.ParametersInterceptor - Developer Notification (set struts.devMode to false to disable this message):
+Unexpected Exception caught setting 'x' on 'class chzu.lujie.work.view.action.UserAction: Error setting expression 'x' with value ['48', ]
+[ERROR] 2015-05-25 10:12:43 http-bio-8080-exec-16 com.opensymphony.xwork2.interceptor.ParametersInterceptor - Developer Notification (set struts.devMode to false to disable this message):
+Unexpected Exception caught setting 'y' on 'class chzu.lujie.work.view.action.UserAction: Error setting expression 'y' with value ['29', ]
+[WARN ] 2015-05-25 10:15:17 ContainerBackgroundProcessor[StandardEngine[Catalina]] org.hibernate.impl.SessionFactoryObjectFactory - Could not unbind factory from JNDI
+javax.naming.NamingException: Name is not valid
+	at org.apache.naming.NamingContext.unbind(NamingContext.java:269)
+	at org.apache.naming.NamingContext.unbind(NamingContext.java:304)
+	at org.apache.naming.SelectorContext.unbind(SelectorContext.java:268)
+	at javax.naming.InitialContext.unbind(Unknown Source)
+	at org.hibernate.impl.SessionFactoryObjectFactory.removeInstance(SessionFactoryObjectFactory.java:139)
+	at org.hibernate.impl.SessionFactoryImpl.close(SessionFactoryImpl.java:966)
+	at org.springframework.orm.hibernate3.AbstractSessionFactoryBean.destroy(AbstractSessionFactoryBean.java:230)
+	at org.springframework.orm.hibernate3.LocalSessionFactoryBean.destroy(LocalSessionFactoryBean.java:832)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:257)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:540)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:516)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:824)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:485)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:921)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:895)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:841)
+	at org.springframework.web.context.ContextLoader.closeWebApplicationContext(ContextLoader.java:579)
+	at org.springframework.web.context.ContextLoaderListener.contextDestroyed(ContextLoaderListener.java:115)
+	at org.apache.catalina.core.StandardContext.listenerStop(StandardContext.java:5014)
+	at org.apache.catalina.core.StandardContext.stopInternal(StandardContext.java:5659)
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:232)
+	at org.apache.catalina.core.StandardContext.reload(StandardContext.java:3981)
+	at org.apache.catalina.loader.WebappLoader.backgroundProcess(WebappLoader.java:425)
+	at org.apache.catalina.core.ContainerBase.backgroundProcess(ContainerBase.java:1345)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1530)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1540)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1540)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.run(ContainerBase.java:1519)
+	at java.lang.Thread.run(Unknown Source)
+[WARN ] 2015-05-25 10:15:34 ContainerBackgroundProcessor[StandardEngine[Catalina]] com.mchange.v2.c3p0.management.ActiveManagementCoordinator - A C3P0Registry mbean is already registered. This probably means that an application using c3p0 was undeployed, but not all PooledDataSources were closed prior to undeployment. This may lead to resource leaks over time. Please take care to close all PooledDataSources.
+[WARN ] 2015-05-25 10:15:38 ContainerBackgroundProcessor[StandardEngine[Catalina]] org.hibernate.util.DTDEntityResolver - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[WARN ] 2015-05-25 10:15:39 ContainerBackgroundProcessor[StandardEngine[Catalina]] org.hibernate.util.DTDEntityResolver - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[WARN ] 2015-05-25 10:15:39 ContainerBackgroundProcessor[StandardEngine[Catalina]] org.hibernate.util.DTDEntityResolver - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[WARN ] 2015-05-25 10:15:39 ContainerBackgroundProcessor[StandardEngine[Catalina]] org.hibernate.util.DTDEntityResolver - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[WARN ] 2015-05-25 10:15:39 ContainerBackgroundProcessor[StandardEngine[Catalina]] org.hibernate.util.DTDEntityResolver - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[WARN ] 2015-05-25 10:15:39 ContainerBackgroundProcessor[StandardEngine[Catalina]] org.hibernate.util.DTDEntityResolver - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[WARN ] 2015-05-25 10:15:39 ContainerBackgroundProcessor[StandardEngine[Catalina]] org.hibernate.util.DTDEntityResolver - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[WARN ] 2015-05-25 10:15:39 ContainerBackgroundProcessor[StandardEngine[Catalina]] org.hibernate.util.DTDEntityResolver - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[WARN ] 2015-05-25 10:15:39 ContainerBackgroundProcessor[StandardEngine[Catalina]] org.hibernate.util.DTDEntityResolver - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[WARN ] 2015-05-25 10:15:39 ContainerBackgroundProcessor[StandardEngine[Catalina]] org.hibernate.util.DTDEntityResolver - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[WARN ] 2015-05-25 10:15:40 ContainerBackgroundProcessor[StandardEngine[Catalina]] org.hibernate.util.DTDEntityResolver - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[WARN ] 2015-05-25 10:15:40 ContainerBackgroundProcessor[StandardEngine[Catalina]] org.hibernate.util.DTDEntityResolver - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[WARN ] 2015-05-25 10:15:40 ContainerBackgroundProcessor[StandardEngine[Catalina]] org.hibernate.util.DTDEntityResolver - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[WARN ] 2015-05-25 10:15:40 ContainerBackgroundProcessor[StandardEngine[Catalina]] org.hibernate.util.DTDEntityResolver - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[WARN ] 2015-05-25 10:15:40 ContainerBackgroundProcessor[StandardEngine[Catalina]] org.hibernate.util.DTDEntityResolver - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[WARN ] 2015-05-25 10:15:40 ContainerBackgroundProcessor[StandardEngine[Catalina]] org.hibernate.util.DTDEntityResolver - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[WARN ] 2015-05-25 10:15:40 ContainerBackgroundProcessor[StandardEngine[Catalina]] org.hibernate.util.DTDEntityResolver - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[WARN ] 2015-05-25 10:15:40 ContainerBackgroundProcessor[StandardEngine[Catalina]] org.hibernate.util.DTDEntityResolver - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[WARN ] 2015-05-25 10:15:40 ContainerBackgroundProcessor[StandardEngine[Catalina]] org.hibernate.util.DTDEntityResolver - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[WARN ] 2015-05-25 10:15:40 ContainerBackgroundProcessor[StandardEngine[Catalina]] org.hibernate.util.DTDEntityResolver - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[WARN ] 2015-05-25 10:15:40 ContainerBackgroundProcessor[StandardEngine[Catalina]] org.hibernate.util.DTDEntityResolver - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[WARN ] 2015-05-25 10:15:40 ContainerBackgroundProcessor[StandardEngine[Catalina]] org.hibernate.util.DTDEntityResolver - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[WARN ] 2015-05-25 10:15:40 ContainerBackgroundProcessor[StandardEngine[Catalina]] org.hibernate.util.DTDEntityResolver - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[WARN ] 2015-05-25 10:15:40 ContainerBackgroundProcessor[StandardEngine[Catalina]] org.hibernate.util.DTDEntityResolver - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[WARN ] 2015-05-25 10:15:45 ContainerBackgroundProcessor[StandardEngine[Catalina]] org.hibernate.impl.SessionFactoryObjectFactory - Could not bind factory to JNDI
+javax.naming.NamingException: Name is not valid
+	at org.apache.naming.NamingContext.bind(NamingContext.java:892)
+	at org.apache.naming.NamingContext.rebind(NamingContext.java:225)
+	at org.apache.naming.SelectorContext.rebind(SelectorContext.java:216)
+	at javax.naming.InitialContext.rebind(Unknown Source)
+	at org.hibernate.util.NamingHelper.bind(NamingHelper.java:97)
+	at org.hibernate.impl.SessionFactoryObjectFactory.addInstance(SessionFactoryObjectFactory.java:113)
+	at org.hibernate.impl.SessionFactoryImpl.<init>(SessionFactoryImpl.java:365)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1842)
+	at org.springframework.orm.hibernate3.LocalSessionFactoryBean.newSessionFactory(LocalSessionFactoryBean.java:793)
+	at org.springframework.orm.hibernate3.LocalSessionFactoryBean.buildSessionFactory(LocalSessionFactoryBean.java:715)
+	at org.springframework.orm.hibernate3.AbstractSessionFactoryBean.afterPropertiesSet(AbstractSessionFactoryBean.java:189)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1612)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1549)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:539)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:475)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:304)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:300)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:445)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:419)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:544)
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:155)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:87)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessPropertyValues(CommonAnnotationBeanPostProcessor.java:304)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1185)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:537)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:475)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:304)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:300)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:195)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:700)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:760)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:482)
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:403)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:306)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:106)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4973)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5467)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.StandardContext.reload(StandardContext.java:3988)
+	at org.apache.catalina.loader.WebappLoader.backgroundProcess(WebappLoader.java:425)
+	at org.apache.catalina.core.ContainerBase.backgroundProcess(ContainerBase.java:1345)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1530)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1540)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1540)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.run(ContainerBase.java:1519)
+	at java.lang.Thread.run(Unknown Source)
+[ERROR] 2015-05-25 10:15:47 ContainerBackgroundProcessor[StandardEngine[Catalina]] org.hibernate.tool.hbm2ddl.SchemaUpdate - Unsuccessful: alter table t_work_questions add index FKDD2618CA3AB17055 (Q_TYPE), add constraint FKDD2618CA3AB17055 foreign key (Q_TYPE) references t_work_Types (tid)
+[ERROR] 2015-05-25 10:15:47 ContainerBackgroundProcessor[StandardEngine[Catalina]] org.hibernate.tool.hbm2ddl.SchemaUpdate - Can't create table 'workeacheval.#sql-1950_1d' (errno: 150)
+[ERROR] 2015-05-25 10:16:30 http-bio-8080-exec-18 com.opensymphony.xwork2.interceptor.ParametersInterceptor - Developer Notification (set struts.devMode to false to disable this message):
+Unexpected Exception caught setting 'x' on 'class chzu.lujie.work.view.action.UserAction: Error setting expression 'x' with value ['47', ]
+[ERROR] 2015-05-25 10:16:30 http-bio-8080-exec-18 com.opensymphony.xwork2.interceptor.ParametersInterceptor - Developer Notification (set struts.devMode to false to disable this message):
+Unexpected Exception caught setting 'y' on 'class chzu.lujie.work.view.action.UserAction: Error setting expression 'y' with value ['14', ]
+[WARN ] 2015-05-25 10:17:58 ContainerBackgroundProcessor[StandardEngine[Catalina]] org.hibernate.impl.SessionFactoryObjectFactory - Could not unbind factory from JNDI
+javax.naming.NamingException: Name is not valid
+	at org.apache.naming.NamingContext.unbind(NamingContext.java:269)
+	at org.apache.naming.NamingContext.unbind(NamingContext.java:304)
+	at org.apache.naming.SelectorContext.unbind(SelectorContext.java:268)
+	at javax.naming.InitialContext.unbind(Unknown Source)
+	at org.hibernate.impl.SessionFactoryObjectFactory.removeInstance(SessionFactoryObjectFactory.java:139)
+	at org.hibernate.impl.SessionFactoryImpl.close(SessionFactoryImpl.java:966)
+	at org.springframework.orm.hibernate3.AbstractSessionFactoryBean.destroy(AbstractSessionFactoryBean.java:230)
+	at org.springframework.orm.hibernate3.LocalSessionFactoryBean.destroy(LocalSessionFactoryBean.java:832)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:257)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:540)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:516)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:824)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:485)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:921)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:895)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:841)
+	at org.springframework.web.context.ContextLoader.closeWebApplicationContext(ContextLoader.java:579)
+	at org.springframework.web.context.ContextLoaderListener.contextDestroyed(ContextLoaderListener.java:115)
+	at org.apache.catalina.core.StandardContext.listenerStop(StandardContext.java:5014)
+	at org.apache.catalina.core.StandardContext.stopInternal(StandardContext.java:5659)
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:232)
+	at org.apache.catalina.core.StandardContext.reload(StandardContext.java:3981)
+	at org.apache.catalina.loader.WebappLoader.backgroundProcess(WebappLoader.java:425)
+	at org.apache.catalina.core.ContainerBase.backgroundProcess(ContainerBase.java:1345)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1530)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1540)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1540)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.run(ContainerBase.java:1519)
+	at java.lang.Thread.run(Unknown Source)
+[WARN ] 2015-05-25 10:18:17 ContainerBackgroundProcessor[StandardEngine[Catalina]] com.mchange.v2.c3p0.management.ActiveManagementCoordinator - A C3P0Registry mbean is already registered. This probably means that an application using c3p0 was undeployed, but not all PooledDataSources were closed prior to undeployment. This may lead to resource leaks over time. Please take care to close all PooledDataSources.
+[WARN ] 2015-05-25 10:18:22 ContainerBackgroundProcessor[StandardEngine[Catalina]] org.hibernate.util.DTDEntityResolver - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[WARN ] 2015-05-25 10:18:22 ContainerBackgroundProcessor[StandardEngine[Catalina]] org.hibernate.util.DTDEntityResolver - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[WARN ] 2015-05-25 10:18:22 ContainerBackgroundProcessor[StandardEngine[Catalina]] org.hibernate.util.DTDEntityResolver - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[WARN ] 2015-05-25 10:18:22 ContainerBackgroundProcessor[StandardEngine[Catalina]] org.hibernate.util.DTDEntityResolver - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[WARN ] 2015-05-25 10:18:22 ContainerBackgroundProcessor[StandardEngine[Catalina]] org.hibernate.util.DTDEntityResolver - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[WARN ] 2015-05-25 10:18:22 ContainerBackgroundProcessor[StandardEngine[Catalina]] org.hibernate.util.DTDEntityResolver - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[WARN ] 2015-05-25 10:18:22 ContainerBackgroundProcessor[StandardEngine[Catalina]] org.hibernate.util.DTDEntityResolver - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[WARN ] 2015-05-25 10:18:22 ContainerBackgroundProcessor[StandardEngine[Catalina]] org.hibernate.util.DTDEntityResolver - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[WARN ] 2015-05-25 10:18:22 ContainerBackgroundProcessor[StandardEngine[Catalina]] org.hibernate.util.DTDEntityResolver - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[WARN ] 2015-05-25 10:18:22 ContainerBackgroundProcessor[StandardEngine[Catalina]] org.hibernate.util.DTDEntityResolver - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[WARN ] 2015-05-25 10:18:22 ContainerBackgroundProcessor[StandardEngine[Catalina]] org.hibernate.util.DTDEntityResolver - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[WARN ] 2015-05-25 10:18:22 ContainerBackgroundProcessor[StandardEngine[Catalina]] org.hibernate.util.DTDEntityResolver - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[WARN ] 2015-05-25 10:18:22 ContainerBackgroundProcessor[StandardEngine[Catalina]] org.hibernate.util.DTDEntityResolver - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[WARN ] 2015-05-25 10:18:22 ContainerBackgroundProcessor[StandardEngine[Catalina]] org.hibernate.util.DTDEntityResolver - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[WARN ] 2015-05-25 10:18:22 ContainerBackgroundProcessor[StandardEngine[Catalina]] org.hibernate.util.DTDEntityResolver - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[WARN ] 2015-05-25 10:18:22 ContainerBackgroundProcessor[StandardEngine[Catalina]] org.hibernate.util.DTDEntityResolver - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[WARN ] 2015-05-25 10:18:22 ContainerBackgroundProcessor[StandardEngine[Catalina]] org.hibernate.util.DTDEntityResolver - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[WARN ] 2015-05-25 10:18:22 ContainerBackgroundProcessor[StandardEngine[Catalina]] org.hibernate.util.DTDEntityResolver - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[WARN ] 2015-05-25 10:18:22 ContainerBackgroundProcessor[StandardEngine[Catalina]] org.hibernate.util.DTDEntityResolver - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[WARN ] 2015-05-25 10:18:22 ContainerBackgroundProcessor[StandardEngine[Catalina]] org.hibernate.util.DTDEntityResolver - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[WARN ] 2015-05-25 10:18:22 ContainerBackgroundProcessor[StandardEngine[Catalina]] org.hibernate.util.DTDEntityResolver - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[WARN ] 2015-05-25 10:18:22 ContainerBackgroundProcessor[StandardEngine[Catalina]] org.hibernate.util.DTDEntityResolver - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[WARN ] 2015-05-25 10:18:22 ContainerBackgroundProcessor[StandardEngine[Catalina]] org.hibernate.util.DTDEntityResolver - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[WARN ] 2015-05-25 10:18:22 ContainerBackgroundProcessor[StandardEngine[Catalina]] org.hibernate.util.DTDEntityResolver - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[WARN ] 2015-05-25 10:18:28 ContainerBackgroundProcessor[StandardEngine[Catalina]] org.hibernate.impl.SessionFactoryObjectFactory - Could not bind factory to JNDI
+javax.naming.NamingException: Name is not valid
+	at org.apache.naming.NamingContext.bind(NamingContext.java:892)
+	at org.apache.naming.NamingContext.rebind(NamingContext.java:225)
+	at org.apache.naming.SelectorContext.rebind(SelectorContext.java:216)
+	at javax.naming.InitialContext.rebind(Unknown Source)
+	at org.hibernate.util.NamingHelper.bind(NamingHelper.java:97)
+	at org.hibernate.impl.SessionFactoryObjectFactory.addInstance(SessionFactoryObjectFactory.java:113)
+	at org.hibernate.impl.SessionFactoryImpl.<init>(SessionFactoryImpl.java:365)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1842)
+	at org.springframework.orm.hibernate3.LocalSessionFactoryBean.newSessionFactory(LocalSessionFactoryBean.java:793)
+	at org.springframework.orm.hibernate3.LocalSessionFactoryBean.buildSessionFactory(LocalSessionFactoryBean.java:715)
+	at org.springframework.orm.hibernate3.AbstractSessionFactoryBean.afterPropertiesSet(AbstractSessionFactoryBean.java:189)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1612)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1549)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:539)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:475)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:304)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:300)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:445)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:419)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:544)
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:155)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:87)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessPropertyValues(CommonAnnotationBeanPostProcessor.java:304)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1185)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:537)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:475)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:304)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:300)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:195)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:700)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:760)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:482)
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:403)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:306)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:106)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4973)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5467)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.StandardContext.reload(StandardContext.java:3988)
+	at org.apache.catalina.loader.WebappLoader.backgroundProcess(WebappLoader.java:425)
+	at org.apache.catalina.core.ContainerBase.backgroundProcess(ContainerBase.java:1345)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1530)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1540)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1540)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.run(ContainerBase.java:1519)
+	at java.lang.Thread.run(Unknown Source)
+[WARN ] 2015-05-25 10:19:36 localhost-startStop-1 org.hibernate.util.DTDEntityResolver - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[WARN ] 2015-05-25 10:19:36 localhost-startStop-1 org.hibernate.util.DTDEntityResolver - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[WARN ] 2015-05-25 10:19:37 localhost-startStop-1 org.hibernate.util.DTDEntityResolver - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[WARN ] 2015-05-25 10:19:37 localhost-startStop-1 org.hibernate.util.DTDEntityResolver - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[WARN ] 2015-05-25 10:19:37 localhost-startStop-1 org.hibernate.util.DTDEntityResolver - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[WARN ] 2015-05-25 10:19:37 localhost-startStop-1 org.hibernate.util.DTDEntityResolver - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[WARN ] 2015-05-25 10:19:37 localhost-startStop-1 org.hibernate.util.DTDEntityResolver - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[WARN ] 2015-05-25 10:19:37 localhost-startStop-1 org.hibernate.util.DTDEntityResolver - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[WARN ] 2015-05-25 10:19:37 localhost-startStop-1 org.hibernate.util.DTDEntityResolver - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[WARN ] 2015-05-25 10:19:37 localhost-startStop-1 org.hibernate.util.DTDEntityResolver - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[WARN ] 2015-05-25 10:19:37 localhost-startStop-1 org.hibernate.util.DTDEntityResolver - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[WARN ] 2015-05-25 10:19:37 localhost-startStop-1 org.hibernate.util.DTDEntityResolver - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[WARN ] 2015-05-25 10:19:37 localhost-startStop-1 org.hibernate.util.DTDEntityResolver - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[WARN ] 2015-05-25 10:19:37 localhost-startStop-1 org.hibernate.util.DTDEntityResolver - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[WARN ] 2015-05-25 10:19:37 localhost-startStop-1 org.hibernate.util.DTDEntityResolver - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[WARN ] 2015-05-25 10:19:37 localhost-startStop-1 org.hibernate.util.DTDEntityResolver - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[WARN ] 2015-05-25 10:19:37 localhost-startStop-1 org.hibernate.util.DTDEntityResolver - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[WARN ] 2015-05-25 10:19:37 localhost-startStop-1 org.hibernate.util.DTDEntityResolver - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[WARN ] 2015-05-25 10:19:37 localhost-startStop-1 org.hibernate.util.DTDEntityResolver - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[WARN ] 2015-05-25 10:19:37 localhost-startStop-1 org.hibernate.util.DTDEntityResolver - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[WARN ] 2015-05-25 10:19:37 localhost-startStop-1 org.hibernate.util.DTDEntityResolver - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[WARN ] 2015-05-25 10:19:37 localhost-startStop-1 org.hibernate.util.DTDEntityResolver - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[WARN ] 2015-05-25 10:19:38 localhost-startStop-1 org.hibernate.util.DTDEntityResolver - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[WARN ] 2015-05-25 10:19:38 localhost-startStop-1 org.hibernate.util.DTDEntityResolver - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[WARN ] 2015-05-25 10:19:43 localhost-startStop-1 org.hibernate.impl.SessionFactoryObjectFactory - Could not bind factory to JNDI
+javax.naming.NamingException: Name is not valid
+	at org.apache.naming.NamingContext.bind(NamingContext.java:892)
+	at org.apache.naming.NamingContext.rebind(NamingContext.java:225)
+	at org.apache.naming.SelectorContext.rebind(SelectorContext.java:216)
+	at javax.naming.InitialContext.rebind(Unknown Source)
+	at org.hibernate.util.NamingHelper.bind(NamingHelper.java:97)
+	at org.hibernate.impl.SessionFactoryObjectFactory.addInstance(SessionFactoryObjectFactory.java:113)
+	at org.hibernate.impl.SessionFactoryImpl.<init>(SessionFactoryImpl.java:365)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1842)
+	at org.springframework.orm.hibernate3.LocalSessionFactoryBean.newSessionFactory(LocalSessionFactoryBean.java:793)
+	at org.springframework.orm.hibernate3.LocalSessionFactoryBean.buildSessionFactory(LocalSessionFactoryBean.java:715)
+	at org.springframework.orm.hibernate3.AbstractSessionFactoryBean.afterPropertiesSet(AbstractSessionFactoryBean.java:189)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1612)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1549)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:539)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:475)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:304)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:300)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:445)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:419)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:544)
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:155)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:87)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessPropertyValues(CommonAnnotationBeanPostProcessor.java:304)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1185)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:537)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:475)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:304)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:300)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:195)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:700)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:760)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:482)
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:403)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:306)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:106)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4973)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5467)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1559)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1549)
+	at java.util.concurrent.FutureTask$Sync.innerRun(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+[ERROR] 2015-05-25 10:19:44 localhost-startStop-1 org.hibernate.tool.hbm2ddl.SchemaUpdate - Unsuccessful: alter table t_work_questions add index FKDD2618CA3AB17055 (Q_TYPE), add constraint FKDD2618CA3AB17055 foreign key (Q_TYPE) references t_work_Types (tid)
+[ERROR] 2015-05-25 10:19:44 localhost-startStop-1 org.hibernate.tool.hbm2ddl.SchemaUpdate - Can't create table 'workeacheval.#sql-1950_22' (errno: 150)
+[ERROR] 2015-05-25 10:20:18 http-bio-8080-exec-9 com.opensymphony.xwork2.interceptor.ParametersInterceptor - Developer Notification (set struts.devMode to false to disable this message):
+Unexpected Exception caught setting 'x' on 'class chzu.lujie.work.view.action.UserAction: Error setting expression 'x' with value ['61', ]
+[ERROR] 2015-05-25 10:20:18 http-bio-8080-exec-9 com.opensymphony.xwork2.interceptor.ParametersInterceptor - Developer Notification (set struts.devMode to false to disable this message):
+Unexpected Exception caught setting 'y' on 'class chzu.lujie.work.view.action.UserAction: Error setting expression 'y' with value ['32', ]
+[ERROR] 2015-05-25 10:20:58 http-bio-8080-exec-1 com.opensymphony.xwork2.interceptor.ParametersInterceptor - Developer Notification (set struts.devMode to false to disable this message):
+Unexpected Exception caught setting 'x' on 'class chzu.lujie.work.view.action.ExamAction: Error setting expression 'x' with value ['24', ]
+[ERROR] 2015-05-25 10:20:58 http-bio-8080-exec-1 com.opensymphony.xwork2.interceptor.ParametersInterceptor - Developer Notification (set struts.devMode to false to disable this message):
+Unexpected Exception caught setting 'y' on 'class chzu.lujie.work.view.action.ExamAction: Error setting expression 'y' with value ['14', ]
+[ERROR] 2015-05-25 10:21:23 http-bio-8080-exec-2 com.opensymphony.xwork2.interceptor.ParametersInterceptor - Developer Notification (set struts.devMode to false to disable this message):
+Unexpected Exception caught setting 'judgeAnswer' on 'class chzu.lujie.work.view.action.QuestionAction: Error setting expression 'judgeAnswer' with value ['1', ]
+[ERROR] 2015-05-25 10:21:23 http-bio-8080-exec-2 com.opensymphony.xwork2.interceptor.ParametersInterceptor - Developer Notification (set struts.devMode to false to disable this message):
+Unexpected Exception caught setting 'ptAnswer' on 'class chzu.lujie.work.view.action.QuestionAction: Error setting expression 'ptAnswer' with value ['', ]
+[ERROR] 2015-05-25 10:21:23 http-bio-8080-exec-2 com.opensymphony.xwork2.interceptor.ParametersInterceptor - Developer Notification (set struts.devMode to false to disable this message):
+Unexpected Exception caught setting 'x' on 'class chzu.lujie.work.view.action.QuestionAction: Error setting expression 'x' with value ['7', ]
+[ERROR] 2015-05-25 10:21:23 http-bio-8080-exec-2 com.opensymphony.xwork2.interceptor.ParametersInterceptor - Developer Notification (set struts.devMode to false to disable this message):
+Unexpected Exception caught setting 'y' on 'class chzu.lujie.work.view.action.QuestionAction: Error setting expression 'y' with value ['9', ]
+[WARN ] 2015-05-25 11:52:26 ContainerBackgroundProcessor[StandardEngine[Catalina]] org.hibernate.impl.SessionFactoryObjectFactory - Could not unbind factory from JNDI
+javax.naming.NamingException: Name is not valid
+	at org.apache.naming.NamingContext.unbind(NamingContext.java:269)
+	at org.apache.naming.NamingContext.unbind(NamingContext.java:304)
+	at org.apache.naming.SelectorContext.unbind(SelectorContext.java:268)
+	at javax.naming.InitialContext.unbind(Unknown Source)
+	at org.hibernate.impl.SessionFactoryObjectFactory.removeInstance(SessionFactoryObjectFactory.java:139)
+	at org.hibernate.impl.SessionFactoryImpl.close(SessionFactoryImpl.java:966)
+	at org.springframework.orm.hibernate3.AbstractSessionFactoryBean.destroy(AbstractSessionFactoryBean.java:230)
+	at org.springframework.orm.hibernate3.LocalSessionFactoryBean.destroy(LocalSessionFactoryBean.java:832)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:257)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:540)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:516)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:824)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:485)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:921)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:895)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:841)
+	at org.springframework.web.context.ContextLoader.closeWebApplicationContext(ContextLoader.java:579)
+	at org.springframework.web.context.ContextLoaderListener.contextDestroyed(ContextLoaderListener.java:115)
+	at org.apache.catalina.core.StandardContext.listenerStop(StandardContext.java:5014)
+	at org.apache.catalina.core.StandardContext.stopInternal(StandardContext.java:5659)
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:232)
+	at org.apache.catalina.core.StandardContext.reload(StandardContext.java:3981)
+	at org.apache.catalina.loader.WebappLoader.backgroundProcess(WebappLoader.java:425)
+	at org.apache.catalina.core.ContainerBase.backgroundProcess(ContainerBase.java:1345)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1530)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1540)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1540)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.run(ContainerBase.java:1519)
+	at java.lang.Thread.run(Unknown Source)
+[WARN ] 2015-05-25 11:53:17 ContainerBackgroundProcessor[StandardEngine[Catalina]] com.mchange.v2.c3p0.management.ActiveManagementCoordinator - A C3P0Registry mbean is already registered. This probably means that an application using c3p0 was undeployed, but not all PooledDataSources were closed prior to undeployment. This may lead to resource leaks over time. Please take care to close all PooledDataSources.
+[WARN ] 2015-05-25 11:53:20 ContainerBackgroundProcessor[StandardEngine[Catalina]] org.hibernate.util.DTDEntityResolver - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[WARN ] 2015-05-25 11:53:20 ContainerBackgroundProcessor[StandardEngine[Catalina]] org.hibernate.util.DTDEntityResolver - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[WARN ] 2015-05-25 11:53:20 ContainerBackgroundProcessor[StandardEngine[Catalina]] org.hibernate.util.DTDEntityResolver - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[WARN ] 2015-05-25 11:53:20 ContainerBackgroundProcessor[StandardEngine[Catalina]] org.hibernate.util.DTDEntityResolver - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[WARN ] 2015-05-25 11:53:20 ContainerBackgroundProcessor[StandardEngine[Catalina]] org.hibernate.util.DTDEntityResolver - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[WARN ] 2015-05-25 11:53:20 ContainerBackgroundProcessor[StandardEngine[Catalina]] org.hibernate.util.DTDEntityResolver - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[WARN ] 2015-05-25 11:53:20 ContainerBackgroundProcessor[StandardEngine[Catalina]] org.hibernate.util.DTDEntityResolver - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[WARN ] 2015-05-25 11:53:20 ContainerBackgroundProcessor[StandardEngine[Catalina]] org.hibernate.util.DTDEntityResolver - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[WARN ] 2015-05-25 11:53:20 ContainerBackgroundProcessor[StandardEngine[Catalina]] org.hibernate.util.DTDEntityResolver - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[WARN ] 2015-05-25 11:53:20 ContainerBackgroundProcessor[StandardEngine[Catalina]] org.hibernate.util.DTDEntityResolver - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[WARN ] 2015-05-25 11:53:20 ContainerBackgroundProcessor[StandardEngine[Catalina]] org.hibernate.util.DTDEntityResolver - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[WARN ] 2015-05-25 11:53:20 ContainerBackgroundProcessor[StandardEngine[Catalina]] org.hibernate.util.DTDEntityResolver - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[WARN ] 2015-05-25 11:53:20 ContainerBackgroundProcessor[StandardEngine[Catalina]] org.hibernate.util.DTDEntityResolver - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[WARN ] 2015-05-25 11:53:20 ContainerBackgroundProcessor[StandardEngine[Catalina]] org.hibernate.util.DTDEntityResolver - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[WARN ] 2015-05-25 11:53:20 ContainerBackgroundProcessor[StandardEngine[Catalina]] org.hibernate.util.DTDEntityResolver - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[WARN ] 2015-05-25 11:53:20 ContainerBackgroundProcessor[StandardEngine[Catalina]] org.hibernate.util.DTDEntityResolver - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[WARN ] 2015-05-25 11:53:20 ContainerBackgroundProcessor[StandardEngine[Catalina]] org.hibernate.util.DTDEntityResolver - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[WARN ] 2015-05-25 11:53:20 ContainerBackgroundProcessor[StandardEngine[Catalina]] org.hibernate.util.DTDEntityResolver - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[WARN ] 2015-05-25 11:53:21 ContainerBackgroundProcessor[StandardEngine[Catalina]] org.hibernate.util.DTDEntityResolver - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[WARN ] 2015-05-25 11:53:21 ContainerBackgroundProcessor[StandardEngine[Catalina]] org.hibernate.util.DTDEntityResolver - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[WARN ] 2015-05-25 11:53:21 ContainerBackgroundProcessor[StandardEngine[Catalina]] org.hibernate.util.DTDEntityResolver - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[WARN ] 2015-05-25 11:53:21 ContainerBackgroundProcessor[StandardEngine[Catalina]] org.hibernate.util.DTDEntityResolver - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[WARN ] 2015-05-25 11:53:21 ContainerBackgroundProcessor[StandardEngine[Catalina]] org.hibernate.util.DTDEntityResolver - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[WARN ] 2015-05-25 11:53:21 ContainerBackgroundProcessor[StandardEngine[Catalina]] org.hibernate.util.DTDEntityResolver - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[WARN ] 2015-05-25 11:53:27 ContainerBackgroundProcessor[StandardEngine[Catalina]] org.hibernate.impl.SessionFactoryObjectFactory - Could not bind factory to JNDI
+javax.naming.NamingException: Name is not valid
+	at org.apache.naming.NamingContext.bind(NamingContext.java:892)
+	at org.apache.naming.NamingContext.rebind(NamingContext.java:225)
+	at org.apache.naming.SelectorContext.rebind(SelectorContext.java:216)
+	at javax.naming.InitialContext.rebind(Unknown Source)
+	at org.hibernate.util.NamingHelper.bind(NamingHelper.java:97)
+	at org.hibernate.impl.SessionFactoryObjectFactory.addInstance(SessionFactoryObjectFactory.java:113)
+	at org.hibernate.impl.SessionFactoryImpl.<init>(SessionFactoryImpl.java:365)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1842)
+	at org.springframework.orm.hibernate3.LocalSessionFactoryBean.newSessionFactory(LocalSessionFactoryBean.java:793)
+	at org.springframework.orm.hibernate3.LocalSessionFactoryBean.buildSessionFactory(LocalSessionFactoryBean.java:715)
+	at org.springframework.orm.hibernate3.AbstractSessionFactoryBean.afterPropertiesSet(AbstractSessionFactoryBean.java:189)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1612)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1549)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:539)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:475)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:304)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:300)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:445)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:419)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:544)
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:155)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:87)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessPropertyValues(CommonAnnotationBeanPostProcessor.java:304)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1185)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:537)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:475)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:304)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:300)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:195)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:700)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:760)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:482)
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:403)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:306)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:106)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4973)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5467)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.StandardContext.reload(StandardContext.java:3988)
+	at org.apache.catalina.loader.WebappLoader.backgroundProcess(WebappLoader.java:425)
+	at org.apache.catalina.core.ContainerBase.backgroundProcess(ContainerBase.java:1345)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1530)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1540)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1540)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.run(ContainerBase.java:1519)
+	at java.lang.Thread.run(Unknown Source)
+[ERROR] 2015-05-25 11:53:30 ContainerBackgroundProcessor[StandardEngine[Catalina]] org.hibernate.tool.hbm2ddl.SchemaUpdate - Unsuccessful: alter table t_work_questions add index FKDD2618CA3AB17055 (Q_TYPE), add constraint FKDD2618CA3AB17055 foreign key (Q_TYPE) references t_work_Types (tid)
+[ERROR] 2015-05-25 11:53:30 ContainerBackgroundProcessor[StandardEngine[Catalina]] org.hibernate.tool.hbm2ddl.SchemaUpdate - Can't create table 'workeacheval.#sql-1950_2b' (errno: 150)
+[WARN ] 2015-05-25 11:59:12 localhost-startStop-1 org.hibernate.util.DTDEntityResolver - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[WARN ] 2015-05-25 11:59:13 localhost-startStop-1 org.hibernate.util.DTDEntityResolver - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[WARN ] 2015-05-25 11:59:13 localhost-startStop-1 org.hibernate.util.DTDEntityResolver - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[WARN ] 2015-05-25 11:59:13 localhost-startStop-1 org.hibernate.util.DTDEntityResolver - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[WARN ] 2015-05-25 11:59:13 localhost-startStop-1 org.hibernate.util.DTDEntityResolver - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[WARN ] 2015-05-25 11:59:13 localhost-startStop-1 org.hibernate.util.DTDEntityResolver - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[WARN ] 2015-05-25 11:59:13 localhost-startStop-1 org.hibernate.util.DTDEntityResolver - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[WARN ] 2015-05-25 11:59:13 localhost-startStop-1 org.hibernate.util.DTDEntityResolver - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[WARN ] 2015-05-25 11:59:13 localhost-startStop-1 org.hibernate.util.DTDEntityResolver - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[WARN ] 2015-05-25 11:59:13 localhost-startStop-1 org.hibernate.util.DTDEntityResolver - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[WARN ] 2015-05-25 11:59:13 localhost-startStop-1 org.hibernate.util.DTDEntityResolver - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[WARN ] 2015-05-25 11:59:13 localhost-startStop-1 org.hibernate.util.DTDEntityResolver - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[WARN ] 2015-05-25 11:59:13 localhost-startStop-1 org.hibernate.util.DTDEntityResolver - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[WARN ] 2015-05-25 11:59:13 localhost-startStop-1 org.hibernate.util.DTDEntityResolver - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[WARN ] 2015-05-25 11:59:13 localhost-startStop-1 org.hibernate.util.DTDEntityResolver - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[WARN ] 2015-05-25 11:59:13 localhost-startStop-1 org.hibernate.util.DTDEntityResolver - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[WARN ] 2015-05-25 11:59:13 localhost-startStop-1 org.hibernate.util.DTDEntityResolver - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[WARN ] 2015-05-25 11:59:13 localhost-startStop-1 org.hibernate.util.DTDEntityResolver - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[WARN ] 2015-05-25 11:59:13 localhost-startStop-1 org.hibernate.util.DTDEntityResolver - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[WARN ] 2015-05-25 11:59:13 localhost-startStop-1 org.hibernate.util.DTDEntityResolver - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[WARN ] 2015-05-25 11:59:13 localhost-startStop-1 org.hibernate.util.DTDEntityResolver - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[WARN ] 2015-05-25 11:59:13 localhost-startStop-1 org.hibernate.util.DTDEntityResolver - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[WARN ] 2015-05-25 11:59:13 localhost-startStop-1 org.hibernate.util.DTDEntityResolver - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[WARN ] 2015-05-25 11:59:13 localhost-startStop-1 org.hibernate.util.DTDEntityResolver - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[WARN ] 2015-05-25 11:59:18 localhost-startStop-1 org.hibernate.impl.SessionFactoryObjectFactory - Could not bind factory to JNDI
+javax.naming.NamingException: Name is not valid
+	at org.apache.naming.NamingContext.bind(NamingContext.java:892)
+	at org.apache.naming.NamingContext.rebind(NamingContext.java:225)
+	at org.apache.naming.SelectorContext.rebind(SelectorContext.java:216)
+	at javax.naming.InitialContext.rebind(Unknown Source)
+	at org.hibernate.util.NamingHelper.bind(NamingHelper.java:97)
+	at org.hibernate.impl.SessionFactoryObjectFactory.addInstance(SessionFactoryObjectFactory.java:113)
+	at org.hibernate.impl.SessionFactoryImpl.<init>(SessionFactoryImpl.java:365)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1842)
+	at org.springframework.orm.hibernate3.LocalSessionFactoryBean.newSessionFactory(LocalSessionFactoryBean.java:793)
+	at org.springframework.orm.hibernate3.LocalSessionFactoryBean.buildSessionFactory(LocalSessionFactoryBean.java:715)
+	at org.springframework.orm.hibernate3.AbstractSessionFactoryBean.afterPropertiesSet(AbstractSessionFactoryBean.java:189)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1612)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1549)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:539)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:475)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:304)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:300)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:445)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:419)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:544)
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:155)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:87)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessPropertyValues(CommonAnnotationBeanPostProcessor.java:304)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1185)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:537)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:475)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:304)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:300)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:195)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:700)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:760)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:482)
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:403)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:306)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:106)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4973)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5467)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1559)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1549)
+	at java.util.concurrent.FutureTask$Sync.innerRun(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+[ERROR] 2015-05-25 11:59:19 localhost-startStop-1 org.hibernate.tool.hbm2ddl.SchemaUpdate - Unsuccessful: alter table t_work_questions add index FKDD2618CA3AB17055 (Q_TYPE), add constraint FKDD2618CA3AB17055 foreign key (Q_TYPE) references t_work_Types (tid)
+[ERROR] 2015-05-25 11:59:19 localhost-startStop-1 org.hibernate.tool.hbm2ddl.SchemaUpdate - Can't create table 'workeacheval.#sql-1950_32' (errno: 150)
+[ERROR] 2015-05-25 11:59:47 http-bio-8080-exec-7 com.opensymphony.xwork2.interceptor.ParametersInterceptor - Developer Notification (set struts.devMode to false to disable this message):
+Unexpected Exception caught setting 'x' on 'class chzu.lujie.work.view.action.UserAction: Error setting expression 'x' with value ['31', ]
+[ERROR] 2015-05-25 11:59:47 http-bio-8080-exec-7 com.opensymphony.xwork2.interceptor.ParametersInterceptor - Developer Notification (set struts.devMode to false to disable this message):
+Unexpected Exception caught setting 'y' on 'class chzu.lujie.work.view.action.UserAction: Error setting expression 'y' with value ['17', ]
+[WARN ] 2015-05-25 12:02:06 localhost-startStop-1 org.hibernate.util.DTDEntityResolver - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[WARN ] 2015-05-25 12:02:07 localhost-startStop-1 org.hibernate.util.DTDEntityResolver - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[WARN ] 2015-05-25 12:02:07 localhost-startStop-1 org.hibernate.util.DTDEntityResolver - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[WARN ] 2015-05-25 12:02:07 localhost-startStop-1 org.hibernate.util.DTDEntityResolver - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[WARN ] 2015-05-25 12:02:07 localhost-startStop-1 org.hibernate.util.DTDEntityResolver - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[WARN ] 2015-05-25 12:02:07 localhost-startStop-1 org.hibernate.util.DTDEntityResolver - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[WARN ] 2015-05-25 12:02:07 localhost-startStop-1 org.hibernate.util.DTDEntityResolver - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[WARN ] 2015-05-25 12:02:07 localhost-startStop-1 org.hibernate.util.DTDEntityResolver - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[WARN ] 2015-05-25 12:02:08 localhost-startStop-1 org.hibernate.util.DTDEntityResolver - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[WARN ] 2015-05-25 12:02:08 localhost-startStop-1 org.hibernate.util.DTDEntityResolver - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[WARN ] 2015-05-25 12:02:08 localhost-startStop-1 org.hibernate.util.DTDEntityResolver - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[WARN ] 2015-05-25 12:02:08 localhost-startStop-1 org.hibernate.util.DTDEntityResolver - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[WARN ] 2015-05-25 12:02:08 localhost-startStop-1 org.hibernate.util.DTDEntityResolver - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[WARN ] 2015-05-25 12:02:08 localhost-startStop-1 org.hibernate.util.DTDEntityResolver - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[WARN ] 2015-05-25 12:02:08 localhost-startStop-1 org.hibernate.util.DTDEntityResolver - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[WARN ] 2015-05-25 12:02:08 localhost-startStop-1 org.hibernate.util.DTDEntityResolver - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[WARN ] 2015-05-25 12:02:08 localhost-startStop-1 org.hibernate.util.DTDEntityResolver - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[WARN ] 2015-05-25 12:02:08 localhost-startStop-1 org.hibernate.util.DTDEntityResolver - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[WARN ] 2015-05-25 12:02:08 localhost-startStop-1 org.hibernate.util.DTDEntityResolver - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[WARN ] 2015-05-25 12:02:09 localhost-startStop-1 org.hibernate.util.DTDEntityResolver - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[WARN ] 2015-05-25 12:02:09 localhost-startStop-1 org.hibernate.util.DTDEntityResolver - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[WARN ] 2015-05-25 12:02:09 localhost-startStop-1 org.hibernate.util.DTDEntityResolver - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[WARN ] 2015-05-25 12:02:09 localhost-startStop-1 org.hibernate.util.DTDEntityResolver - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[WARN ] 2015-05-25 12:02:09 localhost-startStop-1 org.hibernate.util.DTDEntityResolver - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+[WARN ] 2015-05-25 12:02:19 localhost-startStop-1 org.hibernate.impl.SessionFactoryObjectFactory - Could not bind factory to JNDI
+javax.naming.NamingException: Name is not valid
+	at org.apache.naming.NamingContext.bind(NamingContext.java:892)
+	at org.apache.naming.NamingContext.rebind(NamingContext.java:225)
+	at org.apache.naming.SelectorContext.rebind(SelectorContext.java:216)
+	at javax.naming.InitialContext.rebind(Unknown Source)
+	at org.hibernate.util.NamingHelper.bind(NamingHelper.java:97)
+	at org.hibernate.impl.SessionFactoryObjectFactory.addInstance(SessionFactoryObjectFactory.java:113)
+	at org.hibernate.impl.SessionFactoryImpl.<init>(SessionFactoryImpl.java:365)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1842)
+	at org.springframework.orm.hibernate3.LocalSessionFactoryBean.newSessionFactory(LocalSessionFactoryBean.java:793)
+	at org.springframework.orm.hibernate3.LocalSessionFactoryBean.buildSessionFactory(LocalSessionFactoryBean.java:715)
+	at org.springframework.orm.hibernate3.AbstractSessionFactoryBean.afterPropertiesSet(AbstractSessionFactoryBean.java:189)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1612)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1549)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:539)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:475)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:304)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:300)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:445)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:419)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:544)
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:155)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:87)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessPropertyValues(CommonAnnotationBeanPostProcessor.java:304)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1185)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:537)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:475)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:304)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:300)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:195)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:700)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:760)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:482)
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:403)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:306)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:106)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4973)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5467)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1559)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1549)
+	at java.util.concurrent.FutureTask$Sync.innerRun(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+[ERROR] 2015-05-25 12:02:21 localhost-startStop-1 org.hibernate.tool.hbm2ddl.SchemaUpdate - Unsuccessful: alter table t_work_questions add index FKDD2618CA3AB17055 (Q_TYPE), add constraint FKDD2618CA3AB17055 foreign key (Q_TYPE) references t_work_Types (tid)
+[ERROR] 2015-05-25 12:02:21 localhost-startStop-1 org.hibernate.tool.hbm2ddl.SchemaUpdate - Can't create table 'workeacheval.#sql-1950_36' (errno: 150)
+[ERROR] 2015-05-25 12:02:40 http-bio-8080-exec-4 com.opensymphony.xwork2.interceptor.ParametersInterceptor - Developer Notification (set struts.devMode to false to disable this message):
+Unexpected Exception caught setting 'x' on 'class chzu.lujie.work.view.action.UserAction: Error setting expression 'x' with value ['37', ]
+[ERROR] 2015-05-25 12:02:40 http-bio-8080-exec-4 com.opensymphony.xwork2.interceptor.ParametersInterceptor - Developer Notification (set struts.devMode to false to disable this message):
+Unexpected Exception caught setting 'y' on 'class chzu.lujie.work.view.action.UserAction: Error setting expression 'y' with value ['24', ]
+[ERROR] 2015-05-25 12:06:07 http-bio-8080-exec-3 com.opensymphony.xwork2.interceptor.ParametersInterceptor - Developer Notification (set struts.devMode to false to disable this message):
+Unexpected Exception caught setting 'x' on 'class chzu.lujie.work.view.action.RoleAction: Error setting expression 'x' with value ['26', ]
+[ERROR] 2015-05-25 12:06:07 http-bio-8080-exec-3 com.opensymphony.xwork2.interceptor.ParametersInterceptor - Developer Notification (set struts.devMode to false to disable this message):
+Unexpected Exception caught setting 'y' on 'class chzu.lujie.work.view.action.RoleAction: Error setting expression 'y' with value ['15', ]
+[ERROR] 2015-05-25 12:06:22 http-bio-8080-exec-1 com.opensymphony.xwork2.interceptor.ParametersInterceptor - Developer Notification (set struts.devMode to false to disable this message):
+Unexpected Exception caught setting 'x' on 'class chzu.lujie.work.view.action.UserAction: Error setting expression 'x' with value ['18', ]
+[ERROR] 2015-05-25 12:06:22 http-bio-8080-exec-1 com.opensymphony.xwork2.interceptor.ParametersInterceptor - Developer Notification (set struts.devMode to false to disable this message):
+Unexpected Exception caught setting 'y' on 'class chzu.lujie.work.view.action.UserAction: Error setting expression 'y' with value ['21', ]
