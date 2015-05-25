@@ -71,17 +71,6 @@
 									src="${pageContext.request.contextPath}/style/images/reply.gif" />
 							回复
 						</s:a>
-<!-- 						 <a href="moveUI.html"><img border="0" -->
-<%-- 								src="${pageContext.request.contextPath}/style/images/edit.gif" />移动到其他版块</a> --%>
-<!-- 							<a href="#" onClick="return confirm('要把本主题设为精华吗？')"><img -->
-<!-- 								border="0" -->
-<%-- 								src="${pageContext.request.contextPath}/style/images/topicType_1.gif" />精华</a> --%>
-<!-- 							<a href="#" onClick="return confirm('要把本主题设为置顶吗？')"><img -->
-<!-- 								border="0" -->
-<%-- 								src="${pageContext.request.contextPath}/style/images/topicType_2.gif" />置顶</a> --%>
-<!-- 							<a href="#" onClick="return confirm('要把本主题设为普通吗？')"><img -->
-<!-- 								border="0" -->
-<%-- 								src="${pageContext.request.contextPath}/style/images/topicType_0.gif" />普通</a> --%>
 						</td>
 						<td width="3" class="ForumPageTableTitleRight">&nbsp;</td>
 					</tr>
@@ -147,7 +136,7 @@
 
 
 				<!-- ~~~~~~~~~~~~~~~ 显示回复列表 ~~~~~~~~~~~~~~~ -->
-				<s:iterator value="#replyList" status="status">
+				<s:iterator value="recordList" status="status">
 					<div class="ListArea template">
 						<table border="0" cellpadding="0" cellspacing="1" width="100%">
 							<tr>

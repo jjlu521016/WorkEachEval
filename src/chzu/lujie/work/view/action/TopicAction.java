@@ -14,6 +14,7 @@ import chzu.lujie.work.domain.Forum;
 import chzu.lujie.work.domain.PageBean;
 import chzu.lujie.work.domain.Reply;
 import chzu.lujie.work.domain.Topic;
+import chzu.lujie.work.util.QueryHelper;
 
 @SuppressWarnings("serial")
 @Controller
@@ -25,14 +26,18 @@ public class TopicAction extends BaseAction<Topic> {
 
 		Topic topic = topicService.getById(model.getId());		
 		ActionContext.getContext().put("topic", topic);
+		new QueryHelper(Reply.class, "r")//
+		.addCondition("r.topic=?", topic)//
+		.addOrderProperty("r.postTime", true)//
+		.preparePageBean(replyService, pageNum, pageSize);
 		
-		List<Reply> replyList = replyService.findByTopic(topic);
-		ActionContext.getContext().put("replyList", replyList);
-		
-		//分页显示：
-		PageBean pageBean = replyService.getPageByTopic(pageNum,pageSize,topic);
-		
-		ActionContext.getContext().getValueStack().push(pageBean);
+//		List<Reply> replyList = replyService.findByTopic(topic);
+//		ActionContext.getContext().put("replyList", replyList);
+//		
+//		//分页显示：
+//		PageBean pageBean = replyService.getPageByTopic(pageNum,pageSize,topic);
+//		
+//		ActionContext.getContext().getValueStack().push(pageBean);
 		
 		return "show";
 	}

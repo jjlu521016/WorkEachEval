@@ -2,10 +2,12 @@ package chzu.lujie.work.service;
 
 import java.util.List;
 
+import chzu.lujie.work.base.DaoSupport;
 import chzu.lujie.work.domain.Forum;
+import chzu.lujie.work.domain.Reply;
 import chzu.lujie.work.domain.Topic;
 
-public interface TopicService {
+public interface TopicService extends DaoSupport<Topic>{
 //查询指定板块中所有的主题
 	/**
 	 * 置顶帖放在最前面。按最后更新时间排序

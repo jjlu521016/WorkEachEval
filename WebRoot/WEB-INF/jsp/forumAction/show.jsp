@@ -69,9 +69,9 @@
 				<tr height=3><td colspan=8></td></tr>
 					
 				<!--主题列表-->
-				<tbody class="dataContainer" datakey="topicList">
+				<tbody class="dataContainer" datakey="recordList">
 				
-				<s:iterator value="#topicList">
+				<s:iterator value="recordList">
 					<tr height="35" id="d0" class="template">
 						<td></td>
 						<td class="ForumTopicPageDataLine" align="center"><img src="${pageContext.request.contextPath}/style/images/topicType_${type}.gif" /></td>
@@ -131,16 +131,11 @@
 </s:form>
 
 <!--分页信息-->
-<%-- <%@ include file="/WEB-INF/jsp/public/pageView.jspf" %> --%>
+<%@ include file="/WEB-INF/jsp/public/pageView.jspf" %>
 
 
 
 
-<div class="Description">
-	说明：<br />
-	1，主题默认按最后更新的时间降序排列。最后更新时间是指主题最后回复的时间，如果没有回复，就是主题发表的时间。<br />
-	2，帖子有普通、置顶、精华之分。置顶贴始终显示在最上面，精华贴用不同的图标标示。<br />
-</div>
 
 </body>
 </html>
