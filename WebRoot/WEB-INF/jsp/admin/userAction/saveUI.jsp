@@ -3,16 +3,8 @@
 <head>
 <title>用户信息</title>
 <%@ include file="/WEB-INF/jsp/public/commons.jspf"%>
-<script type="text/javascript">
-	$(document).ready(function(){
-		var uid = $(':hidden[name=id]').val();
-		if(uid==""){}
-		else{
-			$(':text[name=loginName]').attr("readonly","true");
-		}	
-		
-	})
-</script>
+<script language="javascript" src="${pageContext.request.contextPath}/script/user.js" charset="utf-8"></script>
+
 </head>
 <body>
 
