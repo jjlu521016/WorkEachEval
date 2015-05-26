@@ -97,10 +97,10 @@
 							<td align="center">
 								<ul class="TopicFunc">
 									<!--操作列表-->
-									<li class="TopicFuncLi"><a class="detail"
-										href="${pageContext.request.contextPath}/BBS_Topic/saveUI.html"><img
+									<li class="TopicFuncLi">
+									<s:a class="detail" action="reply_addUI?topicId=%{#topic.id}"><img
 											border="0"
-											src="${pageContext.request.contextPath}/style/images/edit.gif" />编辑</a>
+											src="${pageContext.request.contextPath}/style/images/edit.gif" />编辑</s:a>
 										<a class="detail" href="#"
 										onClick="return confirm('确定要删除本帖吗？')"><img border="0"
 											src="${pageContext.request.contextPath}/style/images/delete.gif" />删除</a>
